@@ -1,0 +1,3285 @@
+fileFormatVersion: 2
+guid: ed7f8700b467339489e6a6a17171b20a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Desert_environment_props_01_0
+  - first:
+      213: 21300002
+    second: Desert_environment_props_01_1
+  - first:
+      213: 21300004
+    second: Desert_environment_props_01_2
+  - first:
+      213: 21300006
+    second: Desert_environment_props_01_3
+  - first:
+      213: 21300008
+    second: Desert_environment_props_01_4
+  - first:
+      213: 21300010
+    second: Desert_environment_props_01_5
+  - first:
+      213: 21300012
+    second: Desert_environment_props_01_6
+  - first:
+      213: 21300014
+    second: Desert_environment_props_01_7
+  - first:
+      213: 21300016
+    second: Desert_environment_props_01_8
+  - first:
+      213: 21300018
+    second: Desert_environment_props_01_9
+  - first:
+      213: 21300020
+    second: Desert_environment_props_01_10
+  - first:
+      213: 21300022
+    second: Desert_environment_props_01_11
+  - first:
+      213: 21300024
+    second: Desert_environment_props_01_12
+  - first:
+      213: 21300026
+    second: Desert_environment_props_01_13
+  - first:
+      213: 21300028
+    second: Desert_environment_props_01_14
+  - first:
+      213: 21300030
+    second: Desert_environment_props_01_15
+  - first:
+      213: 21300032
+    second: Desert_environment_props_01_16
+  - first:
+      213: 21300034
+    second: Desert_environment_props_01_17
+  - first:
+      213: 21300036
+    second: Desert_environment_props_01_18
+  - first:
+      213: 21300038
+    second: Desert_environment_props_01_19
+  - first:
+      213: 21300040
+    second: Desert_environment_props_01_20
+  - first:
+      213: 21300042
+    second: Desert_environment_props_01_21
+  - first:
+      213: 21300044
+    second: Desert_environment_props_01_22
+  - first:
+      213: 21300046
+    second: Desert_environment_props_01_23
+  - first:
+      213: 21300048
+    second: Desert_environment_props_01_24
+  - first:
+      213: 21300050
+    second: Desert_environment_props_01_25
+  - first:
+      213: 21300052
+    second: Desert_environment_props_01_26
+  - first:
+      213: 21300054
+    second: Desert_environment_props_01_27
+  - first:
+      213: 21300056
+    second: Desert_environment_props_01_28
+  - first:
+      213: 21300058
+    second: Desert_environment_props_01_29
+  - first:
+      213: 21300060
+    second: Desert_environment_props_01_30
+  - first:
+      213: 21300062
+    second: Desert_environment_props_01_31
+  - first:
+      213: 21300064
+    second: Desert_environment_props_01_32
+  - first:
+      213: 21300066
+    second: Desert_environment_props_01_33
+  - first:
+      213: 21300068
+    second: Desert_environment_props_01_34
+  - first:
+      213: 21300070
+    second: Desert_environment_props_01_35
+  - first:
+      213: 21300072
+    second: Desert_environment_props_01_36
+  - first:
+      213: 21300074
+    second: Desert_environment_props_01_37
+  - first:
+      213: 21300076
+    second: Desert_environment_props_01_38
+  - first:
+      213: 21300078
+    second: Desert_environment_props_01_39
+  - first:
+      213: 21300080
+    second: Desert_environment_props_01_40
+  - first:
+      213: 21300082
+    second: Desert_environment_props_01_41
+  - first:
+      213: 21300084
+    second: Desert_environment_props_01_42
+  - first:
+      213: 21300086
+    second: Desert_environment_props_01_43
+  - first:
+      213: 21300088
+    second: Desert_environment_props_01_44
+  - first:
+      213: 21300090
+    second: Desert_environment_props_01_45
+  - first:
+      213: 21300092
+    second: Desert_environment_props_01_46
+  - first:
+      213: 21300094
+    second: Desert_environment_props_01_47
+  - first:
+      213: 21300096
+    second: Desert_environment_props_01_48
+  - first:
+      213: 21300098
+    second: Desert_environment_props_01_49
+  - first:
+      213: 21300100
+    second: Desert_environment_props_01_50
+  - first:
+      213: 21300102
+    second: Desert_environment_props_01_51
+  - first:
+      213: 21300104
+    second: Desert_environment_props_01_52
+  - first:
+      213: 21300106
+    second: Desert_environment_props_01_53
+  - first:
+      213: 21300108
+    second: Desert_environment_props_01_54
+  - first:
+      213: 21300110
+    second: Desert_environment_props_01_55
+  - first:
+      213: 21300112
+    second: Desert_environment_props_01_56
+  - first:
+      213: 21300114
+    second: Desert_environment_props_01_57
+  - first:
+      213: 21300116
+    second: Desert_environment_props_01_58
+  - first:
+      213: 21300118
+    second: Desert_environment_props_01_59
+  - first:
+      213: 21300120
+    second: Desert_environment_props_01_60
+  - first:
+      213: 21300122
+    second: Desert_environment_props_01_61
+  - first:
+      213: 21300124
+    second: Desert_environment_props_01_62
+  - first:
+      213: 21300126
+    second: Desert_environment_props_01_63
+  - first:
+      213: 21300128
+    second: Desert_environment_props_01_64
+  - first:
+      213: 21300130
+    second: Desert_environment_props_01_65
+  - first:
+      213: 21300132
+    second: Desert_environment_props_01_66
+  - first:
+      213: 21300134
+    second: Desert_environment_props_01_67
+  - first:
+      213: 21300136
+    second: Desert_environment_props_01_68
+  - first:
+      213: 21300138
+    second: Desert_environment_props_01_69
+  - first:
+      213: 21300140
+    second: Desert_environment_props_01_70
+  - first:
+      213: 21300142
+    second: Desert_environment_props_01_71
+  - first:
+      213: 21300144
+    second: Desert_environment_props_01_72
+  - first:
+      213: 21300146
+    second: Desert_environment_props_01_73
+  - first:
+      213: 21300148
+    second: Desert_environment_props_01_74
+  - first:
+      213: 21300150
+    second: Desert_environment_props_01_75
+  - first:
+      213: 21300152
+    second: Desert_environment_props_01_76
+  - first:
+      213: 21300154
+    second: Desert_environment_props_01_77
+  - first:
+      213: 21300156
+    second: Desert_environment_props_01_78
+  - first:
+      213: 21300158
+    second: Desert_environment_props_01_79
+  - first:
+      213: 21300160
+    second: Desert_environment_props_01_80
+  - first:
+      213: 21300162
+    second: Desert_environment_props_01_81
+  - first:
+      213: 21300164
+    second: Desert_environment_props_01_82
+  - first:
+      213: 21300166
+    second: Desert_environment_props_01_83
+  - first:
+      213: 21300168
+    second: Desert_environment_props_01_84
+  - first:
+      213: 21300170
+    second: Desert_environment_props_01_85
+  - first:
+      213: 21300172
+    second: Desert_environment_props_01_86
+  - first:
+      213: 21300174
+    second: Desert_environment_props_01_87
+  - first:
+      213: 21300176
+    second: Desert_environment_props_01_88
+  - first:
+      213: 21300178
+    second: Desert_environment_props_01_89
+  - first:
+      213: 21300180
+    second: Desert_environment_props_01_90
+  - first:
+      213: 21300182
+    second: Desert_environment_props_01_91
+  - first:
+      213: 21300184
+    second: Desert_environment_props_01_92
+  - first:
+      213: 21300186
+    second: Desert_environment_props_01_93
+  - first:
+      213: 21300188
+    second: Desert_environment_props_01_94
+  - first:
+      213: 21300190
+    second: Desert_environment_props_01_95
+  - first:
+      213: 21300192
+    second: Desert_environment_props_01_96
+  - first:
+      213: 21300194
+    second: Desert_environment_props_01_97
+  - first:
+      213: 21300196
+    second: Desert_environment_props_01_98
+  - first:
+      213: 21300198
+    second: Desert_environment_props_01_99
+  - first:
+      213: 21300200
+    second: Desert_environment_props_01_100
+  - first:
+      213: 21300202
+    second: Desert_environment_props_01_101
+  - first:
+      213: 21300204
+    second: Desert_environment_props_01_102
+  - first:
+      213: 21300206
+    second: Desert_environment_props_01_103
+  - first:
+      213: 21300208
+    second: Desert_environment_props_01_104
+  - first:
+      213: 21300210
+    second: Desert_environment_props_01_105
+  - first:
+      213: 21300212
+    second: Desert_environment_props_01_106
+  - first:
+      213: 21300214
+    second: Desert_environment_props_01_107
+  - first:
+      213: 21300216
+    second: Desert_environment_props_01_108
+  - first:
+      213: 21300218
+    second: Desert_environment_props_01_109
+  - first:
+      213: 21300220
+    second: Desert_environment_props_01_110
+  - first:
+      213: 21300222
+    second: Desert_environment_props_01_111
+  - first:
+      213: 21300224
+    second: Desert_environment_props_01_112
+  - first:
+      213: 21300226
+    second: Desert_environment_props_01_113
+  - first:
+      213: 21300228
+    second: Desert_environment_props_01_114
+  - first:
+      213: 21300230
+    second: Desert_environment_props_01_115
+  - first:
+      213: 21300232
+    second: Desert_environment_props_01_116
+  - first:
+      213: 21300234
+    second: Desert_environment_props_01_117
+  - first:
+      213: 21300236
+    second: Desert_environment_props_01_118
+  - first:
+      213: 21300238
+    second: Desert_environment_props_01_119
+  - first:
+      213: 21300240
+    second: Desert_environment_props_01_120
+  - first:
+      213: 21300242
+    second: Desert_environment_props_01_121
+  - first:
+      213: 21300244
+    second: Desert_environment_props_01_122
+  - first:
+      213: 21300246
+    second: Desert_environment_props_01_123
+  - first:
+      213: 21300248
+    second: Desert_environment_props_01_124
+  - first:
+      213: 21300250
+    second: Desert_environment_props_01_125
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Desert_environment_props_01_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1099
+        width: 56
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b5f4ecd940e6544a22252380c150cc
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1099
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e2bbf1c1073b6438165f8aa998ad12
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1154
+        width: 30
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a848fa34f13a34444a691dd6f96d3253
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1154
+        width: 27
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9927010b11965bb42b626d344f32d38a
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1099
+        width: 55
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139182c0cf996814dbb76dc1e88a627a
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_5
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1096
+        width: 61
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d27df11068a454293d525bb0943314
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_6
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1096
+        width: 25
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45247058dfa72b54387421d72d4fb0bf
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_7
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1096
+        width: 57
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1fc9dfc9bc9644cbbfc8328b8e8901
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_8
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1096
+        width: 57
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830a351fc27f1cf49bf5024f2916f7b7
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_9
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1096
+        width: 48
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b463facd364ac294b8003dce22ad7f4a
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1101
+        width: 36
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7501572f9c7c04493b7dafe32cec74
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1099
+        width: 15
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2317046fd9c554a9350a01cc0248e6
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1099
+        width: 30
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2aeefe8e96c6841b632ad9b718346a
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1099
+        width: 26
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af2d88a8510ee745884999321ce89f9
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_14
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1099
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d66bfab2d414ab468c5a1b1fbd84c3d
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1099
+        width: 49
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4de2607d242c8a46bc4e769e902dd03
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_16
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1099
+        width: 23
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516391ea5aa52f340b77d4774fda6073
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1099
+        width: 18
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd759f1efaa08242a09d77f81c127ab
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_18
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1099
+        width: 31
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c0e056ea34d3c4cab98c64b977096a
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_19
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1099
+        width: 43
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4a8c74c85d02443b970ced443018dd
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_20
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1096
+        width: 37
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e01acc1350946946aa731754b0e40ec
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_21
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1096
+        width: 23
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06894f0d8f26624090516b677ea41cb
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_22
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1096
+        width: 43
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1d07c2fa267b440811194c81cb7e3f
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_23
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1096
+        width: 55
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b686dfa22f9c441b2450e8195dbb20
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_24
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1096
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf51307693cb204bb55c895ff699688
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_25
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1096
+        width: 39
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bec1c940ead164c9c5d88464727cff
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_26
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 994
+        width: 43
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120ca27706bdbf742a66f7f8fdbe6927
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_27
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 994
+        width: 22
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb88f018d555304fb699f3fe77f0fe0
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_28
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 994
+        width: 37
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e547de5201802ec439a03323dbe2550e
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_29
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 994
+        width: 10
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7f8f5b726cd9d47a70870dd1ed99b1
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_30
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 994
+        width: 30
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed008167e1779c145b5b5b90be22ab16
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_31
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 994
+        width: 60
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f98bc31b009776418a26e7a97ad4424
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_32
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 974
+        width: 54
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c05b141665ef794193deedcb81eda18
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_33
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 994
+        width: 111
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df45f657e1f05640b0f9f1eea2a8c84
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_34
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 994
+        width: 70
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3a4284725bc3b4693ef91ae1b2ea49
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_35
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 994
+        width: 62
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35ac07053a2bc046ad04c05fd61d076
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_36
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 994
+        width: 152
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b320c5afec642f40bae5eb8d7e5d881
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_37
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 918
+        width: 36
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a691a33ea38b8424b8c98431f84a50f7
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_38
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 918
+        width: 21
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a6295eb00077d48b11da032c1897ee
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_39
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 918
+        width: 20
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe401cf3251cda4cbc010f99bdd4ffd
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_40
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 918
+        width: 20
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6122e466f3c8d2a45bcac07bb598419a
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_41
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 918
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eda9a67f35e9df4ca6a2b03a5df8240
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_42
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 918
+        width: 93
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a693c5e91c6af74e9d0f5bb49408243
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_43
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 918
+        width: 45
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb1af5115643a04fb102ad1dfc0f493
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_44
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 918
+        width: 72
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffaa0995cd36a24390f8631be183f42
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_45
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 918
+        width: 64
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6037c69bfe70c44186185cdb59eaba1
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_46
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 918
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60beef0b61148474f8f4f7ff946d93a7
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_47
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 918
+        width: 36
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3161180280959d04ba979139ba04ce27
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_48
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 918
+        width: 26
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f927bc48f3e6ad4b817ec117a56ab72
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_49
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 918
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9242c8f8060f7c44baa08f97c1339f35
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_50
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 918
+        width: 34
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae39ce8f851ad14b8863ad65d6517a8
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_51
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 918
+        width: 56
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a50d01202471a42a904b88a1946412
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_52
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 918
+        width: 76
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618a5402b57df284fbb9c7ebb3d1ddea
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_53
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 804
+        width: 188
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63a0423552b8a7409f1a2c74a742ccb
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_54
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 804
+        width: 189
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6422471926b35c4ca0cb7b185fa8a62
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_55
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 804
+        width: 40
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d24f5fc3699a641a5ba833a04132a3
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 804
+        width: 45
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b667b10982e9047be6caa8ad182055
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_57
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 804
+        width: 18
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc38aa74b122646a556e36f772a343
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_58
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 804
+        width: 23
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10db7f83be217ee4bb01afeb5fdae333
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_59
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 804
+        width: 51
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3f386f2d177a94d95490d68b7a7f08
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_60
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 804
+        width: 52
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22c98e32ac577746b43792d865cb29d
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_61
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 804
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dbe3a3bd9f3a24c869b094532d3811
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_62
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 804
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8e977f45b007c42a2b9c1c07951b24
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_63
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 804
+        width: 26
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fe5b4fbe173494c9a4f30013ff3288
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_64
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 804
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4f6eaf31efb5647a3a875834c0f290
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_65
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 672
+        width: 97
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad832ee89b9f1b4996813f8f8f0d95c
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 672
+        width: 144
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e918560c33b64624190c09ad269434b7
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_67
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 672
+        width: 70
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50b3cbcf7f9ca74cb62c4d98dfee9a4
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_68
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 672
+        width: 88
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a3dedce2946b241832c304289cb8c6
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_69
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 672
+        width: 35
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df4a3e32214b064c9ca95e6e502202b
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_70
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 672
+        width: 97
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a409bbe269061d043a4fad4551ed50bd
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_71
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 672
+        width: 72
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b8e3e685b7e4d429bd35f3595922ad
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_72
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 672
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984558a36fdfef3498e82ab1b9e4e070
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_73
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 678
+        width: 181
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d8855c557dd9a408381458ab2f0c6f
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_74
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 678
+        width: 128
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67e7d979edbfb64b8fa4b8a5e568fc1
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_75
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 678
+        width: 162
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d24c4bab6b4e8f40977cf268a865a51
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_76
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 566
+        width: 202
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e06e6039cb3734694ec3ebf425927f
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_77
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 566
+        width: 124
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab6625f29f6d754ca83d61fbce64414
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_78
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 566
+        width: 132
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71af60c8834114f4a945e8650455f9dd
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_79
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 566
+        width: 28
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cb1f91c6405b5479c58a3b1c72401d
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_80
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 566
+        width: 81
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b7bf2754b18c3478798de05da29858
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_81
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 566
+        width: 183
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732bf2d2eed82884c9868286178a5db5
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_82
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 566
+        width: 55
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e86426a9bc69d4290c3c16c4d80b5b
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_83
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 566
+        width: 55
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd7c8810bb116643bf4f289873b165c
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_84
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 566
+        width: 54
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf012b50ad59022459184f29a536a8c5
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_85
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 538
+        width: 177
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecedcb7b11394c04495e62a0b5e4db32
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_86
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 476
+        width: 214
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f486762694f36449d85a7adaedda1e
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_87
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 476
+        width: 52
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f300ffbe7017d42bcdfdd23974fc3d
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_88
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 476
+        width: 57
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22059337fbedef443878f2c10546034d
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_89
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 476
+        width: 32
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd1e1f0a1eb58a49a72878c1dbcfbbc
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_90
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 476
+        width: 96
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23e2926dc3e5d74aa61328475457824
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_91
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 476
+        width: 133
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84179f6c0dd54394e97ec81558f8c77d
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_92
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 476
+        width: 88
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d685271de63cc6448bc9409eef5c3dc
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_93
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 476
+        width: 137
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2fbc895b7d50a459410d3fb0bdf8f7
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_94
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 476
+        width: 137
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069fc4b8a1b5b3344813bfedf50da397
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_95
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 390
+        width: 53
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c25af887e1a0174ab3ea9e4dbc7d1ea
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_96
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 384
+        width: 66
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126e80ac978d33449b3b6a103477a12e
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_97
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 385
+        width: 48
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7acefcfd2ca1d4eae260262d3fb21d
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_98
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 288
+        width: 101
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638bb915e0f0488468df8c8b5933ca53
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_99
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 287
+        width: 73
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6a34781d94dd94fb1dbea27fb3543b
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_100
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 288
+        width: 97
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f517ad6f3bf3642a1b112d132dfab0
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_101
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 291
+        width: 82
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488f1b8270ed5254da7eb2a06b871862
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_102
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 289
+        width: 80
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb218647279dd05409d54f251f02e466
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_103
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 293
+        width: 73
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15530d49e6cc3524e9d07645b9c68d16
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_104
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 303
+        width: 48
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7b6cfeb9ed8b64bb644dbb5a34a929
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_105
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 292
+        width: 92
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e094bc08875d72469738c8a3a06eeff
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_106
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 289
+        width: 44
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e01e8d717451d428fa2b0fa37bcbcc
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_107
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 291
+        width: 26
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab83ac8810b7df64eab2b37c9ff181ef
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_108
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 292
+        width: 36
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8d766d72b643046a29f9078be2845f
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_109
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 290
+        width: 78
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6f4a717b9616f48b225178b3614037
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_110
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 292
+        width: 77
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0401f77208f8c4b488ff0667b73af960
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_111
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 288
+        width: 81
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e5fe4ee1e369845a316c582c985182
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_112
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 203
+        width: 77
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0920e87aee95c4fbbcf245986fabae
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_113
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 207
+        width: 29
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36778429696200946ab08500d76de0b7
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_114
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 207
+        width: 36
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1850e7c1ac3db414294b9bff9c74c611
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_115
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 204
+        width: 58
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f6a3215678d964d9d1d252689124a4
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_116
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 204
+        width: 56
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f149c7729cec00d42a8b7792bf49b7f9
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_117
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 115
+        width: 94
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbc710358b5dd447921cf9c8186ad9e
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_118
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 114
+        width: 80
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c2cd697aad3ee46acc5b84e1c1ced1
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_119
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 115
+        width: 78
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2802a8d16b84f4d42a68985e13056974
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_120
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 116
+        width: 154
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1884085526f6f334eba30c2b43c28033
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_121
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 107
+        width: 140
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ee80b9b55ed3f40be88cd2bee24b38
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_122
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 104
+        width: 140
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393e3768b44190349ace9dbb2d797581
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_123
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 106
+        width: 206
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fae0acd3120fe46a66279999293415
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_124
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 106
+        width: 169
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a86480f35fb37541b2d276cf7418d61
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_environment_props_01_125
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 105
+        width: 135
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc3785b04396a049a27dbda25dc1bfa
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c592e53d61d1eda478e8ec255c3b0f10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Desert_environment_props_01_16: 21300032
+      Desert_environment_props_01_95: 21300190
+      Desert_environment_props_01_1: 21300002
+      Desert_environment_props_01_89: 21300178
+      Desert_environment_props_01_26: 21300052
+      Desert_environment_props_01_15: 21300030
+      Desert_environment_props_01_38: 21300076
+      Desert_environment_props_01_76: 21300152
+      Desert_environment_props_01_59: 21300118
+      Desert_environment_props_01_65: 21300130
+      Desert_environment_props_01_77: 21300154
+      Desert_environment_props_01_7: 21300014
+      Desert_environment_props_01_3: 21300006
+      Desert_environment_props_01_17: 21300034
+      Desert_environment_props_01_92: 21300184
+      Desert_environment_props_01_107: 21300214
+      Desert_environment_props_01_58: 21300116
+      Desert_environment_props_01_109: 21300218
+      Desert_environment_props_01_112: 21300224
+      Desert_environment_props_01_51: 21300102
+      Desert_environment_props_01_67: 21300134
+      Desert_environment_props_01_82: 21300164
+      Desert_environment_props_01_33: 21300066
+      Desert_environment_props_01_49: 21300098
+      Desert_environment_props_01_64: 21300128
+      Desert_environment_props_01_50: 21300100
+      Desert_environment_props_01_98: 21300196
+      Desert_environment_props_01_24: 21300048
+      Desert_environment_props_01_29: 21300058
+      Desert_environment_props_01_72: 21300144
+      Desert_environment_props_01_53: 21300106
+      Desert_environment_props_01_5: 21300010
+      Desert_environment_props_01_56: 21300112
+      Desert_environment_props_01_42: 21300084
+      Desert_environment_props_01_75: 21300150
+      Desert_environment_props_01_18: 21300036
+      Desert_environment_props_01_105: 21300210
+      Desert_environment_props_01_103: 21300206
+      Desert_environment_props_01_84: 21300168
+      Desert_environment_props_01_44: 21300088
+      Desert_environment_props_01_6: 21300012
+      Desert_environment_props_01_110: 21300220
+      Desert_environment_props_01_46: 21300092
+      Desert_environment_props_01_52: 21300104
+      Desert_environment_props_01_25: 21300050
+      Desert_environment_props_01_55: 21300110
+      Desert_environment_props_01_124: 21300248
+      Desert_environment_props_01_90: 21300180
+      Desert_environment_props_01_57: 21300114
+      Desert_environment_props_01_83: 21300166
+      Desert_environment_props_01_8: 21300016
+      Desert_environment_props_01_94: 21300188
+      Desert_environment_props_01_111: 21300222
+      Desert_environment_props_01_87: 21300174
+      Desert_environment_props_01_115: 21300230
+      Desert_environment_props_01_35: 21300070
+      Desert_environment_props_01_81: 21300162
+      Desert_environment_props_01_12: 21300024
+      Desert_environment_props_01_120: 21300240
+      Desert_environment_props_01_104: 21300208
+      Desert_environment_props_01_32: 21300064
+      Desert_environment_props_01_101: 21300202
+      Desert_environment_props_01_19: 21300038
+      Desert_environment_props_01_13: 21300026
+      Desert_environment_props_01_11: 21300022
+      Desert_environment_props_01_121: 21300242
+      Desert_environment_props_01_37: 21300074
+      Desert_environment_props_01_123: 21300246
+      Desert_environment_props_01_69: 21300138
+      Desert_environment_props_01_21: 21300042
+      Desert_environment_props_01_60: 21300120
+      Desert_environment_props_01_86: 21300172
+      Desert_environment_props_01_34: 21300068
+      Desert_environment_props_01_20: 21300040
+      Desert_environment_props_01_41: 21300082
+      Desert_environment_props_01_78: 21300156
+      Desert_environment_props_01_23: 21300046
+      Desert_environment_props_01_116: 21300232
+      Desert_environment_props_01_117: 21300234
+      Desert_environment_props_01_54: 21300108
+      Desert_environment_props_01_118: 21300236
+      Desert_environment_props_01_93: 21300186
+      Desert_environment_props_01_39: 21300078
+      Desert_environment_props_01_85: 21300170
+      Desert_environment_props_01_80: 21300160
+      Desert_environment_props_01_125: 21300250
+      Desert_environment_props_01_63: 21300126
+      Desert_environment_props_01_68: 21300136
+      Desert_environment_props_01_14: 21300028
+      Desert_environment_props_01_45: 21300090
+      Desert_environment_props_01_66: 21300132
+      Desert_environment_props_01_62: 21300124
+      Desert_environment_props_01_36: 21300072
+      Desert_environment_props_01_10: 21300020
+      Desert_environment_props_01_79: 21300158
+      Desert_environment_props_01_108: 21300216
+      Desert_environment_props_01_99: 21300198
+      Desert_environment_props_01_28: 21300056
+      Desert_environment_props_01_30: 21300060
+      Desert_environment_props_01_47: 21300094
+      Desert_environment_props_01_88: 21300176
+      Desert_environment_props_01_2: 21300004
+      Desert_environment_props_01_96: 21300192
+      Desert_environment_props_01_0: 21300000
+      Desert_environment_props_01_9: 21300018
+      Desert_environment_props_01_27: 21300054
+      Desert_environment_props_01_73: 21300146
+      Desert_environment_props_01_106: 21300212
+      Desert_environment_props_01_100: 21300200
+      Desert_environment_props_01_114: 21300228
+      Desert_environment_props_01_22: 21300044
+      Desert_environment_props_01_113: 21300226
+      Desert_environment_props_01_70: 21300140
+      Desert_environment_props_01_43: 21300086
+      Desert_environment_props_01_71: 21300142
+      Desert_environment_props_01_91: 21300182
+      Desert_environment_props_01_97: 21300194
+      Desert_environment_props_01_122: 21300244
+      Desert_environment_props_01_4: 21300008
+      Desert_environment_props_01_61: 21300122
+      Desert_environment_props_01_74: 21300148
+      Desert_environment_props_01_119: 21300238
+      Desert_environment_props_01_31: 21300062
+      Desert_environment_props_01_40: 21300080
+      Desert_environment_props_01_48: 21300096
+      Desert_environment_props_01_102: 21300204
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

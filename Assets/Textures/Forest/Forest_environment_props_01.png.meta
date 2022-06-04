@@ -1,0 +1,4936 @@
+fileFormatVersion: 2
+guid: 96f82e38395339944b89ca32fa40e659
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Forest_environment_props_01_0
+  - first:
+      213: 21300002
+    second: Forest_environment_props_01_1
+  - first:
+      213: 21300004
+    second: Forest_environment_props_01_2
+  - first:
+      213: 21300006
+    second: Forest_environment_props_01_3
+  - first:
+      213: 21300008
+    second: Forest_environment_props_01_4
+  - first:
+      213: 21300010
+    second: Forest_environment_props_01_5
+  - first:
+      213: 21300012
+    second: Forest_environment_props_01_6
+  - first:
+      213: 21300014
+    second: Forest_environment_props_01_7
+  - first:
+      213: 21300016
+    second: Forest_environment_props_01_8
+  - first:
+      213: 21300018
+    second: Forest_environment_props_01_9
+  - first:
+      213: 21300020
+    second: Forest_environment_props_01_10
+  - first:
+      213: 21300022
+    second: Forest_environment_props_01_11
+  - first:
+      213: 21300024
+    second: Forest_environment_props_01_12
+  - first:
+      213: 21300026
+    second: Forest_environment_props_01_13
+  - first:
+      213: 21300028
+    second: Forest_environment_props_01_14
+  - first:
+      213: 21300030
+    second: Forest_environment_props_01_15
+  - first:
+      213: 21300032
+    second: Forest_environment_props_01_16
+  - first:
+      213: 21300034
+    second: Forest_environment_props_01_17
+  - first:
+      213: 21300036
+    second: Forest_environment_props_01_18
+  - first:
+      213: 21300038
+    second: Forest_environment_props_01_19
+  - first:
+      213: 21300040
+    second: Forest_environment_props_01_20
+  - first:
+      213: 21300042
+    second: Forest_environment_props_01_21
+  - first:
+      213: 21300044
+    second: Forest_environment_props_01_22
+  - first:
+      213: 21300046
+    second: Forest_environment_props_01_23
+  - first:
+      213: 21300048
+    second: Forest_environment_props_01_24
+  - first:
+      213: 21300050
+    second: Forest_environment_props_01_25
+  - first:
+      213: 21300052
+    second: Forest_environment_props_01_26
+  - first:
+      213: 21300054
+    second: Forest_environment_props_01_27
+  - first:
+      213: 21300056
+    second: Forest_environment_props_01_28
+  - first:
+      213: 21300058
+    second: Forest_environment_props_01_29
+  - first:
+      213: 21300060
+    second: Forest_environment_props_01_30
+  - first:
+      213: 21300062
+    second: Forest_environment_props_01_31
+  - first:
+      213: 21300064
+    second: Forest_environment_props_01_32
+  - first:
+      213: 21300066
+    second: Forest_environment_props_01_33
+  - first:
+      213: 21300068
+    second: Forest_environment_props_01_34
+  - first:
+      213: 21300070
+    second: Forest_environment_props_01_35
+  - first:
+      213: 21300072
+    second: Forest_environment_props_01_36
+  - first:
+      213: 21300074
+    second: Forest_environment_props_01_37
+  - first:
+      213: 21300076
+    second: Forest_environment_props_01_38
+  - first:
+      213: 21300078
+    second: Forest_environment_props_01_39
+  - first:
+      213: 21300080
+    second: Forest_environment_props_01_40
+  - first:
+      213: 21300082
+    second: Forest_environment_props_01_41
+  - first:
+      213: 21300084
+    second: Forest_environment_props_01_42
+  - first:
+      213: 21300086
+    second: Forest_environment_props_01_43
+  - first:
+      213: 21300088
+    second: Forest_environment_props_01_44
+  - first:
+      213: 21300090
+    second: Forest_environment_props_01_45
+  - first:
+      213: 21300092
+    second: Forest_environment_props_01_46
+  - first:
+      213: 21300094
+    second: Forest_environment_props_01_47
+  - first:
+      213: 21300096
+    second: Forest_environment_props_01_48
+  - first:
+      213: 21300098
+    second: Forest_environment_props_01_49
+  - first:
+      213: 21300100
+    second: Forest_environment_props_01_50
+  - first:
+      213: 21300102
+    second: Forest_environment_props_01_51
+  - first:
+      213: 21300104
+    second: Forest_environment_props_01_52
+  - first:
+      213: 21300106
+    second: Forest_environment_props_01_53
+  - first:
+      213: 21300108
+    second: Forest_environment_props_01_54
+  - first:
+      213: 21300110
+    second: Forest_environment_props_01_55
+  - first:
+      213: 21300112
+    second: Forest_environment_props_01_56
+  - first:
+      213: 21300114
+    second: Forest_environment_props_01_57
+  - first:
+      213: 21300116
+    second: Forest_environment_props_01_58
+  - first:
+      213: 21300118
+    second: Forest_environment_props_01_59
+  - first:
+      213: 21300120
+    second: Forest_environment_props_01_60
+  - first:
+      213: 21300122
+    second: Forest_environment_props_01_61
+  - first:
+      213: 21300124
+    second: Forest_environment_props_01_62
+  - first:
+      213: 21300126
+    second: Forest_environment_props_01_63
+  - first:
+      213: 21300128
+    second: Forest_environment_props_01_64
+  - first:
+      213: 21300130
+    second: Forest_environment_props_01_65
+  - first:
+      213: 21300132
+    second: Forest_environment_props_01_66
+  - first:
+      213: 21300134
+    second: Forest_environment_props_01_67
+  - first:
+      213: 21300136
+    second: Forest_environment_props_01_68
+  - first:
+      213: 21300138
+    second: Forest_environment_props_01_69
+  - first:
+      213: 21300140
+    second: Forest_environment_props_01_70
+  - first:
+      213: 21300142
+    second: Forest_environment_props_01_71
+  - first:
+      213: 21300144
+    second: Forest_environment_props_01_72
+  - first:
+      213: 21300146
+    second: Forest_environment_props_01_73
+  - first:
+      213: 21300148
+    second: Forest_environment_props_01_74
+  - first:
+      213: 21300150
+    second: Forest_environment_props_01_75
+  - first:
+      213: 21300152
+    second: Forest_environment_props_01_76
+  - first:
+      213: 21300154
+    second: Forest_environment_props_01_77
+  - first:
+      213: 21300156
+    second: Forest_environment_props_01_78
+  - first:
+      213: 21300158
+    second: Forest_environment_props_01_79
+  - first:
+      213: 21300160
+    second: Forest_environment_props_01_80
+  - first:
+      213: 21300162
+    second: Forest_environment_props_01_81
+  - first:
+      213: 21300164
+    second: Forest_environment_props_01_82
+  - first:
+      213: 21300166
+    second: Forest_environment_props_01_83
+  - first:
+      213: 21300168
+    second: Forest_environment_props_01_84
+  - first:
+      213: 21300170
+    second: Forest_environment_props_01_85
+  - first:
+      213: 21300172
+    second: Forest_environment_props_01_86
+  - first:
+      213: 21300174
+    second: Forest_environment_props_01_87
+  - first:
+      213: 21300176
+    second: Forest_environment_props_01_88
+  - first:
+      213: 21300178
+    second: Forest_environment_props_01_89
+  - first:
+      213: 21300180
+    second: Forest_environment_props_01_90
+  - first:
+      213: 21300182
+    second: Forest_environment_props_01_91
+  - first:
+      213: 21300184
+    second: Forest_environment_props_01_92
+  - first:
+      213: 21300186
+    second: Forest_environment_props_01_93
+  - first:
+      213: 21300188
+    second: Forest_environment_props_01_94
+  - first:
+      213: 21300190
+    second: Forest_environment_props_01_95
+  - first:
+      213: 21300192
+    second: Forest_environment_props_01_96
+  - first:
+      213: 21300194
+    second: Forest_environment_props_01_97
+  - first:
+      213: 21300196
+    second: Forest_environment_props_01_98
+  - first:
+      213: 21300198
+    second: Forest_environment_props_01_99
+  - first:
+      213: 21300200
+    second: Forest_environment_props_01_100
+  - first:
+      213: 21300202
+    second: Forest_environment_props_01_101
+  - first:
+      213: 21300204
+    second: Forest_environment_props_01_102
+  - first:
+      213: 21300206
+    second: Forest_environment_props_01_103
+  - first:
+      213: 21300208
+    second: Forest_environment_props_01_104
+  - first:
+      213: 21300210
+    second: Forest_environment_props_01_105
+  - first:
+      213: 21300212
+    second: Forest_environment_props_01_106
+  - first:
+      213: 21300214
+    second: Forest_environment_props_01_107
+  - first:
+      213: 21300216
+    second: Forest_environment_props_01_108
+  - first:
+      213: 21300218
+    second: Forest_environment_props_01_109
+  - first:
+      213: 21300220
+    second: Forest_environment_props_01_110
+  - first:
+      213: 21300222
+    second: Forest_environment_props_01_111
+  - first:
+      213: 21300224
+    second: Forest_environment_props_01_112
+  - first:
+      213: 21300226
+    second: Forest_environment_props_01_113
+  - first:
+      213: 21300228
+    second: Forest_environment_props_01_114
+  - first:
+      213: 21300230
+    second: Forest_environment_props_01_115
+  - first:
+      213: 21300232
+    second: Forest_environment_props_01_116
+  - first:
+      213: 21300234
+    second: Forest_environment_props_01_117
+  - first:
+      213: 21300236
+    second: Forest_environment_props_01_118
+  - first:
+      213: 21300238
+    second: Forest_environment_props_01_119
+  - first:
+      213: 21300240
+    second: Forest_environment_props_01_120
+  - first:
+      213: 21300242
+    second: Forest_environment_props_01_121
+  - first:
+      213: 21300244
+    second: Forest_environment_props_01_122
+  - first:
+      213: 21300246
+    second: Forest_environment_props_01_123
+  - first:
+      213: 21300248
+    second: Forest_environment_props_01_124
+  - first:
+      213: 21300250
+    second: Forest_environment_props_01_125
+  - first:
+      213: 21300252
+    second: Forest_environment_props_01_126
+  - first:
+      213: 21300254
+    second: Forest_environment_props_01_127
+  - first:
+      213: 21300256
+    second: Forest_environment_props_01_128
+  - first:
+      213: 21300258
+    second: Forest_environment_props_01_129
+  - first:
+      213: 21300260
+    second: Forest_environment_props_01_130
+  - first:
+      213: 21300262
+    second: Forest_environment_props_01_131
+  - first:
+      213: 21300264
+    second: Forest_environment_props_01_132
+  - first:
+      213: 21300266
+    second: Forest_environment_props_01_133
+  - first:
+      213: 21300268
+    second: Forest_environment_props_01_134
+  - first:
+      213: 21300270
+    second: Forest_environment_props_01_135
+  - first:
+      213: 21300272
+    second: Forest_environment_props_01_136
+  - first:
+      213: 21300274
+    second: Forest_environment_props_01_137
+  - first:
+      213: 21300276
+    second: Forest_environment_props_01_138
+  - first:
+      213: 21300278
+    second: Forest_environment_props_01_139
+  - first:
+      213: 21300280
+    second: Forest_environment_props_01_140
+  - first:
+      213: 21300282
+    second: Forest_environment_props_01_141
+  - first:
+      213: 21300284
+    second: Forest_environment_props_01_142
+  - first:
+      213: 21300286
+    second: Forest_environment_props_01_143
+  - first:
+      213: 21300288
+    second: Forest_environment_props_01_144
+  - first:
+      213: 21300290
+    second: Forest_environment_props_01_145
+  - first:
+      213: 21300292
+    second: Forest_environment_props_01_146
+  - first:
+      213: 21300294
+    second: Forest_environment_props_01_147
+  - first:
+      213: 21300296
+    second: Forest_environment_props_01_148
+  - first:
+      213: 21300298
+    second: Forest_environment_props_01_149
+  - first:
+      213: 21300300
+    second: Forest_environment_props_01_150
+  - first:
+      213: 21300302
+    second: Forest_environment_props_01_151
+  - first:
+      213: 21300304
+    second: Forest_environment_props_01_152
+  - first:
+      213: 21300306
+    second: Forest_environment_props_01_153
+  - first:
+      213: 21300308
+    second: Forest_environment_props_01_154
+  - first:
+      213: 21300310
+    second: Forest_environment_props_01_155
+  - first:
+      213: 21300312
+    second: Forest_environment_props_01_156
+  - first:
+      213: 21300314
+    second: Forest_environment_props_01_157
+  - first:
+      213: 21300316
+    second: Forest_environment_props_01_158
+  - first:
+      213: 21300318
+    second: Forest_environment_props_01_159
+  - first:
+      213: 21300320
+    second: Forest_environment_props_01_160
+  - first:
+      213: 21300322
+    second: Forest_environment_props_01_161
+  - first:
+      213: 21300324
+    second: Forest_environment_props_01_162
+  - first:
+      213: 21300326
+    second: Forest_environment_props_01_163
+  - first:
+      213: 21300328
+    second: Forest_environment_props_01_164
+  - first:
+      213: 21300330
+    second: Forest_environment_props_01_165
+  - first:
+      213: 21300332
+    second: Forest_environment_props_01_166
+  - first:
+      213: 21300334
+    second: Forest_environment_props_01_167
+  - first:
+      213: 21300336
+    second: Forest_environment_props_01_168
+  - first:
+      213: 21300338
+    second: Forest_environment_props_01_169
+  - first:
+      213: 21300340
+    second: Forest_environment_props_01_170
+  - first:
+      213: 21300342
+    second: Forest_environment_props_01_171
+  - first:
+      213: 21300344
+    second: Forest_environment_props_01_172
+  - first:
+      213: 21300346
+    second: Forest_environment_props_01_173
+  - first:
+      213: 21300348
+    second: Forest_environment_props_01_174
+  - first:
+      213: 21300350
+    second: Forest_environment_props_01_175
+  - first:
+      213: 21300352
+    second: Forest_environment_props_01_176
+  - first:
+      213: 21300354
+    second: Forest_environment_props_01_177
+  - first:
+      213: 21300356
+    second: Forest_environment_props_01_178
+  - first:
+      213: 21300358
+    second: Forest_environment_props_01_179
+  - first:
+      213: 21300360
+    second: Forest_environment_props_01_180
+  - first:
+      213: 21300362
+    second: Forest_environment_props_01_181
+  - first:
+      213: 21300364
+    second: Forest_environment_props_01_182
+  - first:
+      213: 21300366
+    second: Forest_environment_props_01_183
+  - first:
+      213: 21300368
+    second: Forest_environment_props_01_184
+  - first:
+      213: 21300370
+    second: Forest_environment_props_01_185
+  - first:
+      213: 21300372
+    second: Forest_environment_props_01_186
+  - first:
+      213: 21300374
+    second: Forest_environment_props_01_187
+  - first:
+      213: 21300376
+    second: Forest_environment_props_01_188
+  - first:
+      213: 21300378
+    second: Forest_environment_props_01_189
+  - first:
+      213: 21300380
+    second: Forest_environment_props_01_190
+  - first:
+      213: 21300382
+    second: Forest_environment_props_01_191
+  - first:
+      213: 21300384
+    second: Forest_environment_props_01_192
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Forest_environment_props_01_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1460
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a5f8f48f877f44598ba4232beddcec
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1460
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10a903fc68e03f4ab2062a0aa5fb26b
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1460
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a6b1ac54223e64096962b9d40e73a1
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1460
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd203b9a2ff23f439df1bc5de5ba4ec
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1461
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a8773ec80fb2748a9372d32efcd425
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1461
+        width: 32
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0092eaa6697a9dc448fb4a8c25a33301
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1461
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148481a7238f1c14bb607339c9de58e8
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_7
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1461
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940acc98970c2504488656d04f00fe49
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1440
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e423e6f5a4af75b468d4c3dfec674958
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1440
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be806dd399b85b1439ab19757c8a3df3
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_10
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1440
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68883a85a22709d4586bed88a0b552e7
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1439
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ea63f1b008ab441aef83557172033e
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_12
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1445
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc83e939d98421d46b4639fdc788d381
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_13
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1440
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da02aaa6f67701549b7c26fe27aa2200
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_14
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1440
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d46ddebf1f5a9846bf60ba7cc14a99e
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_15
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1440
+        width: 58
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295643e79c6e6cf4fb824e7d44f9273c
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_16
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1430
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1273ccc64a2294f42b50ad04ebf68495
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_17
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1394
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32874d72ffef50a4e9ff00291f8ab4d2
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_18
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1394
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d7337e8efa4a043a968c83fb2fb97a
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_19
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1330
+        width: 45
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2aefa9f320b5e46ba1b176a4a2fefc
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1422
+        width: 51
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664c21adace49c2479d0e36ae6ae2f67
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_21
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1422
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4679b88306f3f4f43b46a5ac919eb779
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1422
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abddcfd02ad026546a4f18a7a5e44fd4
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1422
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad537c84849369458ba0e6d31b2ea72
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1372
+        width: 111
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06358f6fe13798a4fb1e51a4961784ae
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_25
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1372
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb97aee8ec50a134989190d12045605e
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_26
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1372
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3da7538c1217c4bba10f6acc728c7c
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_27
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1371
+        width: 152
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15553e6ffef46d14580f3098a708fff3
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1357
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72a7f2dbf0b7f54792c1267630ab812
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_29
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1356
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc09db5924f19644581466d2733a796d
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_30
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1357
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba651b1910135541be1758907d563de
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_31
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1357
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba1f039a081d5e4ca0de405446f02a5
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_32
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1357
+        width: 72
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99524e0e876abeb4f8462e09c1559438
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_33
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1357
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca2cf5beb7cfbc439ee6820c5173acf
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_34
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1357
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe37cb3934b8a141bfb4d2e9ac799e2
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_35
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1378
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a52add249133348a518c2b40f8f5a4
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_36
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1362
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5926ac75f751adf46a713f9d66aca778
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_37
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1378
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef55b25c1a6842048a840960e5f80e85
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1362
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc93d2c2366dd64bac359bbb945f8d0
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_39
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1330
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a0e8c783014a24aba7e55b8b69a692
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_40
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1330
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963cc0af4e864d344866ebe6586e967c
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_41
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1362
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fb6721394f6a44693ede4f430f42ea
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_42
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1362
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b1bc0ed0c335c48b5e013fb1f0ce0d
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_43
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1271
+        width: 55
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fe8e475ee46ba40a9038b313d1fbf5
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_44
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1345
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68924f542588e89499f4777c205e72f8
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_45
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1345
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0162579fc4f45d74b90a60e5022afb7d
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_46
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1270
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a6d99e8faf3564f81bcc7b8b411d16
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_47
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1270
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235f6bc99c9bec04286ccff13aa9a1ae
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_48
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1270
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c49657c2587ae43b949326d6beb691
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_49
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1271
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e16d3de79d631641bf9d036920a286c
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_50
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1204
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca2c2fd8509c2142ad8e481e22ff0d5
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_51
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1204
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b17dedc2083cf44aff592e36b69cba
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_52
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1204
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2880e6ce88347b448d0c7f0d7cc57bc
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_53
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1204
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297a4073bbf91044da04cbd72ac5f597
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1204
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558735a90142d85448e12f9c46b77dc4
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352c0ee4f3336cc42a79a5e181fbac83
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_56
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1203
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0298468cff579684584e053c812a6b30
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_57
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1203
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101710e1cc12f05468bd2b1ed6deda7a
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_58
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1203
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5afc223e59a92d48829ee7532a51b69
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_59
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1203
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94587fbfa96d314cb30055b0b0cedc9
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_60
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1203
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb8ba39f2cd0574984352c8c7f63605
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_61
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1209
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae32d013b23ef049b5eb1f9ccef6913
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_62
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1209
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419daf5c161bedf4cbb9ca3acdf3783f
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_63
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1209
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e827b1081d08ebb4787577ffdc77eed0
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_64
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1209
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2ed30e50e81e24a99defe4577be09f
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_65
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1209
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddae4dfe2092fa4e82ce48d42e4a783
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_66
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1209
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0bfd9b57ddbc447aae4143f7a4d3ff
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_67
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1209
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f348856dbf6e6c4889b335d0963a8b1
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_68
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1209
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad3a0043542ff341be2638bf879fe3d
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_69
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1209
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42276c1a600ab9840ac6f25fdbf480f6
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_70
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1209
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bee4361673b9241bed70ba6d631dd5
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_71
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1209
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4973ea099ba6e1e4f9844714dddad771
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_72
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1209
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701007bc3beb2f24b92601d73f42678d
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_73
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1209
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbc0420b58b2f044844838d7e118d05
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_74
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1209
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97678d53b297564ca43bed776238098
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_75
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1209
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429fbe80049f447469a48f663d0609f3
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_76
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1204
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a00906fc7e69744b8578b2ac02bc284
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_77
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1050
+        width: 154
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbe205e218cbab49b22bf383b64dd7b
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_78
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1057
+        width: 117
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6826efd24e0559845bc8465260f26085
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_79
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1055
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5900e201a07694aa58a4a74766790c
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_80
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1055
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed90795e82447d344be1f07e6fe2c3ff
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_81
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1049
+        width: 97
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21c250822ccfac4baf782fa89952ce3
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_82
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1051
+        width: 74
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651c28535103eee4f85e440b54c93706
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_83
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1048
+        width: 94
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af15aa38d41273d468276c5d8cd6fda0
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_84
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1046
+        width: 154
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0179fcf8f7ecb4189e391bd2bf5799
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_85
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1044
+        width: 117
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539c4b05eb49b1442b96dd1fe29fcf93
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_86
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1043
+        width: 73
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aded986b6ad432419ca35ce94ccc578
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_87
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1043
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbac0d3f6f0fd80439752c3aac4d6e01
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_88
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1040
+        width: 97
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07577898a32fc774a9588f709d0435f6
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_89
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1040
+        width: 74
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a437ecd532582d49b81d61e2bf164e4
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_90
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1040
+        width: 94
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad26426d0e6bcf14aaae36c1c4e784b1
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_91
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 945
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726ead8e7666e734f889aecd81cc6a6b
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_92
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 928
+        width: 87
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b013f87c8e46334bbce6db65757af08
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_93
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 928
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb25aa649be139498b7a8a97f94dd31
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_94
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 928
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f597f9cd17575964da86da986387e6bb
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_95
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 918
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ccd802894fffd49875cb843d9201cf
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_96
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 928
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f66a574497bbb4e8a7152d939e96aa
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_97
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 928
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7b4c1da9f63544d81d04e966cdab18
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_98
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 930
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81f1be9435b0ce4fbbcd5fbd63fe6ef
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_99
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 931
+        width: 87
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4b2b50c8b4d8a49bf7a73e8a97561f
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_100
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 931
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d1c541fd217243a0bc705bd64aa6e
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_101
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 931
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e4a86e1c8fb4d4c870b41c4e5f5cb3
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_102
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 931
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600f8ee1730a9004bae9305644cc9110
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_103
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 931
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c387a0e423a612e489cbf124dd46ba4b
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_104
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 931
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337c56865a09cb4429c35ccdad15c3d2
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_105
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 773
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e72181f6a34f4441b6d48141236cf3c
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_106
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 773
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97da5a8ce9992c41ac97cd6e48f5707
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_107
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 773
+        width: 75
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1a98b5fd41405419a5eda810eb7f37
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_108
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 773
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c25dd13aef66f34f80a3bec3715e932
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_109
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 773
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b732cd5d9a35e704791db660640ac8b3
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_110
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 773
+        width: 109
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075640f067554dd419063f55b91f0e7d
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_111
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 773
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6895c3d3b3c854697a61d57578160c
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_112
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 773
+        width: 85
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b94186489154d94da242de37ffb6823
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_113
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 773
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382179b0934d2474eadbfb2788335838
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_114
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 773
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e04d46cd9c7e644d835832948cc7cc5
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_115
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 773
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552ae8ce05ca20d4ba6568179682e08e
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_116
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 773
+        width: 84
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30ca5423f3a8da4eb2ffc1fd4acd402
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_117
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 773
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2c15b78fd1f694d9335912d00dae53
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_118
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 782
+        width: 72
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17446ecaed8501044b46267850c0ac8a
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_119
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 782
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f4e97c9a4ee2f47be6e7ce609f6a8d
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_120
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 683
+        width: 80
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6040b7edb7e7f4ebc4f8175daba6e7
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_121
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 683
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab83a9f0e6ef2846a14d8ce97da4ff2
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_122
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 683
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909a33e0f8a29164b8983c1d9644204c
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_123
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 683
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818425253446f2d40a14704104bd6f46
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_124
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 683
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6508b1521fc2f4eb706df1bd686e48
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_125
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 683
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240e0c7d7e395f3498c5f0e487b116a4
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_126
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 683
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272dda1a1d96e3e409e68eb9a5f42466
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_127
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 683
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986516d46c946fc45abfcab41e67bfe4
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_128
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 683
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d75f439e5666e48bfaa51c09f892e0
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_129
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 683
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af3e92892b24944c9ebd8f726623cf7
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_130
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 683
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eff618dd9b281040910330e1265c51c
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_131
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 683
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a1c886e058be54cb9ecea188533da9
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_132
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 632
+        width: 114
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a8bac7e40200449a66f821e65c7a85
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_133
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 630
+        width: 75
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da2b4b91fb327e4b822cfead8976bbb
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_134
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 639
+        width: 96
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b3aa5339ebb4044b0000740d862176
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_135
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 622
+        width: 95
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d12fa9d2f728340b8e2fb0f1127337
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_136
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 627
+        width: 73
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc2b4e0b41719409d2d48375e129ca
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_137
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 630
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd65eeac6728e114586dd9159c4c275f
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_138
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 526
+        width: 63
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b965472e7eb6c214aa0eac7083e18a04
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_139
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 526
+        width: 67
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08292f80695a1844488553a4e64795aa
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_140
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 526
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88005fcfd7e4067488d8aa6cc90f9a6f
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_141
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 526
+        width: 191
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07370f2ae5233d44a6253b3e40c5de2
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_142
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 526
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2139fb33293907342a3ae68fbf252215
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_143
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 526
+        width: 167
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bc45d11c88a3f4a84c2af37de0652f
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_144
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 526
+        width: 113
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58048d30d1cd5734ea76108b2b060112
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_145
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 435
+        width: 126
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005c91bded078aa4084bd65d1db0e7ab
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_146
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 435
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256f6c9ce64471941a2a7cadd3ced8bd
+      internalID: 21300292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_147
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 435
+        width: 103
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974f792a631e4c243b134d96dc7ab4a8
+      internalID: 21300294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_148
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 435
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c66a292b61e8194e8ce9ff4a0c9fe0d
+      internalID: 21300296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_149
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 435
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d96994d0bc26444b436878f44d9b9a
+      internalID: 21300298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_150
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 435
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f80ed05bfad62428db8f2f8f673b32
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_151
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 435
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc2b01bb261cc84aac28127524d8557
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_152
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 435
+        width: 67
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2d6e520b78e9c4b8db74ced447fbdb
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_153
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 435
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57462f455766b3340a55332c8279221b
+      internalID: 21300306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_154
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 435
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba64f926f82b10745a85e47f6164dbad
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_155
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 435
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3eb1dbe347f0645931e1199f9feeab
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_156
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 435
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5bfc646fac6ec459c1fa1dc59b0045
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_157
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 251
+        width: 81
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da84f93e46b4bb40b848682d5cf5f98
+      internalID: 21300314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_158
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 250
+        width: 154
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f32cf6055e604887a06ae0cf3a72b
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_159
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 315
+        width: 55
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26658980094ac745a926a31ccf88de0
+      internalID: 21300318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_160
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 315
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d68e3bbd9736348acfbfcea3206133
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_161
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 251
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfdd4b74af65444296c2b37054fb08c
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_162
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 251
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea76657e6dc39014698c0551816099da
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_163
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 251
+        width: 64
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fc3c4b06e10554ebcb64dd9e485dac
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_164
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 251
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cb56a0d6dc46049bf1bdf99534a218
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_165
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 251
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581dd66ef28bb4348ab3ed30870fdb10
+      internalID: 21300330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_166
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 241
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ae921958167774d9c0092972a49340
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_167
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 251
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7e24a0cce636f4990d7a7f9fae8976
+      internalID: 21300334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_168
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 251
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244780effddabd449b3876ca341c94c6
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_169
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 251
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c3f6e618d1bfb41b0d80fbadf7e65b
+      internalID: 21300338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_170
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 251
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2380b47a3bea5804a914de178dedb487
+      internalID: 21300340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_171
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 251
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493d40b2293fd0041856126df6c5af58
+      internalID: 21300342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_172
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 251
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f10781f8cda5df4386dd55b17447f0d
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_173
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 251
+        width: 99
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9542e64bbcdd5e84f98dafb9a618cae6
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_174
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 251
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf070fbbcede2348b52e235a3a68711
+      internalID: 21300348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_175
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 251
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c7f9e1e4e5c734fb068411e215fe41
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_176
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 251
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ab1da95ab34ed46833a8229da723b3
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_177
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 159
+        width: 91
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63772ff49d2b0d641963a9ac2372b6f1
+      internalID: 21300354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_178
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 159
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c984dc1e57319bc499cb337eb1416eaf
+      internalID: 21300356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_179
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 162
+        width: 101
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18679fbffc74f34aa933ad9f0368e00
+      internalID: 21300358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_180
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 181
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bf6fb416b2e32498ab6579c195c9a9
+      internalID: 21300360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_181
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 181
+        width: 95
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e1953297bb534294be2129cc27948
+      internalID: 21300362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_182
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 101
+        width: 89
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d60e4266deb7ef4c8e9599d3a502dd0
+      internalID: 21300364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_183
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 101
+        width: 93
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54054d29a9e38b48b852dbdf383e6d2
+      internalID: 21300366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_184
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 101
+        width: 67
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfe14690d3f9934b880f032b010164d
+      internalID: 21300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_185
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 101
+        width: 105
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6b4a03e0d9b7847949a937ec6c58fb
+      internalID: 21300370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_186
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 101
+        width: 98
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3963f503f7622994f802f1f98c3b65f4
+      internalID: 21300372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_187
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 81
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed3ac708b6338d489bb3a2843fc1434
+      internalID: 21300374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_188
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 81
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c16c1eee2421348a6dbd78de395696
+      internalID: 21300376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_189
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 81
+        width: 105
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d9cde2bd9597948aba98682852f93a
+      internalID: 21300378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_190
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 81
+        width: 69
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f2d2f006c034047af64d778fa82f78
+      internalID: 21300380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_191
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 81
+        width: 160
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762b00cdef54663419b1e3d5d5c53be1
+      internalID: 21300382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Forest_environment_props_01_192
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 80
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba75e5a0cfd5d54e90990138b49cdc9
+      internalID: 21300384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 23932bd8c9fef7048b660505ce131bbe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Forest_environment_props_01_141: 21300282
+      Forest_environment_props_01_30: 21300060
+      Forest_environment_props_01_46: 21300092
+      Forest_environment_props_01_156: 21300312
+      Forest_environment_props_01_131: 21300262
+      Forest_environment_props_01_126: 21300252
+      Forest_environment_props_01_67: 21300134
+      Forest_environment_props_01_102: 21300204
+      Forest_environment_props_01_100: 21300200
+      Forest_environment_props_01_37: 21300074
+      Forest_environment_props_01_160: 21300320
+      Forest_environment_props_01_88: 21300176
+      Forest_environment_props_01_136: 21300272
+      Forest_environment_props_01_174: 21300348
+      Forest_environment_props_01_122: 21300244
+      Forest_environment_props_01_186: 21300372
+      Forest_environment_props_01_34: 21300068
+      Forest_environment_props_01_65: 21300130
+      Forest_environment_props_01_103: 21300206
+      Forest_environment_props_01_53: 21300106
+      Forest_environment_props_01_139: 21300278
+      Forest_environment_props_01_85: 21300170
+      Forest_environment_props_01_176: 21300352
+      Forest_environment_props_01_115: 21300230
+      Forest_environment_props_01_14: 21300028
+      Forest_environment_props_01_110: 21300220
+      Forest_environment_props_01_165: 21300330
+      Forest_environment_props_01_128: 21300256
+      Forest_environment_props_01_29: 21300058
+      Forest_environment_props_01_91: 21300182
+      Forest_environment_props_01_189: 21300378
+      Forest_environment_props_01_138: 21300276
+      Forest_environment_props_01_132: 21300264
+      Forest_environment_props_01_148: 21300296
+      Forest_environment_props_01_51: 21300102
+      Forest_environment_props_01_83: 21300166
+      Forest_environment_props_01_147: 21300294
+      Forest_environment_props_01_178: 21300356
+      Forest_environment_props_01_77: 21300154
+      Forest_environment_props_01_71: 21300142
+      Forest_environment_props_01_39: 21300078
+      Forest_environment_props_01_158: 21300316
+      Forest_environment_props_01_32: 21300064
+      Forest_environment_props_01_93: 21300186
+      Forest_environment_props_01_70: 21300140
+      Forest_environment_props_01_76: 21300152
+      Forest_environment_props_01_81: 21300162
+      Forest_environment_props_01_161: 21300322
+      Forest_environment_props_01_135: 21300270
+      Forest_environment_props_01_117: 21300234
+      Forest_environment_props_01_44: 21300088
+      Forest_environment_props_01_20: 21300040
+      Forest_environment_props_01_80: 21300160
+      Forest_environment_props_01_19: 21300038
+      Forest_environment_props_01_50: 21300100
+      Forest_environment_props_01_167: 21300334
+      Forest_environment_props_01_17: 21300034
+      Forest_environment_props_01_90: 21300180
+      Forest_environment_props_01_52: 21300104
+      Forest_environment_props_01_47: 21300094
+      Forest_environment_props_01_58: 21300116
+      Forest_environment_props_01_73: 21300146
+      Forest_environment_props_01_101: 21300202
+      Forest_environment_props_01_184: 21300368
+      Forest_environment_props_01_171: 21300342
+      Forest_environment_props_01_108: 21300216
+      Forest_environment_props_01_59: 21300118
+      Forest_environment_props_01_97: 21300194
+      Forest_environment_props_01_173: 21300346
+      Forest_environment_props_01_113: 21300226
+      Forest_environment_props_01_7: 21300014
+      Forest_environment_props_01_155: 21300310
+      Forest_environment_props_01_164: 21300328
+      Forest_environment_props_01_104: 21300208
+      Forest_environment_props_01_18: 21300036
+      Forest_environment_props_01_166: 21300332
+      Forest_environment_props_01_120: 21300240
+      Forest_environment_props_01_140: 21300280
+      Forest_environment_props_01_124: 21300248
+      Forest_environment_props_01_79: 21300158
+      Forest_environment_props_01_24: 21300048
+      Forest_environment_props_01_116: 21300232
+      Forest_environment_props_01_129: 21300258
+      Forest_environment_props_01_33: 21300066
+      Forest_environment_props_01_27: 21300054
+      Forest_environment_props_01_43: 21300086
+      Forest_environment_props_01_31: 21300062
+      Forest_environment_props_01_57: 21300114
+      Forest_environment_props_01_68: 21300136
+      Forest_environment_props_01_66: 21300132
+      Forest_environment_props_01_99: 21300198
+      Forest_environment_props_01_146: 21300292
+      Forest_environment_props_01_64: 21300128
+      Forest_environment_props_01_134: 21300268
+      Forest_environment_props_01_60: 21300120
+      Forest_environment_props_01_159: 21300318
+      Forest_environment_props_01_40: 21300080
+      Forest_environment_props_01_12: 21300024
+      Forest_environment_props_01_16: 21300032
+      Forest_environment_props_01_168: 21300336
+      Forest_environment_props_01_82: 21300164
+      Forest_environment_props_01_145: 21300290
+      Forest_environment_props_01_162: 21300324
+      Forest_environment_props_01_163: 21300326
+      Forest_environment_props_01_177: 21300354
+      Forest_environment_props_01_192: 21300384
+      Forest_environment_props_01_130: 21300260
+      Forest_environment_props_01_153: 21300306
+      Forest_environment_props_01_144: 21300288
+      Forest_environment_props_01_15: 21300030
+      Forest_environment_props_01_143: 21300286
+      Forest_environment_props_01_112: 21300224
+      Forest_environment_props_01_121: 21300242
+      Forest_environment_props_01_190: 21300380
+      Forest_environment_props_01_180: 21300360
+      Forest_environment_props_01_48: 21300096
+      Forest_environment_props_01_13: 21300026
+      Forest_environment_props_01_96: 21300192
+      Forest_environment_props_01_119: 21300238
+      Forest_environment_props_01_125: 21300250
+      Forest_environment_props_01_188: 21300376
+      Forest_environment_props_01_185: 21300370
+      Forest_environment_props_01_5: 21300010
+      Forest_environment_props_01_191: 21300382
+      Forest_environment_props_01_72: 21300144
+      Forest_environment_props_01_89: 21300178
+      Forest_environment_props_01_109: 21300218
+      Forest_environment_props_01_94: 21300188
+      Forest_environment_props_01_183: 21300366
+      Forest_environment_props_01_118: 21300236
+      Forest_environment_props_01_8: 21300016
+      Forest_environment_props_01_61: 21300122
+      Forest_environment_props_01_123: 21300246
+      Forest_environment_props_01_175: 21300350
+      Forest_environment_props_01_150: 21300300
+      Forest_environment_props_01_54: 21300108
+      Forest_environment_props_01_92: 21300184
+      Forest_environment_props_01_26: 21300052
+      Forest_environment_props_01_170: 21300340
+      Forest_environment_props_01_38: 21300076
+      Forest_environment_props_01_106: 21300212
+      Forest_environment_props_01_78: 21300156
+      Forest_environment_props_01_95: 21300190
+      Forest_environment_props_01_4: 21300008
+      Forest_environment_props_01_157: 21300314
+      Forest_environment_props_01_107: 21300214
+      Forest_environment_props_01_36: 21300072
+      Forest_environment_props_01_41: 21300082
+      Forest_environment_props_01_152: 21300304
+      Forest_environment_props_01_62: 21300124
+      Forest_environment_props_01_84: 21300168
+      Forest_environment_props_01_2: 21300004
+      Forest_environment_props_01_182: 21300364
+      Forest_environment_props_01_172: 21300344
+      Forest_environment_props_01_55: 21300110
+      Forest_environment_props_01_21: 21300042
+      Forest_environment_props_01_127: 21300254
+      Forest_environment_props_01_9: 21300018
+      Forest_environment_props_01_87: 21300174
+      Forest_environment_props_01_10: 21300020
+      Forest_environment_props_01_23: 21300046
+      Forest_environment_props_01_74: 21300148
+      Forest_environment_props_01_75: 21300150
+      Forest_environment_props_01_22: 21300044
+      Forest_environment_props_01_6: 21300012
+      Forest_environment_props_01_69: 21300138
+      Forest_environment_props_01_63: 21300126
+      Forest_environment_props_01_149: 21300298
+      Forest_environment_props_01_151: 21300302
+      Forest_environment_props_01_25: 21300050
+      Forest_environment_props_01_105: 21300210
+      Forest_environment_props_01_45: 21300090
+      Forest_environment_props_01_187: 21300374
+      Forest_environment_props_01_133: 21300266
+      Forest_environment_props_01_0: 21300000
+      Forest_environment_props_01_3: 21300006
+      Forest_environment_props_01_181: 21300362
+      Forest_environment_props_01_49: 21300098
+      Forest_environment_props_01_114: 21300228
+      Forest_environment_props_01_137: 21300274
+      Forest_environment_props_01_111: 21300222
+      Forest_environment_props_01_179: 21300358
+      Forest_environment_props_01_154: 21300308
+      Forest_environment_props_01_11: 21300022
+      Forest_environment_props_01_35: 21300070
+      Forest_environment_props_01_98: 21300196
+      Forest_environment_props_01_169: 21300338
+      Forest_environment_props_01_142: 21300284
+      Forest_environment_props_01_86: 21300172
+      Forest_environment_props_01_1: 21300002
+      Forest_environment_props_01_42: 21300084
+      Forest_environment_props_01_56: 21300112
+      Forest_environment_props_01_28: 21300056
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

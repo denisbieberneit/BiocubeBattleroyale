@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ability
+  - DarkZone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Player
+  - SlopeGround
+  - Sky
+  - Effects
+  - Deadzone
+  - DeadzoneCollider2
+  - EnvironmentFront
+  - EnvironmentBack
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 138099289
+    locked: 0
+  - name: NoCollideBack
+    uniqueID: 2876827819
+    locked: 0
+  - name: EnvironmentBack
+    uniqueID: 1729350057
+    locked: 0
+  - name: EnvironmentFront
+    uniqueID: 1103726563
+    locked: 0
+  - name: Gorund
+    uniqueID: 3254702613
+    locked: 0
+  - name: SlopeGround
+    uniqueID: 626682753
+    locked: 0
+  - name: NoCollideFront
+    uniqueID: 4286586461
+    locked: 0
+  - name: PowerUpsStatic
+    uniqueID: 1032457321
+    locked: 0
+  - name: MovingPowerUps
+    uniqueID: 2839583703
+    locked: 0
+  - name: Player
+    uniqueID: 1344046063
+    locked: 0
+  - name: FallThrough
+    uniqueID: 2242602449
+    locked: 0
+  - name: HUD
+    uniqueID: 302880625
+    locked: 0
+  - name: HealthbarEmpty
+    uniqueID: 1112522461
+    locked: 0
+  - name: HealthbarFull
+    uniqueID: 2832513641
+    locked: 0
+  - name: DeadZone
+    uniqueID: 2642147727
+    locked: 0

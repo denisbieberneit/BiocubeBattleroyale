@@ -1,0 +1,4604 @@
+fileFormatVersion: 2
+guid: cb04e47cc6c05274db2ab280c5bfaa4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Volcano_environment_tiles_0
+  - first:
+      213: 21300002
+    second: Volcano_environment_tiles_1
+  - first:
+      213: 21300004
+    second: Volcano_environment_tiles_2
+  - first:
+      213: 21300006
+    second: Volcano_environment_tiles_3
+  - first:
+      213: 21300008
+    second: Volcano_environment_tiles_4
+  - first:
+      213: 21300010
+    second: Volcano_environment_tiles_5
+  - first:
+      213: 21300012
+    second: Volcano_environment_tiles_6
+  - first:
+      213: 21300014
+    second: Volcano_environment_tiles_7
+  - first:
+      213: 21300016
+    second: Volcano_environment_tiles_8
+  - first:
+      213: 21300018
+    second: Volcano_environment_tiles_9
+  - first:
+      213: 21300020
+    second: Volcano_environment_tiles_10
+  - first:
+      213: 21300022
+    second: Volcano_environment_tiles_11
+  - first:
+      213: 21300024
+    second: Volcano_environment_tiles_12
+  - first:
+      213: 21300026
+    second: Volcano_environment_tiles_13
+  - first:
+      213: 21300028
+    second: Volcano_environment_tiles_14
+  - first:
+      213: 21300030
+    second: Volcano_environment_tiles_15
+  - first:
+      213: 21300032
+    second: Volcano_environment_tiles_16
+  - first:
+      213: 21300034
+    second: Volcano_environment_tiles_17
+  - first:
+      213: 21300036
+    second: Volcano_environment_tiles_18
+  - first:
+      213: 21300038
+    second: Volcano_environment_tiles_19
+  - first:
+      213: 21300040
+    second: Volcano_environment_tiles_20
+  - first:
+      213: 21300042
+    second: Volcano_environment_tiles_21
+  - first:
+      213: 21300044
+    second: Volcano_environment_tiles_22
+  - first:
+      213: 21300046
+    second: Volcano_environment_tiles_23
+  - first:
+      213: 21300048
+    second: Volcano_environment_tiles_24
+  - first:
+      213: 21300050
+    second: Volcano_environment_tiles_25
+  - first:
+      213: 21300052
+    second: Volcano_environment_tiles_26
+  - first:
+      213: 21300054
+    second: Volcano_environment_tiles_27
+  - first:
+      213: 21300056
+    second: Volcano_environment_tiles_28
+  - first:
+      213: 21300058
+    second: Volcano_environment_tiles_29
+  - first:
+      213: 21300060
+    second: Volcano_environment_tiles_30
+  - first:
+      213: 21300062
+    second: Volcano_environment_tiles_31
+  - first:
+      213: 21300064
+    second: Volcano_environment_tiles_32
+  - first:
+      213: 21300066
+    second: Volcano_environment_tiles_33
+  - first:
+      213: 21300068
+    second: Volcano_environment_tiles_34
+  - first:
+      213: 21300070
+    second: Volcano_environment_tiles_35
+  - first:
+      213: 21300072
+    second: Volcano_environment_tiles_36
+  - first:
+      213: 21300074
+    second: Volcano_environment_tiles_37
+  - first:
+      213: 21300076
+    second: Volcano_environment_tiles_38
+  - first:
+      213: 21300078
+    second: Volcano_environment_tiles_39
+  - first:
+      213: 21300080
+    second: Volcano_environment_tiles_40
+  - first:
+      213: 21300082
+    second: Volcano_environment_tiles_41
+  - first:
+      213: 21300084
+    second: Volcano_environment_tiles_42
+  - first:
+      213: 21300086
+    second: Volcano_environment_tiles_43
+  - first:
+      213: 21300088
+    second: Volcano_environment_tiles_44
+  - first:
+      213: 21300090
+    second: Volcano_environment_tiles_45
+  - first:
+      213: 21300092
+    second: Volcano_environment_tiles_46
+  - first:
+      213: 21300094
+    second: Volcano_environment_tiles_47
+  - first:
+      213: 21300096
+    second: Volcano_environment_tiles_48
+  - first:
+      213: 21300098
+    second: Volcano_environment_tiles_49
+  - first:
+      213: 21300100
+    second: Volcano_environment_tiles_50
+  - first:
+      213: 21300102
+    second: Volcano_environment_tiles_51
+  - first:
+      213: 21300104
+    second: Volcano_environment_tiles_52
+  - first:
+      213: 21300106
+    second: Volcano_environment_tiles_53
+  - first:
+      213: 21300108
+    second: Volcano_environment_tiles_54
+  - first:
+      213: 21300110
+    second: Volcano_environment_tiles_55
+  - first:
+      213: 21300112
+    second: Volcano_environment_tiles_56
+  - first:
+      213: 21300114
+    second: Volcano_environment_tiles_57
+  - first:
+      213: 21300116
+    second: Volcano_environment_tiles_58
+  - first:
+      213: 21300118
+    second: Volcano_environment_tiles_59
+  - first:
+      213: 21300120
+    second: Volcano_environment_tiles_60
+  - first:
+      213: 21300122
+    second: Volcano_environment_tiles_61
+  - first:
+      213: 21300124
+    second: Volcano_environment_tiles_62
+  - first:
+      213: 21300126
+    second: Volcano_environment_tiles_63
+  - first:
+      213: 21300128
+    second: Volcano_environment_tiles_64
+  - first:
+      213: 21300130
+    second: Volcano_environment_tiles_65
+  - first:
+      213: 21300132
+    second: Volcano_environment_tiles_66
+  - first:
+      213: 21300134
+    second: Volcano_environment_tiles_67
+  - first:
+      213: 21300136
+    second: Volcano_environment_tiles_68
+  - first:
+      213: 21300138
+    second: Volcano_environment_tiles_69
+  - first:
+      213: 21300140
+    second: Volcano_environment_tiles_70
+  - first:
+      213: 21300142
+    second: Volcano_environment_tiles_71
+  - first:
+      213: 21300144
+    second: Volcano_environment_tiles_72
+  - first:
+      213: 21300146
+    second: Volcano_environment_tiles_73
+  - first:
+      213: 21300148
+    second: Volcano_environment_tiles_74
+  - first:
+      213: 21300150
+    second: Volcano_environment_tiles_75
+  - first:
+      213: 21300152
+    second: Volcano_environment_tiles_76
+  - first:
+      213: 21300154
+    second: Volcano_environment_tiles_77
+  - first:
+      213: 21300156
+    second: Volcano_environment_tiles_78
+  - first:
+      213: 21300158
+    second: Volcano_environment_tiles_79
+  - first:
+      213: 21300160
+    second: Volcano_environment_tiles_80
+  - first:
+      213: 21300162
+    second: Volcano_environment_tiles_81
+  - first:
+      213: 21300164
+    second: Volcano_environment_tiles_82
+  - first:
+      213: 21300166
+    second: Volcano_environment_tiles_83
+  - first:
+      213: 21300168
+    second: Volcano_environment_tiles_84
+  - first:
+      213: 21300170
+    second: Volcano_environment_tiles_85
+  - first:
+      213: 21300172
+    second: Volcano_environment_tiles_86
+  - first:
+      213: 21300174
+    second: Volcano_environment_tiles_87
+  - first:
+      213: 21300176
+    second: Volcano_environment_tiles_88
+  - first:
+      213: 21300178
+    second: Volcano_environment_tiles_89
+  - first:
+      213: 21300180
+    second: Volcano_environment_tiles_90
+  - first:
+      213: 21300182
+    second: Volcano_environment_tiles_91
+  - first:
+      213: 21300184
+    second: Volcano_environment_tiles_92
+  - first:
+      213: 21300186
+    second: Volcano_environment_tiles_93
+  - first:
+      213: 21300188
+    second: Volcano_environment_tiles_94
+  - first:
+      213: 21300190
+    second: Volcano_environment_tiles_95
+  - first:
+      213: 21300192
+    second: Volcano_environment_tiles_96
+  - first:
+      213: 21300194
+    second: Volcano_environment_tiles_97
+  - first:
+      213: 21300196
+    second: Volcano_environment_tiles_98
+  - first:
+      213: 21300198
+    second: Volcano_environment_tiles_99
+  - first:
+      213: 21300200
+    second: Volcano_environment_tiles_100
+  - first:
+      213: 21300202
+    second: Volcano_environment_tiles_101
+  - first:
+      213: 21300204
+    second: Volcano_environment_tiles_102
+  - first:
+      213: 21300206
+    second: Volcano_environment_tiles_103
+  - first:
+      213: 21300208
+    second: Volcano_environment_tiles_104
+  - first:
+      213: 21300210
+    second: Volcano_environment_tiles_105
+  - first:
+      213: 21300212
+    second: Volcano_environment_tiles_106
+  - first:
+      213: 21300214
+    second: Volcano_environment_tiles_107
+  - first:
+      213: 21300216
+    second: Volcano_environment_tiles_108
+  - first:
+      213: 21300218
+    second: Volcano_environment_tiles_109
+  - first:
+      213: 21300220
+    second: Volcano_environment_tiles_110
+  - first:
+      213: 21300222
+    second: Volcano_environment_tiles_111
+  - first:
+      213: 21300224
+    second: Volcano_environment_tiles_112
+  - first:
+      213: 21300226
+    second: Volcano_environment_tiles_113
+  - first:
+      213: 21300228
+    second: Volcano_environment_tiles_114
+  - first:
+      213: 21300230
+    second: Volcano_environment_tiles_115
+  - first:
+      213: 21300232
+    second: Volcano_environment_tiles_116
+  - first:
+      213: 21300234
+    second: Volcano_environment_tiles_117
+  - first:
+      213: 21300236
+    second: Volcano_environment_tiles_118
+  - first:
+      213: 21300238
+    second: Volcano_environment_tiles_119
+  - first:
+      213: 21300240
+    second: Volcano_environment_tiles_120
+  - first:
+      213: 21300242
+    second: Volcano_environment_tiles_121
+  - first:
+      213: 21300244
+    second: Volcano_environment_tiles_122
+  - first:
+      213: 21300246
+    second: Volcano_environment_tiles_123
+  - first:
+      213: 21300248
+    second: Volcano_environment_tiles_124
+  - first:
+      213: 21300250
+    second: Volcano_environment_tiles_125
+  - first:
+      213: 21300252
+    second: Volcano_environment_tiles_126
+  - first:
+      213: 21300254
+    second: Volcano_environment_tiles_127
+  - first:
+      213: 21300256
+    second: Volcano_environment_tiles_128
+  - first:
+      213: 21300258
+    second: Volcano_environment_tiles_129
+  - first:
+      213: 21300260
+    second: Volcano_environment_tiles_130
+  - first:
+      213: 21300262
+    second: Volcano_environment_tiles_131
+  - first:
+      213: 21300264
+    second: Volcano_environment_tiles_132
+  - first:
+      213: 21300266
+    second: Volcano_environment_tiles_133
+  - first:
+      213: 21300268
+    second: Volcano_environment_tiles_134
+  - first:
+      213: 21300270
+    second: Volcano_environment_tiles_135
+  - first:
+      213: 21300272
+    second: Volcano_environment_tiles_136
+  - first:
+      213: 21300274
+    second: Volcano_environment_tiles_137
+  - first:
+      213: 21300276
+    second: Volcano_environment_tiles_138
+  - first:
+      213: 21300278
+    second: Volcano_environment_tiles_139
+  - first:
+      213: 21300280
+    second: Volcano_environment_tiles_140
+  - first:
+      213: 21300282
+    second: Volcano_environment_tiles_141
+  - first:
+      213: 21300284
+    second: Volcano_environment_tiles_142
+  - first:
+      213: 21300286
+    second: Volcano_environment_tiles_143
+  - first:
+      213: 21300288
+    second: Volcano_environment_tiles_144
+  - first:
+      213: 21300290
+    second: Volcano_environment_tiles_145
+  - first:
+      213: 21300292
+    second: Volcano_environment_tiles_146
+  - first:
+      213: 21300294
+    second: Volcano_environment_tiles_147
+  - first:
+      213: 21300296
+    second: Volcano_environment_tiles_148
+  - first:
+      213: 21300298
+    second: Volcano_environment_tiles_149
+  - first:
+      213: 21300300
+    second: Volcano_environment_tiles_150
+  - first:
+      213: 21300302
+    second: Volcano_environment_tiles_151
+  - first:
+      213: 21300304
+    second: Volcano_environment_tiles_152
+  - first:
+      213: 21300306
+    second: Volcano_environment_tiles_153
+  - first:
+      213: 21300308
+    second: Volcano_environment_tiles_154
+  - first:
+      213: 21300310
+    second: Volcano_environment_tiles_155
+  - first:
+      213: 21300312
+    second: Volcano_environment_tiles_156
+  - first:
+      213: 21300314
+    second: Volcano_environment_tiles_157
+  - first:
+      213: 21300316
+    second: Volcano_environment_tiles_158
+  - first:
+      213: 21300318
+    second: Volcano_environment_tiles_159
+  - first:
+      213: 21300320
+    second: Volcano_environment_tiles_160
+  - first:
+      213: 21300322
+    second: Volcano_environment_tiles_161
+  - first:
+      213: 21300324
+    second: Volcano_environment_tiles_162
+  - first:
+      213: 21300326
+    second: Volcano_environment_tiles_163
+  - first:
+      213: 21300328
+    second: Volcano_environment_tiles_164
+  - first:
+      213: 21300330
+    second: Volcano_environment_tiles_165
+  - first:
+      213: 21300332
+    second: Volcano_environment_tiles_166
+  - first:
+      213: 21300334
+    second: Volcano_environment_tiles_167
+  - first:
+      213: 21300336
+    second: Volcano_environment_tiles_168
+  - first:
+      213: 21300338
+    second: Volcano_environment_tiles_169
+  - first:
+      213: 21300340
+    second: Volcano_environment_tiles_170
+  - first:
+      213: 21300342
+    second: Volcano_environment_tiles_171
+  - first:
+      213: 21300344
+    second: Volcano_environment_tiles_172
+  - first:
+      213: 21300346
+    second: Volcano_environment_tiles_173
+  - first:
+      213: 21300348
+    second: Volcano_environment_tiles_174
+  - first:
+      213: 21300350
+    second: Volcano_environment_tiles_175
+  - first:
+      213: 21300352
+    second: Volcano_environment_tiles_176
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234ec52a6157fc44cad1457460ac6dc4
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97604c5ff52078d4682421365943af4b
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: -24}
+        - {x: 24, y: 24}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5368fbe6bfd80aa449b7664394db5d1f
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657cd9abd2c6d3145bc8c7deb5f7aced
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d92a4d6cf0adf4a8c4934943a52b3a
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: 24}
+        - {x: 24, y: -24}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f00c4122db2d7489d6a5c52fff1998
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db72d76c0a5c09488a8e274d3063d06
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07080dbd1edaa94dbdddf169ee95f86
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24460cfc39a113d4ca8b8c6dc2947633
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f6ab5a8c161044ba498ba4cfcf49c6
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d34123bd1ad8cf4ca9a433ef6f8c7ec
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e28b0de87f978e40a5555a9d6978fa6
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372553269162a444faf0c269943a410a
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33608c8a321f40b4b9b6a8e2adf7ea40
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a01f3d1cabfb644888ab3a0e6d31413
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cbbec246a23c14c8b5b5d124445730
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbc2adc80876324ca7ceef4587b86c4
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47744ac0870fd2d4b9d7b42f78e00f65
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5117d184f4cbfe2478dbc35e3242de75
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ab1d9755f52e7418ea899d87b77a6b
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31607d38032de2b49b1acd82b9ed79d3
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 352
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3810d8891b7b349a02ae363336209e
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff623e085fbe9342b4bd20de805c294
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3297da3846c2a6e479b2203839a6b50a
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9893bf3b77b95374c97b6ae7f2e07eb9
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87f50de03409a8459369ed8523ffc70
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb47b25e3a38254bb742592961547e2
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a25495af85cb340ae08bdd9b2e768c
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bee80f5a86ab34c91255c4a9ed36a6
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cff7283ddb889f4dba0dc8bc19a1489
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f63bc6f676caed4d9920c744c3e347e
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7666a05786c194482184d8bff12207
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a90088a09269a043813e2263fb6b704
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a687ef574452a104992145c450016d5a
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_34
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8492ff59cdbd8f94cae6870267f0bd50
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_35
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc3518d6bdf0af43af9e4878881a8aa
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_36
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f457e27a84b7e4f919530febcd3da7
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_37
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb80e78885bb79499fb8b7fae66fd2f
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_38
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b53c2d6580544cb834f8070fbc682
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_39
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bc57a9ccf72d246b47c5777728dabc
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_40
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894a50a2e4c568b4883c9cb08d1d4192
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ee0da031769094d93b713f7a1c4d47
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_42
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5429a49d332960f43a9c1d126afc9dee
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_43
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f003815fb665944b08c5e198ef7e33
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38770f08516a61419aae612bdfd097c
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b3abb499de70f4886c1927a653d937
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3e348dbaea81740b8607e355801427
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d84f69e51db414f9a1296f4be42957
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_48
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5294abdd3c5545f41a764f69944993e4
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d8c8d4b68db7f429231c0d3af69ab3
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34147f3864f576e4196f68953c7125a6
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95defb5bb409dba46992648ba1c1e045
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: 24, y: -8}
+        - {x: 24, y: -8}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637551a4583acb2429bebcae73c390ab
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_53
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: -8}
+        - {x: 24, y: 8}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc8c420d7f58684a89d6f740b20e015
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_54
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: 8}
+        - {x: 24, y: 24}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05893c8b83454124785d1989afb41d32
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_55
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: 24}
+        - {x: 24, y: 8}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7569c727ecb78840b023f57000bdc04
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_56
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: 8}
+        - {x: 24, y: -8}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f78e5f5339eb934889083577c20f133
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -24, y: -24}
+        - {x: -24, y: -8}
+        - {x: 24, y: -24}
+        - {x: 24, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bde0547f4d2c4d4d8e17ecd04ab1f60
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_58
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7e856bf90b79844a638c58f68f0d3c
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_59
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850c85bb252c2b947bce48d03b475f2e
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_60
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ddc01edc3bcae4cace0eb7455b21f4
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639efbf2964bb5949a845bb90cae853b
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_62
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd544587241e3c4e9f1e7b12f6ed9b2
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_63
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2240325849eca41a2d6b3bc2d5b62c
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_64
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeee3d46a45009e43ba2378763d72774
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_65
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee9c9bf4e25c014aad6e712476c6f5e
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_66
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99d23d6c5e3bd1428c0179b9f35570f
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_67
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3039989f76f99e24dba8dc13e7f93135
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_68
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71fd920f263c214bbc89066cb0675d8
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_69
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4060830f21656c24e9deb012b31cc442
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_70
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62496f9f9acbf714187a812ddfb9d722
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d681d514eb54c5349ad4249713c4a667
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_72
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ddd529909b8bd43b4beebec6968ba8
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea74d65a68c57dc4ba7e6a513aab4e8e
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_74
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5ca5c1e9bbf454e9eb682d752a0df8
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_75
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51c70c1587afcc44857a880a50187dc
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_76
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a9c74e37857c248a23bf70c3fc847f
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8cfe434540fa34b9ea87e6663384b3
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_78
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278a4f457fbd6d74b9b5517796ef5c2d
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_79
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ad06a3098e28b4cb9575cc485d3067
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_80
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2eab7bcd5accd14dbfb68d2c5e9a110
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_81
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4cd170880cdc3409e7bb0fc5c85ef9
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_82
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805dee7117c4f364ab8831cd56ba7fc7
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_83
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac63b1ce5e3d5c4ba76d2fce868d662
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_84
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b70380b4e2a6a4fbcd716a6dbe0e04
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_85
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fc6032815488c449ba7fabc9e95be9
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_86
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcdc6e91b9e2de468ffd69422fec483
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_87
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af801a56b17c2dc48b6c4766e2830dc0
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_88
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb928fb189bb4943b3fbbb823c6f538
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_89
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e97bbb17dc31141be5b8fe74479d85
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_90
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f42259ee1982a47a73378aba62ddba
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_91
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7ec45cf04cabe46870e3fdeb2dcad3
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_92
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af526040922012440b39be3d99808c62
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_93
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8859d0f156e8d554a8e5a16e214b09e4
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_94
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c43dc79df80ef42b939ecfce94e810
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1818d335149cf7041a3f6bb7b25bb332
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_96
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641c67a2e48cb64429e71c5e597caa24
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdae8cc475a5484ab63f2c49ec37f53
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_98
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1ec6293df4ef448b0359a1e4d40937
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_99
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e28c4df3b8ae948ae5d3155c623ea3
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_100
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a949b057218a39a41995c6a26f1f00dd
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b191b4796db39674d9a14f26826e67e2
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_102
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e684b739498d82249bc851bd4ffa1bde
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_103
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c16117b8cc14240806184940411f6d
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_104
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4949ef986d86c48813f5c3e18d7df8
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_105
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba28e17332a51e49bc093df2e42b898
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_106
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88694cece41f0b14881741bc6e205d48
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_107
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4681b381fc3eb24fad92403168449f8
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_108
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c86ba3edf7448c4bbf89980e018e928
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c61516f945c8aa498e0b82d1b81f995
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_110
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a1fe940e0f2a245ba9f689708f4aa9
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_111
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056fcd8956facfd4ea23c32488065282
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_112
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bbc77022a5e6d43991e5e8cb7b2043
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_113
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b632439e5c777a040ac0aee1bbd900f5
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_114
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12afcd225a97ea44affbee667dddf91
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_115
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 160
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d909f254e75f0374b853081db034ef38
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3e241ecb4d27c41bb028caa88d44f3
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_117
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37eff099eacbc55409858bb214bf5164
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_118
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7840888ce5b8a264a8c9f72b0fe7f8d1
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_119
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc917745e78b16f4c9023a13d9e05cd5
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_120
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bc0619447abab42a52ec282b589e36
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_121
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad138776a590d489fe61f29746959d
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_122
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064a9e46e0de55c4a9bb1b7845944dcc
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4632f97ab5769f94bab58665844c9564
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_124
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d4edaf38a60f44a9d7f39b3528393c
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_125
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219dc7952b48c9c49866035c10c8934c
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_126
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f3cdeee74cdea43892f6922ac02711
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_127
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bd4fb9fb5530443add5f6c8ca9bddc
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_128
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c12e1c8f2df2004ea6321be8e1eeafc
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_129
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1978b79ee30434e43b31573bc5ec87a9
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_130
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c18f1c92878124e8dac823d856e34a
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_131
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba49c8ac326e6d04680b78fb98183601
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_132
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a68851d0f417064aaee5bfd240b8fc8
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_133
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a75d8bb9889774cb53f62d6def473b
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_134
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376f33825a8b5d046a809481b891ee2a
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_135
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d9f432cd6bdc7409e610e75c80ceaf
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_136
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c43dd9b184db84fb1572a11c336657
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_137
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde9229613502604eb9c5f3015646ead
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_138
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c209e7239f36df4cb03b25fecbeb0e5
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_139
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 112
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f15c0677e104184fa1c4abddf3e89a1
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_140
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacc9139028b2204f8414512960b96ec
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff89d74c1a0f4e44a217dedc0bb0c21
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_142
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b644329f710f848a4b8abaeef433f8
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_143
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855000d76b306f5429d10ac0f58e84ab
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_144
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1a8a253a90dfc4e9909d2f44524de1
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_145
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4650fef2bbd132d4a9ff100c172c3740
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_146
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ba4247b643b344b96308fafa32d7c
+      internalID: 21300292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_147
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5b7b0cdd92c584ea03de09a569ee55
+      internalID: 21300294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_148
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74a3983bfce0b744b8dba68c096d5fc
+      internalID: 21300296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_149
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1460b05453c55949a629fcd08854650
+      internalID: 21300298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_150
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81677bbb53e23e4cb1f2d477dd43d21
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_151
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ccda37d1509234f969fd11e8ebcf0b
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_152
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f088eed80252674ea1645279d4a1fa7
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_153
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4484379f2c4fead4d844a4ca914c37a6
+      internalID: 21300306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_154
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907f911dccd9bda4ba39ea97421e6b3f
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_155
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69e6a1ef207c3f4ba36867f2b0a1481
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_156
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b6fd9084e37c547a830b5a3387ec9e
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_157
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8141b8d8c6c63146a42d5993c38b52b
+      internalID: 21300314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_158
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb5c4b41067fc9448c9b90a037a735c
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_159
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa5a4aa42e10a2408084c7c5096ec90
+      internalID: 21300318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_160
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a2d06a0548f304ab77c3db1fd5c2cf
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_161
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c52a787ba84324b8871078fb6c134e
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_162
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfe1e8a4dc4096409a741ee3fd2b815
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_163
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ae0514ad6c79a4387f86e2e5df1b36
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_164
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d65bb4f37232784d9198ab351af19c5
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_165
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9536522db130a45876fb41f3e0ff10
+      internalID: 21300330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_166
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341cfe86e4e078340b963414271b1524
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_167
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426e2b179e4245943b0b08ae7d6a7237
+      internalID: 21300334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_168
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a89e524215e4e74fa95fe76349dabf0
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_169
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19dc8db54561ad49af444c96cf88df8
+      internalID: 21300338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_170
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfe3f988859d7748be1f3e5f563aeeb
+      internalID: 21300340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_171
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b567ad2a933924eaab091ea6762fef
+      internalID: 21300342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_172
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed14c26239d99394497878373932d46b
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_173
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605cd07114f45654299b07f48ee1026c
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_174
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e104fdb92b792c04abd918ecf2dc3461
+      internalID: 21300348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_175
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dbf52dbe541c244964edc8596fe222
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_tiles_176
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 16
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef3ecbdaddccee45ac9fe6719c05e56
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 24e123db47c04bb48b3f57c2e15e35e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Volcano_environment_tiles_47: 21300094
+      Volcano_environment_tiles_90: 21300180
+      Volcano_environment_tiles_61: 21300122
+      Volcano_environment_tiles_78: 21300156
+      Volcano_environment_tiles_42: 21300084
+      Volcano_environment_tiles_171: 21300342
+      Volcano_environment_tiles_150: 21300300
+      Volcano_environment_tiles_165: 21300330
+      Volcano_environment_tiles_134: 21300268
+      Volcano_environment_tiles_44: 21300088
+      Volcano_environment_tiles_155: 21300310
+      Volcano_environment_tiles_139: 21300278
+      Volcano_environment_tiles_123: 21300246
+      Volcano_environment_tiles_145: 21300290
+      Volcano_environment_tiles_12: 21300024
+      Volcano_environment_tiles_153: 21300306
+      Volcano_environment_tiles_14: 21300028
+      Volcano_environment_tiles_88: 21300176
+      Volcano_environment_tiles_148: 21300296
+      Volcano_environment_tiles_40: 21300080
+      Volcano_environment_tiles_113: 21300226
+      Volcano_environment_tiles_3: 21300006
+      Volcano_environment_tiles_87: 21300174
+      Volcano_environment_tiles_9: 21300018
+      Volcano_environment_tiles_11: 21300022
+      Volcano_environment_tiles_118: 21300236
+      Volcano_environment_tiles_10: 21300020
+      Volcano_environment_tiles_89: 21300178
+      Volcano_environment_tiles_23: 21300046
+      Volcano_environment_tiles_24: 21300048
+      Volcano_environment_tiles_62: 21300124
+      Volcano_environment_tiles_104: 21300208
+      Volcano_environment_tiles_32: 21300064
+      Volcano_environment_tiles_72: 21300144
+      Volcano_environment_tiles_137: 21300274
+      Volcano_environment_tiles_34: 21300068
+      Volcano_environment_tiles_172: 21300344
+      Volcano_environment_tiles_19: 21300038
+      Volcano_environment_tiles_22: 21300044
+      Volcano_environment_tiles_91: 21300182
+      Volcano_environment_tiles_129: 21300258
+      Volcano_environment_tiles_66: 21300132
+      Volcano_environment_tiles_127: 21300254
+      Volcano_environment_tiles_57: 21300114
+      Volcano_environment_tiles_100: 21300200
+      Volcano_environment_tiles_26: 21300052
+      Volcano_environment_tiles_0: 21300000
+      Volcano_environment_tiles_175: 21300350
+      Volcano_environment_tiles_2: 21300004
+      Volcano_environment_tiles_51: 21300102
+      Volcano_environment_tiles_158: 21300316
+      Volcano_environment_tiles_5: 21300010
+      Volcano_environment_tiles_126: 21300252
+      Volcano_environment_tiles_105: 21300210
+      Volcano_environment_tiles_161: 21300322
+      Volcano_environment_tiles_173: 21300346
+      Volcano_environment_tiles_53: 21300106
+      Volcano_environment_tiles_13: 21300026
+      Volcano_environment_tiles_80: 21300160
+      Volcano_environment_tiles_8: 21300016
+      Volcano_environment_tiles_16: 21300032
+      Volcano_environment_tiles_99: 21300198
+      Volcano_environment_tiles_132: 21300264
+      Volcano_environment_tiles_140: 21300280
+      Volcano_environment_tiles_157: 21300314
+      Volcano_environment_tiles_149: 21300298
+      Volcano_environment_tiles_174: 21300348
+      Volcano_environment_tiles_25: 21300050
+      Volcano_environment_tiles_45: 21300090
+      Volcano_environment_tiles_65: 21300130
+      Volcano_environment_tiles_38: 21300076
+      Volcano_environment_tiles_69: 21300138
+      Volcano_environment_tiles_111: 21300222
+      Volcano_environment_tiles_82: 21300164
+      Volcano_environment_tiles_84: 21300168
+      Volcano_environment_tiles_167: 21300334
+      Volcano_environment_tiles_59: 21300118
+      Volcano_environment_tiles_110: 21300220
+      Volcano_environment_tiles_97: 21300194
+      Volcano_environment_tiles_29: 21300058
+      Volcano_environment_tiles_142: 21300284
+      Volcano_environment_tiles_30: 21300060
+      Volcano_environment_tiles_50: 21300100
+      Volcano_environment_tiles_83: 21300166
+      Volcano_environment_tiles_36: 21300072
+      Volcano_environment_tiles_94: 21300188
+      Volcano_environment_tiles_67: 21300134
+      Volcano_environment_tiles_120: 21300240
+      Volcano_environment_tiles_176: 21300352
+      Volcano_environment_tiles_70: 21300140
+      Volcano_environment_tiles_103: 21300206
+      Volcano_environment_tiles_135: 21300270
+      Volcano_environment_tiles_7: 21300014
+      Volcano_environment_tiles_73: 21300146
+      Volcano_environment_tiles_144: 21300288
+      Volcano_environment_tiles_141: 21300282
+      Volcano_environment_tiles_75: 21300150
+      Volcano_environment_tiles_162: 21300324
+      Volcano_environment_tiles_143: 21300286
+      Volcano_environment_tiles_92: 21300184
+      Volcano_environment_tiles_4: 21300008
+      Volcano_environment_tiles_117: 21300234
+      Volcano_environment_tiles_96: 21300192
+      Volcano_environment_tiles_107: 21300214
+      Volcano_environment_tiles_60: 21300120
+      Volcano_environment_tiles_95: 21300190
+      Volcano_environment_tiles_125: 21300250
+      Volcano_environment_tiles_52: 21300104
+      Volcano_environment_tiles_41: 21300082
+      Volcano_environment_tiles_27: 21300054
+      Volcano_environment_tiles_63: 21300126
+      Volcano_environment_tiles_86: 21300172
+      Volcano_environment_tiles_31: 21300062
+      Volcano_environment_tiles_6: 21300012
+      Volcano_environment_tiles_116: 21300232
+      Volcano_environment_tiles_115: 21300230
+      Volcano_environment_tiles_119: 21300238
+      Volcano_environment_tiles_71: 21300142
+      Volcano_environment_tiles_21: 21300042
+      Volcano_environment_tiles_35: 21300070
+      Volcano_environment_tiles_159: 21300318
+      Volcano_environment_tiles_1: 21300002
+      Volcano_environment_tiles_108: 21300216
+      Volcano_environment_tiles_122: 21300244
+      Volcano_environment_tiles_79: 21300158
+      Volcano_environment_tiles_133: 21300266
+      Volcano_environment_tiles_15: 21300030
+      Volcano_environment_tiles_18: 21300036
+      Volcano_environment_tiles_168: 21300336
+      Volcano_environment_tiles_128: 21300256
+      Volcano_environment_tiles_77: 21300154
+      Volcano_environment_tiles_74: 21300148
+      Volcano_environment_tiles_136: 21300272
+      Volcano_environment_tiles_160: 21300320
+      Volcano_environment_tiles_46: 21300092
+      Volcano_environment_tiles_163: 21300326
+      Volcano_environment_tiles_151: 21300302
+      Volcano_environment_tiles_147: 21300294
+      Volcano_environment_tiles_112: 21300224
+      Volcano_environment_tiles_124: 21300248
+      Volcano_environment_tiles_152: 21300304
+      Volcano_environment_tiles_17: 21300034
+      Volcano_environment_tiles_33: 21300066
+      Volcano_environment_tiles_55: 21300110
+      Volcano_environment_tiles_146: 21300292
+      Volcano_environment_tiles_169: 21300338
+      Volcano_environment_tiles_28: 21300056
+      Volcano_environment_tiles_170: 21300340
+      Volcano_environment_tiles_156: 21300312
+      Volcano_environment_tiles_101: 21300202
+      Volcano_environment_tiles_130: 21300260
+      Volcano_environment_tiles_39: 21300078
+      Volcano_environment_tiles_43: 21300086
+      Volcano_environment_tiles_98: 21300196
+      Volcano_environment_tiles_121: 21300242
+      Volcano_environment_tiles_85: 21300170
+      Volcano_environment_tiles_93: 21300186
+      Volcano_environment_tiles_37: 21300074
+      Volcano_environment_tiles_68: 21300136
+      Volcano_environment_tiles_131: 21300262
+      Volcano_environment_tiles_164: 21300328
+      Volcano_environment_tiles_49: 21300098
+      Volcano_environment_tiles_64: 21300128
+      Volcano_environment_tiles_102: 21300204
+      Volcano_environment_tiles_76: 21300152
+      Volcano_environment_tiles_20: 21300040
+      Volcano_environment_tiles_58: 21300116
+      Volcano_environment_tiles_109: 21300218
+      Volcano_environment_tiles_166: 21300332
+      Volcano_environment_tiles_138: 21300276
+      Volcano_environment_tiles_81: 21300162
+      Volcano_environment_tiles_154: 21300308
+      Volcano_environment_tiles_48: 21300096
+      Volcano_environment_tiles_114: 21300228
+      Volcano_environment_tiles_56: 21300112
+      Volcano_environment_tiles_54: 21300108
+      Volcano_environment_tiles_106: 21300212
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

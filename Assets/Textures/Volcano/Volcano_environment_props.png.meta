@@ -1,0 +1,2961 @@
+fileFormatVersion: 2
+guid: 2de7beaea4625b540ab5e11aafb5d4cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Volcano_environment_props_0
+  - first:
+      213: 21300002
+    second: Volcano_environment_props_1
+  - first:
+      213: 21300004
+    second: Volcano_environment_props_2
+  - first:
+      213: 21300006
+    second: Volcano_environment_props_3
+  - first:
+      213: 21300008
+    second: Volcano_environment_props_4
+  - first:
+      213: 21300010
+    second: Volcano_environment_props_5
+  - first:
+      213: 21300012
+    second: Volcano_environment_props_6
+  - first:
+      213: 21300014
+    second: Volcano_environment_props_7
+  - first:
+      213: 21300016
+    second: Volcano_environment_props_8
+  - first:
+      213: 21300018
+    second: Volcano_environment_props_9
+  - first:
+      213: 21300020
+    second: Volcano_environment_props_10
+  - first:
+      213: 21300022
+    second: Volcano_environment_props_11
+  - first:
+      213: 21300024
+    second: Volcano_environment_props_12
+  - first:
+      213: 21300026
+    second: Volcano_environment_props_13
+  - first:
+      213: 21300028
+    second: Volcano_environment_props_14
+  - first:
+      213: 21300030
+    second: Volcano_environment_props_15
+  - first:
+      213: 21300032
+    second: Volcano_environment_props_16
+  - first:
+      213: 21300034
+    second: Volcano_environment_props_17
+  - first:
+      213: 21300036
+    second: Volcano_environment_props_18
+  - first:
+      213: 21300038
+    second: Volcano_environment_props_19
+  - first:
+      213: 21300040
+    second: Volcano_environment_props_20
+  - first:
+      213: 21300042
+    second: Volcano_environment_props_21
+  - first:
+      213: 21300044
+    second: Volcano_environment_props_22
+  - first:
+      213: 21300046
+    second: Volcano_environment_props_23
+  - first:
+      213: 21300048
+    second: Volcano_environment_props_24
+  - first:
+      213: 21300050
+    second: Volcano_environment_props_25
+  - first:
+      213: 21300052
+    second: Volcano_environment_props_26
+  - first:
+      213: 21300054
+    second: Volcano_environment_props_27
+  - first:
+      213: 21300056
+    second: Volcano_environment_props_28
+  - first:
+      213: 21300058
+    second: Volcano_environment_props_29
+  - first:
+      213: 21300060
+    second: Volcano_environment_props_30
+  - first:
+      213: 21300062
+    second: Volcano_environment_props_31
+  - first:
+      213: 21300064
+    second: Volcano_environment_props_32
+  - first:
+      213: 21300066
+    second: Volcano_environment_props_33
+  - first:
+      213: 21300068
+    second: Volcano_environment_props_34
+  - first:
+      213: 21300070
+    second: Volcano_environment_props_35
+  - first:
+      213: 21300072
+    second: Volcano_environment_props_36
+  - first:
+      213: 21300074
+    second: Volcano_environment_props_37
+  - first:
+      213: 21300076
+    second: Volcano_environment_props_38
+  - first:
+      213: 21300078
+    second: Volcano_environment_props_39
+  - first:
+      213: 21300080
+    second: Volcano_environment_props_40
+  - first:
+      213: 21300082
+    second: Volcano_environment_props_41
+  - first:
+      213: 21300084
+    second: Volcano_environment_props_42
+  - first:
+      213: 21300086
+    second: Volcano_environment_props_43
+  - first:
+      213: 21300088
+    second: Volcano_environment_props_44
+  - first:
+      213: 21300090
+    second: Volcano_environment_props_45
+  - first:
+      213: 21300092
+    second: Volcano_environment_props_46
+  - first:
+      213: 21300094
+    second: Volcano_environment_props_47
+  - first:
+      213: 21300096
+    second: Volcano_environment_props_48
+  - first:
+      213: 21300098
+    second: Volcano_environment_props_49
+  - first:
+      213: 21300100
+    second: Volcano_environment_props_50
+  - first:
+      213: 21300102
+    second: Volcano_environment_props_51
+  - first:
+      213: 21300104
+    second: Volcano_environment_props_52
+  - first:
+      213: 21300106
+    second: Volcano_environment_props_53
+  - first:
+      213: 21300108
+    second: Volcano_environment_props_54
+  - first:
+      213: 21300110
+    second: Volcano_environment_props_55
+  - first:
+      213: 21300112
+    second: Volcano_environment_props_56
+  - first:
+      213: 21300114
+    second: Volcano_environment_props_57
+  - first:
+      213: 21300116
+    second: Volcano_environment_props_58
+  - first:
+      213: 21300118
+    second: Volcano_environment_props_59
+  - first:
+      213: 21300120
+    second: Volcano_environment_props_60
+  - first:
+      213: 21300122
+    second: Volcano_environment_props_61
+  - first:
+      213: 21300124
+    second: Volcano_environment_props_62
+  - first:
+      213: 21300126
+    second: Volcano_environment_props_63
+  - first:
+      213: 21300128
+    second: Volcano_environment_props_64
+  - first:
+      213: 21300130
+    second: Volcano_environment_props_65
+  - first:
+      213: 21300132
+    second: Volcano_environment_props_66
+  - first:
+      213: 21300134
+    second: Volcano_environment_props_67
+  - first:
+      213: 21300136
+    second: Volcano_environment_props_68
+  - first:
+      213: 21300138
+    second: Volcano_environment_props_69
+  - first:
+      213: 21300140
+    second: Volcano_environment_props_70
+  - first:
+      213: 21300142
+    second: Volcano_environment_props_71
+  - first:
+      213: 21300144
+    second: Volcano_environment_props_72
+  - first:
+      213: 21300146
+    second: Volcano_environment_props_73
+  - first:
+      213: 21300148
+    second: Volcano_environment_props_74
+  - first:
+      213: 21300150
+    second: Volcano_environment_props_75
+  - first:
+      213: 21300152
+    second: Volcano_environment_props_76
+  - first:
+      213: 21300154
+    second: Volcano_environment_props_77
+  - first:
+      213: 21300156
+    second: Volcano_environment_props_78
+  - first:
+      213: 21300158
+    second: Volcano_environment_props_79
+  - first:
+      213: 21300160
+    second: Volcano_environment_props_80
+  - first:
+      213: 21300162
+    second: Volcano_environment_props_81
+  - first:
+      213: 21300164
+    second: Volcano_environment_props_82
+  - first:
+      213: 21300166
+    second: Volcano_environment_props_83
+  - first:
+      213: 21300168
+    second: Volcano_environment_props_84
+  - first:
+      213: 21300170
+    second: Volcano_environment_props_85
+  - first:
+      213: 21300172
+    second: Volcano_environment_props_86
+  - first:
+      213: 21300174
+    second: Volcano_environment_props_87
+  - first:
+      213: 21300176
+    second: Volcano_environment_props_88
+  - first:
+      213: 21300178
+    second: Volcano_environment_props_89
+  - first:
+      213: 21300180
+    second: Volcano_environment_props_90
+  - first:
+      213: 21300182
+    second: Volcano_environment_props_91
+  - first:
+      213: 21300184
+    second: Volcano_environment_props_92
+  - first:
+      213: 21300186
+    second: Volcano_environment_props_93
+  - first:
+      213: 21300188
+    second: Volcano_environment_props_94
+  - first:
+      213: 21300190
+    second: Volcano_environment_props_95
+  - first:
+      213: 21300192
+    second: Volcano_environment_props_96
+  - first:
+      213: 21300194
+    second: Volcano_environment_props_97
+  - first:
+      213: 21300196
+    second: Volcano_environment_props_98
+  - first:
+      213: 21300198
+    second: Volcano_environment_props_99
+  - first:
+      213: 21300200
+    second: Volcano_environment_props_100
+  - first:
+      213: 21300202
+    second: Volcano_environment_props_101
+  - first:
+      213: 21300204
+    second: Volcano_environment_props_102
+  - first:
+      213: 21300206
+    second: Volcano_environment_props_103
+  - first:
+      213: 21300208
+    second: Volcano_environment_props_104
+  - first:
+      213: 21300210
+    second: Volcano_environment_props_105
+  - first:
+      213: 21300212
+    second: Volcano_environment_props_106
+  - first:
+      213: 21300214
+    second: Volcano_environment_props_107
+  - first:
+      213: 21300216
+    second: Volcano_environment_props_108
+  - first:
+      213: 21300218
+    second: Volcano_environment_props_109
+  - first:
+      213: 21300220
+    second: Volcano_environment_props_110
+  - first:
+      213: 21300222
+    second: Volcano_environment_props_111
+  - first:
+      213: 21300224
+    second: Volcano_environment_props_112
+  - first:
+      213: 21300226
+    second: Volcano_environment_props_113
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Volcano_environment_props_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069067a5ad7c31b4da9180dda1cf873e
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1185
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702de762adb50ca43a4163c2a6ec82eb
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1185
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d147e1107e26fce42853ee57f5503031
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1185
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b3ce7fbef6db24f8e908c3fc29ad58
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_4
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1185
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b60b95ebf90d240885f6cbada089c8
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1185
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92277bf4060b5c0479b3ce6c7a6ff432
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1181
+        width: 93
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e7181d759dbfd45a724ef11659e8fc
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_7
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1181
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1120de4bdb191c4dab318917aa74076
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_8
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1181
+        width: 72
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1494af0c6676e42a12528fbeeae1ff
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_9
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1131
+        width: 149
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb55441b2d3e83b43bfff3fc28a506dd
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_10
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 1131
+        width: 113
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b5e04420d4fc74bae10f06583ddaaa
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1131
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1b22729f6ae464cb22be26881e8bed
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_12
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1131
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0887dcbe976da04e8a8496e615f5c37
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1131
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d6e0f93c0531c4eb875f77564d7281
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1131
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e2525993e5fab4d8490e22d53067af
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1131
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c06b29d82b69040bf4a128cd5a17d4
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1131
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4882d8fc4d49e804eb9d37a3562a301a
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1131
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e17332154d2c444d826b6f7412cd056
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1131
+        width: 111
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b00363283519342a6d07be7fb79c21
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_19
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1131
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba109bf103bc844089b59639f5c6536
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_20
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1131
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a968a1ade6c949345b971e53c214d982
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_21
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1131
+        width: 152
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7ad01f2f8c51f43abf2e9f8ab92444
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1131
+        width: 111
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8d722a9db83b642991871890a499c1
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1037
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4961a68fe9bf9724eafb9a8df25d6ef8
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1037
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e628e474bfc1347b5d7f3a785fab59
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1037
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c674f7e4ab3f8f438c691d0c95a604a
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_26
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1037
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593ee0ab9a3cedd4d825f8f1edab9668
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_27
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1037
+        width: 43
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6fe09ba3c82d64586fa2b1ea1352d0
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_28
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1037
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c31ae121bd36da4a8a027ec9b228f69
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1037
+        width: 76
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ff4e4904fe7f74c8569e608f7c6325
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_30
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1037
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dda324f4b43794b96259a48e5f3631
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_31
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1037
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a81c30ef246944a8a024cfbb4c059
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_32
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1037
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10edd162af8d9994f80b8c7269cb253f
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_33
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1037
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea4eadb1d84cfa478a10e69a5711170
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_34
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1037
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a839b612f33504a91ce6d92ef5a515
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_35
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1037
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39097962fda8abf48b96ceea75b2728e
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_36
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1037
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b9da3d3af0eb64eae26cdede9ac745
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_37
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1037
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00d58efbd8a65647814bad946d5497a
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_38
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1037
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185e094b042bd1342a52664f2e0e5a05
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_39
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1037
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae68dab9a7788264ab423fc99c8f6376
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_40
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1037
+        width: 71
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30497275a1d4db42801b034ad96e504
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 923
+        width: 111
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199c974dc52723c4ca9d87ba3586fc9a
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 923
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d94bf87e8fe294fb4b5b1a8a8de97e
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_43
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 923
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817766c555df1df45bd6e6818704e235
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_44
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 922
+        width: 152
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7516b83a326876b4282894cfa9641d0d
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_45
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 923
+        width: 149
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00af13a19ad6786418873d8ecd9c1b5a
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_46
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 923
+        width: 113
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e070ab2ee4e04484ea052f358fa0c572
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_47
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 923
+        width: 111
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18feee210c8b2524cb8d599566d2b529
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 796
+        width: 57
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b1d4b566386fa4aa46e817cd0fe70d
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_49
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 864
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c198b926a55612242ac1662a46e32503
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_50
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 864
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac6ed5a1c7c40c45a229bb19756d6db
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_51
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 864
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a263ca0e06087c24aba0fffdc0316bfc
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_52
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 864
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3654cd803bff39e4fb78fe842885f479
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_53
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 796
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba3cd15d844a2c43b9dea0c58b03bc7
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_54
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 796
+        width: 57
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b952cc0bf32b4b930c3b207649056
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_55
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 864
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f3dafc0139f144c9f15a8bb8bbd6cd
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_56
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 864
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da038efc0165d240b64bcb5d7703952
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_57
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 864
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def13696ac8af55449a0c553917ae6cd
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_58
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 864
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8206e1d44876af0428458c1edd08c42b
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_59
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 796
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58a765ae962bd24c985b3c694af193a
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_60
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 796
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217cb90e02add9448b299e71038dd6a
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_61
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 796
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ed3a3209f8c5241b2abcc8487a9b4f
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_62
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 796
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24698470a471473429d11ab916dca217
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_63
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 796
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d3a5bd9f0f47546896d798e0b0ebba
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_64
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 796
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3837a69502a288648a4055f5f9e50aa7
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_65
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 796
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c6d228e929c45479e6369af28d4c88
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_66
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 796
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e865722b621082247b41588e1c24e7c1
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_67
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 796
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b765f3e571a91b47ad0bcbf627e815d
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_68
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 699
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842f909aee577a44aafd17b4464f6abc
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_69
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 699
+        width: 103
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369d971b7ae3bd45be67914dd873eb3
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_70
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 699
+        width: 117
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd003105bba88e149b4cbf1d334543a9
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_71
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 699
+        width: 103
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c1f33978b3692459e23b7f77fe4b5a
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_72
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 699
+        width: 96
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e297bf5cb7fedfb45befb44bdd49ed7a
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_73
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 699
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3bffd587e62594993c9b338adf7386
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_74
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 699
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239262f54f16d1c4699ee48ae7e37059
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_75
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 699
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bf65f4861e67346ab62ee772cb54a8
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_76
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 699
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739e31b2b9a187d4e9e67d8fedee0041
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_77
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 699
+        width: 63
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cf5a0f9b133ec44988a7716ecd4cef
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_78
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 586
+        width: 186
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce7f9e5354502746b660be54ef302c1
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_79
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 586
+        width: 115
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a249591f76f1fce43a90b60a03622244
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_80
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 586
+        width: 107
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72aae13cddf78f40a35e4232dae0241
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_81
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 586
+        width: 117
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2715309ae858c644cbc81f94213062b8
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_82
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 586
+        width: 118
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb4254dcf0e65a468ef5be70f9e26f0
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_83
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 586
+        width: 95
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb008d686a102a48a334a2e7b22ddb9
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_84
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 586
+        width: 109
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b4181512ae2474e90782d240e7fb23
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_85
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 469
+        width: 102
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a13b395a3e60ae4d8947091d949fe52
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_86
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 469
+        width: 107
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78421b75ce23f4249b9f2b973a30ef5f
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 472
+        width: 122
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58760150f42291441ba97adb61c523b6
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_88
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 470
+        width: 106
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c465dc5e714fb4f83ed7f08c71e3f4
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_89
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 471
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001d81693dacee94e99e4dafa972ae89
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_90
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 471
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7fe6c9bf6e52b408abc360d8fdb6e7
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_91
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 469
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa4ef7c7ff79b84b81cfa7d4dfb05eb
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_92
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 471
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1017792e4b4f84b821a95acec86f09
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_93
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 358
+        width: 132
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0f6c2c9c7c0e24687194d1f27d4a26
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_94
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 358
+        width: 65
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05628f211078a4458a797c41d53770a
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_95
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 358
+        width: 188
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e164c2206330b74090876b205d2d490
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_96
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 358
+        width: 173
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944c1898e42e65741864a73258396da3
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_97
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 357
+        width: 73
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e9883fff3f42248a1f0c12ab18a213
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_98
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 356
+        width: 87
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c697dbeaa61380549853897c02b33abe
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_99
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 240
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f73787a1fba4c4d99c9109c5b0c535
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_100
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 227
+        width: 156
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5bfda31de26574f847f1e6ab3ee975
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_101
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 230
+        width: 117
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dff210575ad0ae4483870c2a9cc28fe
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_102
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 231
+        width: 150
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2f749419f10db4aae4205ce8eb10ee
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_103
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 231
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcb3043f17067b409a792bc1e12e020
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_104
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 60
+        width: 63
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c79718f990892545835bf40fcb054fc
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_105
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 61
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a52fc2625fc3840b48ea6a726abf4c
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_106
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 64
+        width: 55
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de8951d72bb02644a4c87798b313502
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_107
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 64
+        width: 58
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24e7000a51deee46ba0eeeaf020238c
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_108
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 57
+        width: 105
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e6846cda03a5741b98181774481d7e
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_109
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 62
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b347194c3e8758143a582cd95b138894
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_110
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 66
+        width: 73
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf6f9cadb5c60c40a9bd8aec41fffac
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_111
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 61
+        width: 81
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e380dc8454c1a54c95481c21864b935
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_112
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 62
+        width: 80
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8264de697227ce84aa0a0116e8f1c955
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Volcano_environment_props_113
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 64
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faeefd99294061d4bbfa58d8aa51fbe5
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3d1bd9560199c174590ce4f340318279
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Volcano_environment_props_8: 21300016
+      Volcano_environment_props_56: 21300112
+      Volcano_environment_props_89: 21300178
+      Volcano_environment_props_87: 21300174
+      Volcano_environment_props_16: 21300032
+      Volcano_environment_props_11: 21300022
+      Volcano_environment_props_85: 21300170
+      Volcano_environment_props_74: 21300148
+      Volcano_environment_props_41: 21300082
+      Volcano_environment_props_27: 21300054
+      Volcano_environment_props_38: 21300076
+      Volcano_environment_props_95: 21300190
+      Volcano_environment_props_106: 21300212
+      Volcano_environment_props_62: 21300124
+      Volcano_environment_props_84: 21300168
+      Volcano_environment_props_7: 21300014
+      Volcano_environment_props_52: 21300104
+      Volcano_environment_props_69: 21300138
+      Volcano_environment_props_45: 21300090
+      Volcano_environment_props_78: 21300156
+      Volcano_environment_props_35: 21300070
+      Volcano_environment_props_86: 21300172
+      Volcano_environment_props_24: 21300048
+      Volcano_environment_props_76: 21300152
+      Volcano_environment_props_14: 21300028
+      Volcano_environment_props_30: 21300060
+      Volcano_environment_props_6: 21300012
+      Volcano_environment_props_102: 21300204
+      Volcano_environment_props_59: 21300118
+      Volcano_environment_props_3: 21300006
+      Volcano_environment_props_112: 21300224
+      Volcano_environment_props_64: 21300128
+      Volcano_environment_props_97: 21300194
+      Volcano_environment_props_15: 21300030
+      Volcano_environment_props_47: 21300094
+      Volcano_environment_props_22: 21300044
+      Volcano_environment_props_109: 21300218
+      Volcano_environment_props_4: 21300008
+      Volcano_environment_props_81: 21300162
+      Volcano_environment_props_32: 21300064
+      Volcano_environment_props_53: 21300106
+      Volcano_environment_props_23: 21300046
+      Volcano_environment_props_57: 21300114
+      Volcano_environment_props_46: 21300092
+      Volcano_environment_props_54: 21300108
+      Volcano_environment_props_10: 21300020
+      Volcano_environment_props_100: 21300200
+      Volcano_environment_props_80: 21300160
+      Volcano_environment_props_31: 21300062
+      Volcano_environment_props_34: 21300068
+      Volcano_environment_props_67: 21300134
+      Volcano_environment_props_82: 21300164
+      Volcano_environment_props_0: 21300000
+      Volcano_environment_props_5: 21300010
+      Volcano_environment_props_70: 21300140
+      Volcano_environment_props_37: 21300074
+      Volcano_environment_props_90: 21300180
+      Volcano_environment_props_103: 21300206
+      Volcano_environment_props_104: 21300208
+      Volcano_environment_props_105: 21300210
+      Volcano_environment_props_19: 21300038
+      Volcano_environment_props_60: 21300120
+      Volcano_environment_props_2: 21300004
+      Volcano_environment_props_79: 21300158
+      Volcano_environment_props_12: 21300024
+      Volcano_environment_props_36: 21300072
+      Volcano_environment_props_96: 21300192
+      Volcano_environment_props_72: 21300144
+      Volcano_environment_props_93: 21300186
+      Volcano_environment_props_1: 21300002
+      Volcano_environment_props_58: 21300116
+      Volcano_environment_props_48: 21300096
+      Volcano_environment_props_75: 21300150
+      Volcano_environment_props_73: 21300146
+      Volcano_environment_props_17: 21300034
+      Volcano_environment_props_110: 21300220
+      Volcano_environment_props_13: 21300026
+      Volcano_environment_props_66: 21300132
+      Volcano_environment_props_92: 21300184
+      Volcano_environment_props_28: 21300056
+      Volcano_environment_props_51: 21300102
+      Volcano_environment_props_83: 21300166
+      Volcano_environment_props_40: 21300080
+      Volcano_environment_props_9: 21300018
+      Volcano_environment_props_49: 21300098
+      Volcano_environment_props_26: 21300052
+      Volcano_environment_props_50: 21300100
+      Volcano_environment_props_63: 21300126
+      Volcano_environment_props_113: 21300226
+      Volcano_environment_props_88: 21300176
+      Volcano_environment_props_44: 21300088
+      Volcano_environment_props_71: 21300142
+      Volcano_environment_props_101: 21300202
+      Volcano_environment_props_29: 21300058
+      Volcano_environment_props_77: 21300154
+      Volcano_environment_props_94: 21300188
+      Volcano_environment_props_68: 21300136
+      Volcano_environment_props_61: 21300122
+      Volcano_environment_props_18: 21300036
+      Volcano_environment_props_111: 21300222
+      Volcano_environment_props_55: 21300110
+      Volcano_environment_props_42: 21300084
+      Volcano_environment_props_25: 21300050
+      Volcano_environment_props_33: 21300066
+      Volcano_environment_props_43: 21300086
+      Volcano_environment_props_98: 21300196
+      Volcano_environment_props_21: 21300042
+      Volcano_environment_props_99: 21300198
+      Volcano_environment_props_65: 21300130
+      Volcano_environment_props_20: 21300040
+      Volcano_environment_props_107: 21300214
+      Volcano_environment_props_39: 21300078
+      Volcano_environment_props_91: 21300182
+      Volcano_environment_props_108: 21300216
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
