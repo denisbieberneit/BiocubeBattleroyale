@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using FishNet.Object;
+using FishNet.Object.Synchronizing;
 
 public class ItemSpawnPoint : NetworkBehaviour
 {
@@ -15,6 +16,9 @@ public class ItemSpawnPoint : NetworkBehaviour
     private SpriteRenderer sprite;
 
     private Animator anim;
+
+    [SyncVar]
+    public string animName;
 
     private void Awake()
     {
@@ -41,15 +45,13 @@ public class ItemSpawnPoint : NetworkBehaviour
     }
 
 
-    [ServerRpc]
     public void ServerSetAnim(string animationName)
     {
-        Debug.Log("ServerSetAnim: " + animationName);
-        ObserversSetAnim(animationName);
+        animName = animationName;
+        ObserversSetAnim();
     }
 
-    [ObserversRpc]
-    private void ObserversSetAnim(string animationName)
+    private void ObserversSetAnim()
     {
         
         foreach (AnimatorControllerParameter parameter in anim.parameters)
@@ -57,7 +59,7 @@ public class ItemSpawnPoint : NetworkBehaviour
             anim.SetBool(parameter.name, false);
         }
         anim.enabled = true;
-        Debug.Log("ObserversSetAnim: " + animationName);
-        anim.SetBool(animationName, true);
+        Debug.Log("ObserversSetAnim: " + animName);
+        anim.SetBool(animName, true);
     }
 }
