@@ -52478,6 +52478,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &239690346
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57880,6 +57881,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!95 &770030072
 Animator:
   serializedVersion: 4
@@ -59273,6 +59275,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &894761220
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62599,6 +62602,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &1201321673
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66878,6 +66882,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!95 &1498330001
 Animator:
   serializedVersion: 4
@@ -67386,7 +67391,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549189659}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f552901693f241545ba8f956ef241162, type: 3}
@@ -68174,6 +68179,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &1646400482
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69496,6 +69502,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &1761826306
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69969,6 +69976,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!95 &1822320570
 Animator:
   serializedVersion: 4
@@ -72480,6 +72488,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 0}
   occupied: 0
   item: {fileID: 0}
+  animName: 
 --- !u!58 &2026150376
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -73973,7 +73982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9f6ec51ddc14f908f5acc0cd0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 2526658513653068422, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+  _playerPrefab: {fileID: 2410751104200399866, guid: 74099974485b6db4bb15917799da9902, type: 3}
   _addToDefaultScene: 1
   Spawns:
   - {fileID: 951037319}

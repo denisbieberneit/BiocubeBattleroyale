@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/CharacterSelection.unity
-    guid: 2145ce4b6aeb8074e956dca04de57813
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/FishNet/Example/All/Prediction/Rigidbody/RigidbodyPrediction.unity
+    guid: 005289ca292137448ba5edc0e1163f4a
   m_configObjects: {}

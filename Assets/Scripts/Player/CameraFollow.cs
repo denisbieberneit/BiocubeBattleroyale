@@ -22,10 +22,6 @@ public class CameraFollow : NetworkBehaviour
         }
     }
 
-    private void Start()
-    {
-        target = GetComponentInParent<Player>().gameObject;
-    }
 
     private void Update()
     {

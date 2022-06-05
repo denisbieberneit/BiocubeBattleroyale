@@ -59,7 +59,7 @@ public class PlayerMovement : NetworkBehaviour
         slopeCheck = GetComponent<SlopeCheck>();
 
         rb = GetComponent<Rigidbody2D>();
-        ac = GetComponent<AnimationController>();
+        ac = GetComponentInChildren<AnimationController>();
         touchController = GetComponent<TouchController>();
     }
 
