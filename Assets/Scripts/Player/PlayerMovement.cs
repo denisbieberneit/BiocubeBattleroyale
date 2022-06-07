@@ -4,6 +4,8 @@ using UnityEngine;
 using FishNet.Object;
 using FishNet;
 using FishNet.Connection;
+using FishNet.Object.Prediction;
+
 
 public class PlayerMovement : NetworkBehaviour
 {
@@ -31,9 +33,6 @@ public class PlayerMovement : NetworkBehaviour
 
     public TouchController touchController;
 
-    private float width;
-    private float height;
-
     public bool forceStackSetZero = false;
 
     public bool isStunned = false;
@@ -51,6 +50,30 @@ public class PlayerMovement : NetworkBehaviour
     [SerializeField]
     private PlayerAttackController attackController;
 
+
+    #region Types.
+    public struct MoveData
+    {
+        public float Horizontal;
+        public float Vertical;
+    }
+    public struct ReconcileData
+    {
+        public Vector3 Position;
+        public Quaternion Rotation;
+        public ReconcileData(Vector3 position, Quaternion rotation)
+        {
+            Position = position;
+            Rotation = rotation;
+        }
+    }
+    #endregion
+
+    private void Awake()
+    {
+        InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
+    }
+
     private void Start()
     {
         gameObjecTouchSkill = GameObject.Find("MobileSkill");
@@ -64,15 +87,9 @@ public class PlayerMovement : NetworkBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
+    [Replicate]
+    private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        if (!base.IsOwner)
-        {
-            //rb.gravityScale = 0; //TODO: ruckelt mit gravity
-            return;
-        }
-
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
@@ -100,10 +117,11 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            if (!isStunned) {
+            if (!isStunned)
+            {
                 rb.sharedMaterial = noFriction;
             }
-          
+
         }
 
         //if (!isJumping) { ac.SetFullGround(fullGround);}
@@ -127,7 +145,7 @@ public class PlayerMovement : NetworkBehaviour
             OnAbility();
         }
 
-        horizontalMove = Input.GetAxisRaw("Horizontal");
+        horizontalMove = md.Horizontal;
 
         if (touchController.moveLeft || touchController.moveRight)
         {
@@ -158,6 +176,23 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         checkHit();
+
+        //fixedupdate
+        if (leftGround)
+        {
+            ac.SetJumping();
+            isJumping = true;
+            leftGround = false;
+        }
+
+        if (holdingJump && forceStacks < maxForceStacks)
+        {
+            rb.AddForce(new Vector2(0f, 31f));
+            forceStacks = forceStacks + 1;
+        }
+
+         controller.Move(horizontalMove * runSpeed * (float)base.TimeManager.TickDelta, false, jump);
+         jump = false;
     }
 
     private void checkHit()
@@ -172,31 +207,6 @@ public class PlayerMovement : NetworkBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        if (leftGround)
-        {
-            ac.SetJumping();
-            isJumping = true;
-            leftGround = false;
-        }
-
-        if (!base.IsOwner)
-        {
-            return;
-        }
-
-        if (holdingJump && forceStacks < maxForceStacks)
-        {
-            rb.AddForce(new Vector2(0f, 31f));
-            forceStacks = forceStacks + 1;
-        }
-        if (isPlayer)
-        {
-            controller.Move(horizontalMove * runSpeed * Time.fixedDeltaTime, false, jump);
-            jump = false;
-        }
-    }
 
     public void OnJumpUp()
     {
@@ -271,5 +281,52 @@ public class PlayerMovement : NetworkBehaviour
     {
         target.GetComponent<Rigidbody2D>().AddForce(new Vector2(600f * direction, 600f));
         target.GetComponent<Player>().TakeDamage(1f);
+    }
+
+    [Reconcile]
+    private void Reconciliation(ReconcileData rd, bool asServer)
+    {
+        transform.position = rd.Position;
+        transform.rotation = rd.Rotation;
+    }
+
+    private void TimeManager_OnTick()
+    {
+        if (base.IsOwner)
+        {
+            Reconciliation(default, false);
+            CheckInput(out MoveData md);
+            updateMethod(md, false);
+        }
+        if (base.IsServer)
+        {
+            updateMethod(default, true);
+            ReconcileData rd = new ReconcileData(transform.position, transform.rotation);
+            Reconciliation(rd, true);
+        }
+    }
+
+    private void CheckInput(out MoveData md)
+    {
+        md = default;
+
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal == 0f && vertical == 0f)
+            return;
+
+        md = new MoveData()
+        {
+            Horizontal = horizontal,
+            Vertical = vertical
+        };
+    }
+    private void OnDestroy()
+    {
+        if (InstanceFinder.TimeManager != null)
+        {
+            InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
+        }
     }
 }

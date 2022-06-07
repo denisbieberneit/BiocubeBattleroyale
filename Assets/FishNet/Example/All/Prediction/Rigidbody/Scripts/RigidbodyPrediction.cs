@@ -63,6 +63,8 @@ namespace FishNet.Example.Prediction.Rigidbodies
         /// True to jump next frame.
         /// </summary>
         private bool _jump;
+
+        private bool m_FacingRight = true;
         #endregion
 
 
@@ -144,14 +146,18 @@ namespace FishNet.Example.Prediction.Rigidbodies
 
 
             // Multiply the player's x local scale by -1.
-            if (md.Horizontal >= 1)
+            if (md.Horizontal > 0 && !m_FacingRight)
             {
-                Vector3 theScale = transform.localScale;
-                theScale.x *= -1;
-                transform.localScale = theScale;
+                m_FacingRight = !m_FacingRight;
 
+                if (md.Horizontal >= 1)
+                {
+                    Vector3 theScale = transform.localScale;
+                    theScale.x *= -1;
+                    transform.localScale = theScale;
+
+                }
             }
-
             if (md.Jump)
                 _rigidbody.AddForce(new Vector3(0f, _jumpForce, 0f));
         }
