@@ -15,7 +15,6 @@ public class AnimationController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim.SetBool("isHuntress", true);//TODO REMOVE
     }
 
     private void FixedUpdate()
