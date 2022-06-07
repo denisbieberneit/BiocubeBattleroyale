@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/FishNet/Example/All/Prediction/Rigidbody/RigidbodyPrediction.unity
-    guid: 005289ca292137448ba5edc0e1163f4a
+    path: Assets/FishNet/Example/All/Prediction/CharacterController/CharacterControllerPrediction.unity
+    guid: ec1a6e85f57626a4cbacaf306766bdfd
   m_configObjects: {}
