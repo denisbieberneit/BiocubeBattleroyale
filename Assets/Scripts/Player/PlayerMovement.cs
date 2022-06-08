@@ -88,7 +88,7 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        
+        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
     }
 
     private void Update()
@@ -154,8 +154,6 @@ public class PlayerMovement : NetworkBehaviour
         checkHit();
 
 
-        horizontalMove = Input.GetAxisRaw("Horizontal");
-        controller.Move(horizontalMove * runSpeed * (float)base.TimeManager.TickDelta);
     }
 
 
@@ -326,7 +324,7 @@ public class PlayerMovement : NetworkBehaviour
         md = default;
 
         float horizontal = Input.GetAxisRaw("Horizontal");
-
+        horizontalMove = horizontal;
         md = new MoveData()
         {
             Horizontal = horizontal,

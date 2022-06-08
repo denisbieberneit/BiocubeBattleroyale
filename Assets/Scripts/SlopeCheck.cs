@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FishNet.Object;
 
-public class SlopeCheck : NetworkBehaviour
+public class SlopeCheck : MonoBehaviour
 {
     [SerializeField]
     private LayerMask groundLayerMask;
@@ -28,10 +28,6 @@ public class SlopeCheck : NetworkBehaviour
 
     private void Update()
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
         CheckSlope();
         CheckWall();   
     }
@@ -41,13 +37,13 @@ public class SlopeCheck : NetworkBehaviour
         if (Physics2D.Raycast(rayCastOrigin.position, Vector2.down, .8f, slopeLayerMask))
             {
             //playerBody2D.gravityScale = 4f;
-                characterController.m_MovementSmoothing = .15f;
+                //characterController.m_MovementSmoothing = .15f;
                 onSlope = true;
             }
             else
             {
                 onSlope = false;
-                characterController.m_MovementSmoothing = .3f;
+                //characterController.m_MovementSmoothing = .3f;
             }
     }
 
