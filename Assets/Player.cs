@@ -6,7 +6,7 @@ using CodeMonkey.Utils;
 using FishNet.Object;
 using FishNet.Connection;
 
-public class Player : NetworkBehaviour,IGetHealthSystem
+public class Player : NetworkBehaviour, IGetHealthSystem
 {
 
     private HealthSystem healthSystem;
@@ -15,6 +15,7 @@ public class Player : NetworkBehaviour,IGetHealthSystem
 
     [SerializeField]
     private float baseHealth;
+
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class Player : NetworkBehaviour,IGetHealthSystem
 
     public void GainHealth(float health)
     {
-        if (!base.IsClient)
+        if (!base.IsOwner)
         {
             return;
         }
@@ -67,7 +68,7 @@ public class Player : NetworkBehaviour,IGetHealthSystem
 
     public void TakeDamage(float takeDamage)
     {
-        if (!base.IsClient)
+        if (!base.IsOwner)
         {
             return;
         }
@@ -81,7 +82,7 @@ public class Player : NetworkBehaviour,IGetHealthSystem
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
-        if (!base.IsClient)
+        if (!base.IsOwner)
         {
             return;
         }
@@ -91,7 +92,7 @@ public class Player : NetworkBehaviour,IGetHealthSystem
 
     public HealthSystem GetHealthSystem()
     {
-        if (!base.IsClient)
+        if (!base.IsOwner)
         {
             return null;
         }

@@ -9,7 +9,7 @@ public class SkinSelectionController : MonoBehaviour
     [SerializeField]
     private Animator anim;
 
-    public string characterKey = "Character";
+    private string characterKey = "Character";
     private int selectedCharacter;
 
     [SerializeField]

@@ -10,8 +10,7 @@ public class SkinSelection : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        int selectedPlayer = PlayerPrefs.GetInt("Character");
-        Debug.Log("selected skin: " + selectedPlayer);
+        int selectedPlayer = 0;//PlayerPrefs.GetInt("Character"); //TODO: add back again
         if (selectedPlayer == 1)
         {
             anim.SetBool("isMage", true);
@@ -24,5 +23,11 @@ public class SkinSelection : MonoBehaviour
         {
             anim.SetBool("isHuntress", true);
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

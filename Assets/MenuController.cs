@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -21,12 +20,6 @@ public class MenuController : MonoBehaviour
     {
         characterSelection.SetActive(false);
         menu.SetActive(true);
-    }
-
-    public void OnStartGame()
-    {
-        //TODO replace with proper solution, e.g. scenemanager with enum of scenes
-        SceneManager.LoadScene(1);
     }
 
 }

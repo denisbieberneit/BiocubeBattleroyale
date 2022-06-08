@@ -9,15 +9,14 @@ using FishNet.Object.Prediction;
 
 public class PlayerMovement : NetworkBehaviour
 {
-    public bool isPlayer;
     public CharacterController2D controller;
     public float runSpeed = 40f;
     public float horizontalMove = 0f;
-    public bool jump = false;
     public bool holdingJump = false;
 
     public float lastMovement;
 
+    [SerializeField]
     private float maxForceStacks = 30f;
     public float forceStacks = 0;
 
@@ -31,8 +30,6 @@ public class PlayerMovement : NetworkBehaviour
 
     public bool fullGround = false;
 
-    public TouchController touchController;
-
     public bool forceStackSetZero = false;
 
     public bool isStunned = false;
@@ -41,9 +38,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private bool isJumping = false;
     private bool leftGround = false;
-
-    public GameObject gameObjecTouchSkill;
-    public GameObject gameObjecTouchAttack;
 
     private InventorySystem inventory;
 
@@ -55,7 +49,6 @@ public class PlayerMovement : NetworkBehaviour
     public struct MoveData
     {
         public float Horizontal;
-        public float Vertical;
     }
     public struct ReconcileData
     {
@@ -69,39 +62,33 @@ public class PlayerMovement : NetworkBehaviour
     }
     #endregion
 
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        controller.enabled = (base.IsServer || base.IsOwner);
+    }
+
     private void Awake()
     {
+        controller = GetComponent<CharacterController2D>();
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
     }
 
     private void Start()
     {
-        gameObjecTouchSkill = GameObject.Find("MobileSkill");
-        gameObjecTouchAttack = GameObject.Find("MobileAttack");
+
         inventory = GetComponent<InventorySystem>();
         slopeCheck = GetComponent<SlopeCheck>();
 
         rb = GetComponent<Rigidbody2D>();
         ac = GetComponentInChildren<AnimationController>();
-<<<<<<< HEAD
-
-        Debug.Log("Started client: " + base.IsClient + " and started server " + base.IsServer);
-=======
-        touchController = GetComponent<TouchController>();
->>>>>>> parent of 3a2e3e5 (auslagerung movement)
     }
 
 
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-<<<<<<< HEAD
-        if (!base.IsOwner)
-        {
-            Debug.Log("NOT THE OWNER OF THIS ");
-            return;
-        }
-        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta, runSpeed);
+        
     }
 
     private void Update()
@@ -110,8 +97,6 @@ public class PlayerMovement : NetworkBehaviour
         {
             return;
         }
-=======
->>>>>>> parent of 3a2e3e5 (auslagerung movement)
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
@@ -129,6 +114,7 @@ public class PlayerMovement : NetworkBehaviour
             leftGround = true; //weil player beim slopes runter laufen direkt auf fall übergeht, dachte ich diese variable könnte das blockieren
         }
 
+        HandleJump();
 
         if (horizontalMove == 0f)
         {
@@ -146,33 +132,12 @@ public class PlayerMovement : NetworkBehaviour
 
         }
 
-        //if (!isJumping) { ac.SetFullGround(fullGround);}
+
+        HandleFalling();
 
 
-        if (rb.velocity.y < 0 && !fullGround)
-        {
-            ac.SetFalling();
-            isJumping = false;
-            forceStacks = maxForceStacks;
-        }
+        HandleAttack();
 
-
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            ac.SetIsAttacking(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            OnAbility();
-        }
-
-        horizontalMove = md.Horizontal;
-
-        if (touchController.moveLeft || touchController.moveRight)
-        {
-            ac.HorizontalMovement(true);
-        }
 
         if (Mathf.Abs(horizontalMove) > 0f)
         {
@@ -185,10 +150,12 @@ public class PlayerMovement : NetworkBehaviour
             ac.HorizontalMovement(false);
         }
 
-<<<<<<< HEAD
 
         checkHit();
 
+
+        horizontalMove = Input.GetAxisRaw("Horizontal");
+        controller.Move(horizontalMove * runSpeed * (float)base.TimeManager.TickDelta);
     }
 
 
@@ -218,9 +185,6 @@ public class PlayerMovement : NetworkBehaviour
     {
 
         if (!isJumping && fullGround)
-=======
-        if (!isJumping)
->>>>>>> parent of 3a2e3e5 (auslagerung movement)
         {
             if (Input.GetButtonDown("Jump") && ac.isAttacking == false)
             {
@@ -232,9 +196,11 @@ public class PlayerMovement : NetworkBehaviour
             OnJumpUp();
         }
 
-        checkHit();
+        if (forceStackSetZero && !holdingJump)
+        {
+            forceStacks = 0;
+        }
 
-        //fixedupdate
         if (leftGround)
         {
             ac.SetJumping();
@@ -242,14 +208,15 @@ public class PlayerMovement : NetworkBehaviour
             leftGround = false;
         }
 
+        if (forceStacks > maxForceStacks)
+        {
+            forceStacks = maxForceStacks;
+        }
         if (holdingJump && forceStacks < maxForceStacks)
         {
-            rb.AddForce(new Vector2(0f, 31f));
+            rb.AddForce(new Vector2(0f, forceStacks));
             forceStacks = forceStacks + 1;
         }
-
-         controller.Move(horizontalMove * runSpeed * (float)base.TimeManager.TickDelta, false, jump);
-         jump = false;
     }
 
     private void checkHit()
@@ -267,24 +234,15 @@ public class PlayerMovement : NetworkBehaviour
 
     public void OnJumpUp()
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
         holdingJump = false;
-        forceStacks = maxForceStacks;
         forceStackSetZero = true;
     }
 
     public void OnJumpDown()
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        jump = true;
+        isJumping = true;
         holdingJump = true;
-        forceStacks = 0;
+        forceStacks = 10;
         forceStackSetZero = false;
     }
 
@@ -368,23 +326,10 @@ public class PlayerMovement : NetworkBehaviour
         md = default;
 
         float horizontal = Input.GetAxisRaw("Horizontal");
-<<<<<<< HEAD
-        horizontalMove = horizontal;
-
-        md = new MoveData()
-        {
-            Horizontal = horizontal
-=======
-        float vertical = Input.GetAxisRaw("Vertical");
-
-        if (horizontal == 0f && vertical == 0f)
-            return;
 
         md = new MoveData()
         {
             Horizontal = horizontal,
-            Vertical = vertical
->>>>>>> parent of 3a2e3e5 (auslagerung movement)
         };
     }
     private void OnDestroy()
