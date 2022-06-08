@@ -60,7 +60,6 @@ MonoBehaviour:
   - {fileID: 288446644520707530}
   - {fileID: 6726746365241379945}
   - {fileID: 6849756407532612895}
-  - {fileID: 0}
   - {fileID: 8867479507771499381}
   - {fileID: 4367048098271410454}
   - {fileID: 4948327828110776197}
@@ -247,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e980d275e7990a040be537f7c9a7c6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 4
+  _componentIndexCache: 3
   _addedNetworkObject: {fileID: 2410751104200399866}
   _networkObjectCache: {fileID: 2410751104200399866}
   baseHealth: 10
@@ -279,10 +278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 5
+  _componentIndexCache: 4
   _addedNetworkObject: {fileID: 2410751104200399866}
   _networkObjectCache: {fileID: 2410751104200399866}
-  _synchronizeParent: 1
+  _synchronizeParent: 0
   _packing:
     Position: 1
     Rotation: 1
@@ -291,7 +290,7 @@ MonoBehaviour:
   _extrapolation: 0
   _enableTeleport: 0
   _teleportThreshold: 1
-  _clientAuthoritative: 1
+  _clientAuthoritative: 0
   _sendToOwner: 0
   _interval: 1
   _synchronizePosition: 1
@@ -317,18 +316,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 4717895597456125541}
     m_Modifications:
-    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _prefabId
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _hasParentNetworkObjectAtEdit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2715060397754105809, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -343,7 +330,19 @@ PrefabInstance:
       objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 4003156382236879165, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _componentIndexCache
-      value: 6
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _prefabId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _hasParentNetworkObjectAtEdit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_RootOrder
@@ -373,10 +372,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerView
       objectReference: {fileID: 0}
-    - target: {fileID: 5318637802471709519, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5835456043661429308, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: playerMovement
       value: 
@@ -391,7 +386,7 @@ PrefabInstance:
       objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 5835456043661429308, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _componentIndexCache
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6125980097840982769, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -407,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 8627332837437494102, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _componentIndexCache
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: target
@@ -415,18 +410,6 @@ PrefabInstance:
       objectReference: {fileID: 8465374379778460824}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: offset.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: minDistance
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
@@ -447,7 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _componentIndexCache
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _hasParentNetworkObjectAtEdit
@@ -479,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 9171019099842570387, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _componentIndexCache
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

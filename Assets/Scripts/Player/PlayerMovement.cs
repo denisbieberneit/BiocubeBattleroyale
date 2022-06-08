@@ -49,6 +49,7 @@ public class PlayerMovement : NetworkBehaviour
     public struct MoveData
     {
         public float Horizontal;
+        public float ForceStack;
     }
     public struct ReconcileData
     {
@@ -66,6 +67,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         base.OnStartClient();
         controller.enabled = (base.IsServer || base.IsOwner);
+        Debug.Log("I spawned as Server " + base.IsServer + " as Client " + base.IsClient);
     }
 
     private void Awake()
@@ -88,72 +90,21 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
+
+        // TODO HANDLE PROPER, CHECK Y VALUE OF HEIGHT AND ADJUST BASED ON SERVER
+        //jumping
+        if (md.ForceStack > maxForceStacks)
+        {
+            md.ForceStack = maxForceStacks;
+        }
+        if (holdingJump && md.ForceStack < maxForceStacks)
+        {
+            rb.AddForce(new Vector2(0f, md.ForceStack));
+            forceStacks = md.ForceStack + 1;
+        }
+        //moving
+        lastMovement = md.Horizontal;
         controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
-    }
-
-    private void Update()
-    {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        if (slopeCheck.onGround || slopeCheck.onSlope)
-        {
-            fullGround = true;
-            ac.SetFullGround(fullGround);
-            isJumping = false;
-            if (leftGround == true)
-            {
-                leftGround = false;
-            }
-        }
-        else
-        {
-            fullGround = false;
-            ac.SetFullGround(fullGround);
-            leftGround = true; //weil player beim slopes runter laufen direkt auf fall übergeht, dachte ich diese variable könnte das blockieren
-        }
-
-        HandleJump();
-
-        if (horizontalMove == 0f)
-        {
-            if (slopeCheck.onSlope)
-            {
-                Invoke("SetFriction", .2f);
-            }
-        }
-        else
-        {
-            if (!isStunned)
-            {
-                rb.sharedMaterial = noFriction;
-            }
-
-        }
-
-
-        HandleFalling();
-
-
-        HandleAttack();
-
-
-        if (Mathf.Abs(horizontalMove) > 0f)
-        {
-            lastMovement = horizontalMove;
-            ac.HorizontalMovement(true);
-
-        }
-        else
-        {
-            ac.HorizontalMovement(false);
-        }
-
-
-        checkHit();
-
-
     }
 
 
@@ -204,16 +155,6 @@ public class PlayerMovement : NetworkBehaviour
             ac.SetJumping();
             isJumping = true;
             leftGround = false;
-        }
-
-        if (forceStacks > maxForceStacks)
-        {
-            forceStacks = maxForceStacks;
-        }
-        if (holdingJump && forceStacks < maxForceStacks)
-        {
-            rb.AddForce(new Vector2(0f, forceStacks));
-            forceStacks = forceStacks + 1;
         }
     }
 
@@ -325,9 +266,66 @@ public class PlayerMovement : NetworkBehaviour
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         horizontalMove = horizontal;
+
+        if (slopeCheck.onGround || slopeCheck.onSlope)
+        {
+            fullGround = true;
+            ac.SetFullGround(fullGround);
+            isJumping = false;
+            if (leftGround == true)
+            {
+                leftGround = false;
+            }
+        }
+        else
+        {
+            fullGround = false;
+            ac.SetFullGround(fullGround);
+            leftGround = true; //weil player beim slopes runter laufen direkt auf fall übergeht, dachte ich diese variable könnte das blockieren
+        }
+
+        HandleJump();
+
+        if (horizontalMove == 0f)
+        {
+            if (slopeCheck.onSlope)
+            {
+                Invoke("SetFriction", .2f);
+            }
+        }
+        else
+        {
+            if (!isStunned)
+            {
+                rb.sharedMaterial = noFriction;
+            }
+
+        }
+
+
+        HandleFalling();
+        HandleAttack();
+
+
+        if (Mathf.Abs(horizontalMove) > 0f)
+        {
+            ac.HorizontalMovement(true);
+
+        }
+        else
+        {
+            ac.HorizontalMovement(false);
+        }
+
+
+        checkHit();
+       
+
+
         md = new MoveData()
         {
             Horizontal = horizontal,
+            ForceStack = forceStacks
         };
     }
     private void OnDestroy()

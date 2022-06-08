@@ -16,10 +16,6 @@ public class CharacterController2D :  NetworkBehaviour
 
 	public void Move(float move)
 	{
-        if (!base.IsOwner)
-        {
-			return;
-        }
 		//only control the player if grounded or airCoifntrol is turned on
 		// And then smoothing it out and applying it to the character
 		m_Rigidbody2D.velocity = new Vector2(move,m_Rigidbody2D.velocity.y);
