@@ -19,10 +19,6 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     private void Start()
     {
-        if (!base.IsClient)
-        {
-            return;
-        }
         FunctionPeriodic.Create(() =>
         {
             /*if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
@@ -38,10 +34,6 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     public void GainHealth(float health)
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
         if (healthSystem == null)
         {
             healthSystem = new HealthSystem(baseHealth);
@@ -68,10 +60,6 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     public void TakeDamage(float takeDamage)
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
         if (healthSystem == null)
         {
             healthSystem = new HealthSystem(baseHealth);
@@ -82,20 +70,11 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
- 
         Destroy(gameObject);
     }
 
     public HealthSystem GetHealthSystem()
     {
-        if (!base.IsOwner)
-        {
-            return null;
-        }
         if (healthSystem == null)
         {
             healthSystem = new HealthSystem(baseHealth);

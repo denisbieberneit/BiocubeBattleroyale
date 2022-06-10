@@ -55,10 +55,14 @@ public class PlayerMovement : NetworkBehaviour
     {
         public Vector3 Position;
         public Quaternion Rotation;
-        public ReconcileData(Vector3 position, Quaternion rotation)
+        public Vector3 Velocity;
+        public Vector3 AngularVelocity;
+        public ReconcileData(Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity)
         {
             Position = position;
             Rotation = rotation;
+            Velocity = velocity;
+            AngularVelocity = angularVelocity;
         }
     }
     #endregion
@@ -67,13 +71,14 @@ public class PlayerMovement : NetworkBehaviour
     {
         base.OnStartClient();
         controller.enabled = (base.IsServer || base.IsOwner);
-        Debug.Log("I spawned as Server " + base.IsServer + " as Client " + base.IsClient);
     }
 
     private void Awake()
     {
         controller = GetComponent<CharacterController2D>();
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
+        InstanceFinder.TimeManager.OnPostTick += TimeManager_OnPostTick;
+
     }
 
     private void Start()
@@ -97,11 +102,16 @@ public class PlayerMovement : NetworkBehaviour
         {
             md.ForceStack = maxForceStacks;
         }
-        if (holdingJump && md.ForceStack < maxForceStacks)
+        if (forceStackSetZero && !holdingJump)
+        {
+            md.ForceStack = 0;
+        }
+        
+        if (holdingJump && md.ForceStack <= maxForceStacks)
         {
             rb.AddForce(new Vector2(0f, md.ForceStack));
-            forceStacks = md.ForceStack + 1;
         }
+
         //moving
         lastMovement = md.Horizontal;
         controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
@@ -112,6 +122,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (rb.velocity.y < 0 && !fullGround)
         {
+            forceStackSetZero = false;
             ac.SetFalling();
             isJumping = false;
         }
@@ -145,9 +156,16 @@ public class PlayerMovement : NetworkBehaviour
             OnJumpUp();
         }
 
-        if (forceStackSetZero && !holdingJump)
+        if (forceStackSetZero)
         {
             forceStacks = 0;
+            holdingJump = false;
+        }
+
+        if (forceStacks >= maxForceStacks)
+        {
+            forceStacks = maxForceStacks;
+            forceStackSetZero = true;
         }
 
         if (leftGround)
@@ -187,10 +205,6 @@ public class PlayerMovement : NetworkBehaviour
 
     public void OnAbility()
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
         if (inventory.inventory != null)
         {
             ac.SetIsAttacking(true);
@@ -242,6 +256,8 @@ public class PlayerMovement : NetworkBehaviour
     {
         transform.position = rd.Position;
         transform.rotation = rd.Rotation;
+        rb.velocity = rd.Velocity;
+        rb.angularVelocity = 1f;
     }
 
     private void TimeManager_OnTick()
@@ -255,11 +271,17 @@ public class PlayerMovement : NetworkBehaviour
         if (base.IsServer)
         {
             updateMethod(default, true);
-            ReconcileData rd = new ReconcileData(transform.position, transform.rotation);
+            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, Vector3.one);
             Reconciliation(rd, true);
         }
     }
-
+    private void TimeManager_OnPostTick()
+    {
+        if (base.IsServer)
+        {
+            
+        }
+    }
     private void CheckInput(out MoveData md)
     {
         md = default;
@@ -270,12 +292,13 @@ public class PlayerMovement : NetworkBehaviour
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
-            ac.SetFullGround(fullGround);
             isJumping = false;
-            if (leftGround == true)
+            if (leftGround)
             {
                 leftGround = false;
             }
+            ac.SetFullGround(fullGround);
+
         }
         else
         {
@@ -283,8 +306,6 @@ public class PlayerMovement : NetworkBehaviour
             ac.SetFullGround(fullGround);
             leftGround = true; //weil player beim slopes runter laufen direkt auf fall übergeht, dachte ich diese variable könnte das blockieren
         }
-
-        HandleJump();
 
         if (horizontalMove == 0f)
         {
@@ -302,37 +323,41 @@ public class PlayerMovement : NetworkBehaviour
 
         }
 
-
         HandleFalling();
         HandleAttack();
 
-
-        if (Mathf.Abs(horizontalMove) > 0f)
+        if (Mathf.Abs(horizontalMove) != 0f)
         {
             ac.HorizontalMovement(true);
 
         }
-        else
-        {
-            ac.HorizontalMovement(false);
-        }
-
-
         checkHit();
        
-
-
         md = new MoveData()
         {
             Horizontal = horizontal,
             ForceStack = forceStacks
         };
     }
+    private void Update()
+    {
+        if (base.IsOwner)
+        {
+
+            HandleJump();
+            if (holdingJump && forceStacks < maxForceStacks && !forceStackSetZero)
+            {
+                forceStacks = forceStacks + 1;
+            }
+        }
+    }
     private void OnDestroy()
     {
         if (InstanceFinder.TimeManager != null)
         {
             InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
+            InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
+
         }
     }
 }

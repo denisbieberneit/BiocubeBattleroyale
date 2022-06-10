@@ -88,7 +88,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
 
         private void Update()
         {
-           /* if (base.IsOwner)
+            if (base.IsOwner)
             {
                 if (Input.GetKeyDown(KeyCode.Space) && Time.time > _nextJumpTime)
                 {
@@ -96,7 +96,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
                     _jump = true;
                 }
             }
-           */
+           
         }
 
         private void TimeManager_OnTick()
