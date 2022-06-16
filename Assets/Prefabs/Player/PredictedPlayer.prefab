@@ -74,7 +74,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 12
+  _prefabId: 15
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
@@ -170,7 +170,7 @@ MonoBehaviour:
   horizontalMove: 0
   holdingJump: 0
   lastMovement: 0
-  maxForceStacks: 29
+  maxForceStacks: 79
   forceStacks: 0
   noFriction: {fileID: 6200000, guid: e3187ae8e916c374aa5d8440c040baa4, type: 2}
   friction: {fileID: 6200000, guid: e81672d0bd155e846b4ab890bbcac2cc, type: 2}

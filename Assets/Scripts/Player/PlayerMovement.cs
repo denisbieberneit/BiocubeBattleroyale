@@ -288,10 +288,24 @@ public class PlayerMovement : NetworkBehaviour
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         horizontalMove = horizontal;
-
+       
+        md = new MoveData()
+        {
+            Horizontal = horizontal,
+            ForceStack = forceStacks
+        };
+    }
+    private void Update()
+    {
+        HandleJump();
+        if (holdingJump && forceStacks < maxForceStacks && !forceStackSetZero)
+        {
+            forceStacks = forceStacks + 1;
+        }
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
+            forceStackSetZero = false;
             isJumping = false;
             if (leftGround)
             {
@@ -332,24 +346,6 @@ public class PlayerMovement : NetworkBehaviour
 
         }
         checkHit();
-       
-        md = new MoveData()
-        {
-            Horizontal = horizontal,
-            ForceStack = forceStacks
-        };
-    }
-    private void Update()
-    {
-        if (base.IsOwner)
-        {
-
-            HandleJump();
-            if (holdingJump && forceStacks < maxForceStacks && !forceStackSetZero)
-            {
-                forceStacks = forceStacks + 1;
-            }
-        }
     }
     private void OnDestroy()
     {
