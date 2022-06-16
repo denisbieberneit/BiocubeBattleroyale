@@ -71,6 +71,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         base.OnStartClient();
         controller.enabled = (base.IsServer || base.IsOwner);
+        Debug.Log("ownerID: " + base.OwnerId + " isCLient:" + base.IsClient);
     }
 
     private void Awake()
@@ -104,7 +105,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         if (forceStackSetZero && !holdingJump)
         {
-            md.ForceStack = 0;
+           // md.ForceStack = 0;
         }
         
         if (holdingJump && md.ForceStack <= maxForceStacks)
@@ -114,7 +115,7 @@ public class PlayerMovement : NetworkBehaviour
 
         //moving
         lastMovement = md.Horizontal;
-        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
+        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
     }
 
 
@@ -271,15 +272,14 @@ public class PlayerMovement : NetworkBehaviour
         if (base.IsServer)
         {
             updateMethod(default, true);
-            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, Vector3.one);
-            Reconciliation(rd, true);
         }
     }
     private void TimeManager_OnPostTick()
     {
         if (base.IsServer)
         {
-            
+            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, Vector3.one);
+            Reconciliation(rd, true);
         }
     }
     private void CheckInput(out MoveData md)
