@@ -12,13 +12,8 @@ public class PlayerMovement : NetworkBehaviour
     public CharacterController2D controller;
     public float runSpeed = 40f;
     public float horizontalMove = 0f;
-    public bool holdingJump = false;
 
     public float lastMovement;
-
-    [SerializeField]
-    private float maxForceStacks = 30f;
-    public float forceStacks = 0;
 
     public PhysicsMaterial2D noFriction;
     public PhysicsMaterial2D friction;
@@ -30,14 +25,15 @@ public class PlayerMovement : NetworkBehaviour
 
     public bool fullGround = false;
 
-    public bool forceStackSetZero = false;
-
     public bool isStunned = false;
 
     public bool isGased = false;
 
-    private bool isJumping = false;
+    public bool isJumping = false;
     private bool leftGround = false;
+
+    [SerializeField]
+    private float jumpForce;
 
     private InventorySystem inventory;
 
@@ -49,7 +45,7 @@ public class PlayerMovement : NetworkBehaviour
     public struct MoveData
     {
         public float Horizontal;
-        public float ForceStack;
+        public bool Jump;
     }
     public struct ReconcileData
     {
@@ -71,7 +67,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         base.OnStartClient();
         controller.enabled = (base.IsServer || base.IsOwner);
-        Debug.Log("ownerID: " + base.OwnerId + " isCLient:" + base.IsClient);
     }
 
     private void Awake()
@@ -98,24 +93,9 @@ public class PlayerMovement : NetworkBehaviour
     {
 
         // TODO HANDLE PROPER, CHECK Y VALUE OF HEIGHT AND ADJUST BASED ON SERVER
-        //jumping
-        if (md.ForceStack > maxForceStacks)
-        {
-            md.ForceStack = maxForceStacks;
-        }
-        if (forceStackSetZero && !holdingJump)
-        {
-           // md.ForceStack = 0;
-        }
-        
-        if (holdingJump && md.ForceStack <= maxForceStacks)
-        {
-            rb.AddForce(new Vector2(0f, md.ForceStack));
-        }
-
         //moving
         lastMovement = md.Horizontal;
-        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
+        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta, md.Jump, jumpForce);
     }
 
 
@@ -123,7 +103,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (rb.velocity.y < 0 && !fullGround)
         {
-            forceStackSetZero = false;
             ac.SetFalling();
             isJumping = false;
         }
@@ -152,28 +131,11 @@ public class PlayerMovement : NetworkBehaviour
                 OnJumpDown();
             }
         }
-        if (Input.GetButtonUp("Jump"))
-        {
-            OnJumpUp();
-        }
 
-        if (forceStackSetZero)
-        {
-            forceStacks = 0;
-            holdingJump = false;
-        }
-
-        if (forceStacks >= maxForceStacks)
-        {
-            forceStacks = maxForceStacks;
-            forceStackSetZero = true;
-        }
 
         if (leftGround)
         {
             ac.SetJumping();
-            isJumping = true;
-            leftGround = false;
         }
     }
 
@@ -190,18 +152,9 @@ public class PlayerMovement : NetworkBehaviour
     }
 
 
-    public void OnJumpUp()
-    {
-        holdingJump = false;
-        forceStackSetZero = true;
-    }
-
     public void OnJumpDown()
     {
         isJumping = true;
-        holdingJump = true;
-        forceStacks = 10;
-        forceStackSetZero = false;
     }
 
     public void OnAbility()
@@ -292,21 +245,16 @@ public class PlayerMovement : NetworkBehaviour
         md = new MoveData()
         {
             Horizontal = horizontal,
-            ForceStack = forceStacks
+            Jump = isJumping
         };
     }
-    private void Update()
+    private void FixedUpdate()
     {
         HandleJump();
-        if (holdingJump && forceStacks < maxForceStacks && !forceStackSetZero)
-        {
-            forceStacks = forceStacks + 1;
-        }
+
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
-            forceStackSetZero = false;
-            isJumping = false;
             if (leftGround)
             {
                 leftGround = false;

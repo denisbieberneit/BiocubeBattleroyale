@@ -14,12 +14,16 @@ public class CharacterController2D :  NetworkBehaviour
 	}
 
 
-	public void Move(float move)
+	public void Move(float move, bool jump, float jumpSpeed)
 	{
 		//only control the player if grounded or airCoifntrol is turned on
 		// And then smoothing it out and applying it to the character
 		m_Rigidbody2D.velocity = new Vector2(move,m_Rigidbody2D.velocity.y);
 
+        if (jump)
+        {
+			m_Rigidbody2D.AddForce(new Vector2(0f, jumpSpeed));
+		}
 
 		// If the input is moving the player right and the player is facing left...
 		if (move > 0 && !m_FacingRight)
