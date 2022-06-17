@@ -39,19 +39,29 @@ public class PlayerMovement : NetworkBehaviour
     [SerializeField]
     private PlayerAttackController attackController;
 
-    private float _nextJumpTime;
     private bool _jump;
+    private bool canJump;
+    private int jumps = 1;
+    [SerializeField]
+    private int maxJumps;
+
+    private float fallDistance;
+    private bool setFallDistance;
+
+    private bool holdingJump;
 
 
     #region Types.
     public struct MoveData
     {
         public bool Jump;
+        public bool CanJump;
         public float Horizontal;
         public float Vertical;
-        public MoveData(bool jump, float horizontal, float vertical)
+        public MoveData(bool jump,bool canJump, float horizontal, float vertical)
         {
             Jump = jump;
+            CanJump = canJump;
             Horizontal = horizontal;
             Vertical = vertical;
         }
@@ -106,17 +116,30 @@ public class PlayerMovement : NetworkBehaviour
         controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
 
         // synch jump
-        if (md.Jump)
+        if (md.Jump && md.CanJump)
+        {
+            rb.velocity = new Vector2(0f, 0f);
             rb.AddForce(new Vector2(0f, jumpForce));
+        }
 
     }
 
 
     private void HandleFalling()
     {
-        if (rb.velocity.y < 0 && !fullGround)
+        if (rb.velocity.y < 0 && !fullGround && !holdingJump)
         {
+            if (!setFallDistance)
+            {
+                fallDistance = transform.position.y;
+                setFallDistance = true;
+            }
             ac.SetFalling();
+        }
+       
+        if (((Mathf.Abs(fallDistance) - Mathf.Abs(transform.position.y))) > 2 && setFallDistance)
+        {
+            canJump = false;
         }
     }
 
@@ -135,16 +158,35 @@ public class PlayerMovement : NetworkBehaviour
 
     private void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > _nextJumpTime)
+        if (jumps == maxJumps)
         {
-            _nextJumpTime = Time.time + 1f;
-            _jump = true;
+            canJump = false;
+            holdingJump = false;
         }
-
+        else
+        {
+            canJump = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) & canJump)
+        {
+            _jump = true;
+            leftGround = true;
+            jumps = jumps + 1;
+            holdingJump = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            holdingJump = false;
+        }
 
         if (leftGround)
         {
             ac.SetJumping();
+        }
+        if (holdingJump && !fullGround && rb.velocity.y <= 0 & canJump)
+        {
+            _jump = true;
+            jumps = jumps + 1;
         }
     }
 
@@ -244,11 +286,11 @@ public class PlayerMovement : NetworkBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         lastMovement = horizontal;
-
+        horizontalMove = horizontal;
         if (horizontal == 0f && vertical == 0f && !_jump)
             return;
 
-        md = new MoveData(_jump, horizontal, vertical);
+        md = new MoveData(_jump, canJump, horizontal, vertical);
         _jump = false;
 
     }
@@ -259,8 +301,8 @@ public class PlayerMovement : NetworkBehaviour
             return;
         }
         HandleJump();
-        HandleMove();
         HandleSlope();
+        HandleMove();
         HandleFalling();
         HandleAttack();
         checkHit();
@@ -273,13 +315,12 @@ public class PlayerMovement : NetworkBehaviour
         {
             InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
             InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
-
         }
     }
 
     private void HandleMove()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0f)
+        if (horizontalMove != 0f)
         {
             ac.HorizontalMovement(true);
 
@@ -290,13 +331,11 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
+            setFallDistance = false;
+            jumps = 1;
             fullGround = true;
-            if (leftGround)
-            {
-                leftGround = false;
-            }
+            leftGround = false;
             ac.SetFullGround(fullGround);
-
         }
         else
         {

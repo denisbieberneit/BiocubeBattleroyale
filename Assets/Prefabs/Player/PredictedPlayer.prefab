@@ -166,7 +166,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 2410751104200399866}
   _networkObjectCache: {fileID: 2410751104200399866}
   controller: {fileID: 6726746365241379945}
-  runSpeed: 120
+  runSpeed: 240
   horizontalMove: 0
   lastMovement: 0
   noFriction: {fileID: 6200000, guid: e3187ae8e916c374aa5d8440c040baa4, type: 2}
@@ -176,8 +176,9 @@ MonoBehaviour:
   fullGround: 0
   isStunned: 0
   isGased: 0
-  jumpForce: 200
+  jumpForce: 400
   attackController: {fileID: 2584600193130345604}
+  maxJumps: 3
 --- !u!114 &3986227916485108648
 MonoBehaviour:
   m_ObjectHideFlags: 0
