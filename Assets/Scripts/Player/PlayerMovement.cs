@@ -29,7 +29,6 @@ public class PlayerMovement : NetworkBehaviour
 
     public bool isGased = false;
 
-    public bool isJumping = false;
     private bool leftGround = false;
 
     [SerializeField]
@@ -40,12 +39,22 @@ public class PlayerMovement : NetworkBehaviour
     [SerializeField]
     private PlayerAttackController attackController;
 
+    private float _nextJumpTime;
+    private bool _jump;
+
 
     #region Types.
     public struct MoveData
     {
-        public float Horizontal;
         public bool Jump;
+        public float Horizontal;
+        public float Vertical;
+        public MoveData(bool jump, float horizontal, float vertical)
+        {
+            Jump = jump;
+            Horizontal = horizontal;
+            Vertical = vertical;
+        }
     }
     public struct ReconcileData
     {
@@ -67,6 +76,8 @@ public class PlayerMovement : NetworkBehaviour
     {
         base.OnStartClient();
         controller.enabled = (base.IsServer || base.IsOwner);
+        rb.isKinematic = (!base.IsOwner || base.IsServerOnly);
+
     }
 
     private void Awake()
@@ -91,11 +102,13 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
+        // synch move
+        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
 
-        // TODO HANDLE PROPER, CHECK Y VALUE OF HEIGHT AND ADJUST BASED ON SERVER
-        //moving
-        lastMovement = md.Horizontal;
-        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta, md.Jump, jumpForce);
+        // synch jump
+        if (md.Jump)
+            rb.AddForce(new Vector2(0f, jumpForce));
+
     }
 
 
@@ -104,7 +117,6 @@ public class PlayerMovement : NetworkBehaviour
         if (rb.velocity.y < 0 && !fullGround)
         {
             ac.SetFalling();
-            isJumping = false;
         }
     }
 
@@ -123,13 +135,10 @@ public class PlayerMovement : NetworkBehaviour
 
     private void HandleJump()
     {
-
-        if (!isJumping && fullGround)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > _nextJumpTime)
         {
-            if (Input.GetButtonDown("Jump") && ac.isAttacking == false)
-            {
-                OnJumpDown();
-            }
+            _nextJumpTime = Time.time + 1f;
+            _jump = true;
         }
 
 
@@ -149,12 +158,6 @@ public class PlayerMovement : NetworkBehaviour
         {
             attackController.OnEndHit();
         }
-    }
-
-
-    public void OnJumpDown()
-    {
-        isJumping = true;
     }
 
     public void OnAbility()
@@ -238,20 +241,53 @@ public class PlayerMovement : NetworkBehaviour
     private void CheckInput(out MoveData md)
     {
         md = default;
-
         float horizontal = Input.GetAxisRaw("Horizontal");
-        horizontalMove = horizontal;
-       
-        md = new MoveData()
-        {
-            Horizontal = horizontal,
-            Jump = isJumping
-        };
-    }
-    private void FixedUpdate()
-    {
-        HandleJump();
+        float vertical = Input.GetAxisRaw("Vertical");
+        lastMovement = horizontal;
 
+        if (horizontal == 0f && vertical == 0f && !_jump)
+            return;
+
+        md = new MoveData(_jump, horizontal, vertical);
+        _jump = false;
+
+    }
+    private void Update()
+    {
+        if (!base.IsOwner)
+        {
+            return;
+        }
+        HandleJump();
+        HandleMove();
+        HandleSlope();
+        HandleFalling();
+        HandleAttack();
+        checkHit();
+    }
+
+
+    private void OnDestroy()
+    {
+        if (InstanceFinder.TimeManager != null)
+        {
+            InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
+            InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
+
+        }
+    }
+
+    private void HandleMove()
+    {
+        if (Input.GetAxisRaw("Horizontal") != 0f)
+        {
+            ac.HorizontalMovement(true);
+
+        }
+    }
+
+    private void HandleSlope()
+    {
         if (slopeCheck.onGround || slopeCheck.onSlope)
         {
             fullGround = true;
@@ -282,25 +318,6 @@ public class PlayerMovement : NetworkBehaviour
             {
                 rb.sharedMaterial = noFriction;
             }
-
-        }
-
-        HandleFalling();
-        HandleAttack();
-
-        if (Mathf.Abs(horizontalMove) != 0f)
-        {
-            ac.HorizontalMovement(true);
-
-        }
-        checkHit();
-    }
-    private void OnDestroy()
-    {
-        if (InstanceFinder.TimeManager != null)
-        {
-            InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
-            InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
 
         }
     }
