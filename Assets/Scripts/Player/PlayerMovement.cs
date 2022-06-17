@@ -112,6 +112,8 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
+        //synch hit
+
         // synch move
         controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
 
@@ -198,7 +200,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            attackController.OnEndHit();
+            //attackController.OnEndHit();
         }
     }
 
@@ -212,6 +214,7 @@ public class PlayerMovement : NetworkBehaviour
             GameObject ability = inventory.inventory.referenceItem.prefab;
             GameObject obj = Instantiate(ability, v, Quaternion.identity);
             InstanceFinder.ServerManager.Spawn(obj, inventory.inventory.getOwner());
+            Debug.Log("Instantiated");
 
             inventory.Remove();
         }
@@ -247,7 +250,7 @@ public class PlayerMovement : NetworkBehaviour
     private void ObserversHitback(GameObject target, float direction)
     {
         target.GetComponent<Rigidbody2D>().AddForce(new Vector2(600f * direction, 600f));
-        target.GetComponent<Player>().TakeDamage(1f);
+        target.GetComponent<Player>().TakeDamage(3f);
     }
 
     [Reconcile]

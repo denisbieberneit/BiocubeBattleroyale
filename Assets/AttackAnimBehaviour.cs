@@ -9,11 +9,10 @@ public class AttackAnimBehaviour : StateMachineBehaviour
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        attack.OnStartHit();
+       
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        attack.OnEndHit();
     }
 }

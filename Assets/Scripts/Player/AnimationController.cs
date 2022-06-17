@@ -2,24 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FishNet.Component.Animating;
+using FishNet.Object;
 
-public class AnimationController : MonoBehaviour
+public class AnimationController : NetworkBehaviour
 {
     private Animator anim;
     public bool isAttacking = false;
 
     private SpriteRenderer spriteRenderer;
 
-    // Start is called before the first frame update
-    void Start()
+
+    public override void OnStartClient()
     {
+        base.OnStartClient();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim.SetBool("isHuntress", true);//TODO REMOVE
+        anim.SetBool("isHuntress", true);
+
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         string animationName = spriteRenderer.sprite.name;
         
         if (animationName == "GroundAttackLast" || animationName == "AirAttackLast")

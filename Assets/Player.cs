@@ -32,8 +32,19 @@ public class Player : NetworkBehaviour, IGetHealthSystem
         },2f);
     }
 
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        healthSystem = new HealthSystem(baseHealth);
+
+    }
+
     public void GainHealth(float health)
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         if (healthSystem == null)
         {
             healthSystem = new HealthSystem(baseHealth);
@@ -45,6 +56,10 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     public void StunPlayer()
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         if (pm == null)
         {
             GetPlayerMovement();
@@ -54,32 +69,42 @@ public class Player : NetworkBehaviour, IGetHealthSystem
 
     private void GetPlayerMovement()
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         pm = GetComponent<PlayerMovement>();
     }
 
 
     public void TakeDamage(float takeDamage)
     {
+        if (!base.IsOwner)
+        {
+            Debug.Log("Not owner");
+            return;
+        }
         if (healthSystem == null)
         {
             healthSystem = new HealthSystem(baseHealth);
             healthSystem.OnDead += HealthSystem_OnDead;
         }
         healthSystem.Damage(takeDamage);
+        Debug.Log("Remaining after hit HP:" + healthSystem.GetHealth());
     }
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         Destroy(gameObject);
     }
 
     public HealthSystem GetHealthSystem()
     {
-        if (healthSystem == null)
-        {
-            healthSystem = new HealthSystem(baseHealth);
-            healthSystem.OnDead += HealthSystem_OnDead;
-        }
+       
         return healthSystem;
     }
 }
