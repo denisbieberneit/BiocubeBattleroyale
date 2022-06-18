@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5330375076387988261}
   - component: {fileID: 1387123686462247249}
   - component: {fileID: -162443125589339060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StunItem
   m_TagString: Ability
   m_Icon: {fileID: 0}

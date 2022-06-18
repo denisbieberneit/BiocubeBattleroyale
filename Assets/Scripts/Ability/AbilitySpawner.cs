@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FishNet.Object;
+using FishNet;
 
-public class AbilitySpawner : MonoBehaviour
+public class AbilitySpawner : NetworkBehaviour
 {
     [SerializeField]
-    private List<ItemSpawnPoint> spawnPoints;
+    private List<Transform> spawnPoints;
 
     [SerializeField]
-    private List<ItemObject> spawnItems;
+    private List<GameObject> spawnableItems;
 
     [SerializeField]
     private int itemSpawnSeconds;
@@ -18,33 +20,26 @@ public class AbilitySpawner : MonoBehaviour
 
    void FixedUpdate()
     {
-        if (spawnItems != null)
+        if (Time.time > i)
         {
-            if (Time.time > i)
+            foreach (Transform spawn in spawnPoints)
             {
-                foreach (ItemSpawnPoint spawn in spawnPoints)
+                if (spawn.childCount != 0)
                 {
-                    if (spawn.item == null)
-                    {
-                   
-                        ItemObject randItem = GetRandomItem();
-                        randItem.setOwner(null);
-                        spawn.item = randItem.gameObject;
-                        SpawnAbility(randItem, spawn);
-                    }
+                    continue;
                 }
-                i += itemSpawnSeconds;
+                GameObject item = GetRandomItem();
+                GameObject instItem = Instantiate(item, new Vector3(spawn.position.x, spawn.position.y), Quaternion.identity);
+                instItem.transform.parent =spawn.transform;
+                InstanceFinder.ServerManager.Spawn(instItem, null);
+
             }
-        }
+            i += itemSpawnSeconds;
+        }        
     }
 
-    private ItemObject GetRandomItem()
+    private GameObject GetRandomItem()
     {
-        return spawnItems[Random.Range(0, spawnItems.Count)];
-    }
-
-    public void SpawnAbility(ItemObject respawnAbility, ItemSpawnPoint spawn)
-    {
-        spawn.ServerSetAnim(respawnAbility.referenceItem.animationName);
+        return spawnableItems[Random.Range(0, spawnableItems.Count)];
     }
 }

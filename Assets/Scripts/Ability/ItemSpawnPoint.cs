@@ -3,30 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using FishNet.Object;
-using FishNet.Object.Synchronizing;
+using FishNet;
 
 public class ItemSpawnPoint : NetworkBehaviour
 {
-    public Transform spawnPoint;
-
-    public bool occupied;
-
     public GameObject item;
-
     private SpriteRenderer sprite;
-
     private Animator anim;
-
-    [SyncVar]
     public string animName;
 
-    private void Awake()
+    private void Start()
     {
-        spawnPoint = transform;
-        occupied = false;
-        item = null;
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        anim.SetBool(animName,true);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -38,28 +28,7 @@ public class ItemSpawnPoint : NetworkBehaviour
             Debug.Log("ClientId of owner: "+  collider.gameObject.GetComponent<NetworkObject>().LocalConnection.ClientId);
             copy.referenceItem.inInventory = true;
             collider.gameObject.GetComponent<InventorySystem>().Add(copy);
-            item = null;
-            sprite.sprite = null;
-            anim.enabled = false;
+            InstanceFinder.ServerManager.Despawn(gameObject);
         }
-    }
-
-
-    public void ServerSetAnim(string animationName)
-    {
-        animName = animationName;
-        ObserversSetAnim();
-    }
-
-    private void ObserversSetAnim()
-    {
-        
-        foreach (AnimatorControllerParameter parameter in anim.parameters)
-        {
-            anim.SetBool(parameter.name, false);
-        }
-        anim.enabled = true;
-        Debug.Log("ObserversSetAnim: " + animName);
-        anim.SetBool(animName, true);
     }
 }

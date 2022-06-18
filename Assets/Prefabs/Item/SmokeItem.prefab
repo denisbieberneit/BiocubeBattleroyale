@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6788768176670356733}
   - component: {fileID: 5330375076387988261}
   - component: {fileID: -2511660780382181196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SmokeItem
   m_TagString: Ability
   m_Icon: {fileID: 0}

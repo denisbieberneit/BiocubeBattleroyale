@@ -213,8 +213,8 @@ public class PlayerMovement : NetworkBehaviour
             Vector3 v = new Vector3(transform.position.x + (.6f * lastMovement), transform.position.y, transform.position.z);
             GameObject ability = inventory.inventory.referenceItem.prefab;
             GameObject obj = Instantiate(ability, v, Quaternion.identity);
-            InstanceFinder.ServerManager.Spawn(obj, inventory.inventory.getOwner());
-            Debug.Log("Instantiated");
+            InstanceFinder.ServerManager.Spawn(obj, base.Owner);
+            Debug.Log("Instantiated by owner:" + base.OwnerId);
 
             inventory.Remove();
         }
