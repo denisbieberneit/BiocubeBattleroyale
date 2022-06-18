@@ -5,6 +5,7 @@ using CodeMonkey.HealthSystemCM;
 using CodeMonkey.Utils;
 using FishNet.Object;
 using FishNet.Connection;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class Player : NetworkBehaviour, IGetHealthSystem
 {
@@ -16,6 +17,8 @@ public class Player : NetworkBehaviour, IGetHealthSystem
     [SerializeField]
     private float baseHealth;
 
+    [SerializeField]
+    private GameObject deathDummy;
 
     private void Start()
     {
@@ -31,7 +34,18 @@ public class Player : NetworkBehaviour, IGetHealthSystem
             }*/
         },2f);
     }
-
+    private void Update()
+    {
+        if (!base.IsOwner)
+        {
+            return;
+        }
+        Debug.Log("HP OF OWNER: " + base.OwnerId + ", "+ healthSystem.GetHealth());
+        if (healthSystem.GetHealth() == 0)
+        {
+            OnDeath();
+        }
+    }
     public override void OnStartClient()
     {
         base.OnStartClient();
@@ -106,5 +120,28 @@ public class Player : NetworkBehaviour, IGetHealthSystem
     {
        
         return healthSystem;
+    }
+
+
+    private void OnDeath()
+    {
+        if (!base.IsServer)
+            return;
+
+        //If there is an owning client then destroy the object and respawn.
+        __DelayRespawn(GetComponent<NetworkObject>());
+    }
+
+    private void __DelayRespawn(NetworkObject netIdent)
+    {
+        //Send Rpc to spawn death dummy then destroy original.
+        RpcSpawnDeathDummy(netIdent.transform.position);
+    }
+
+    [ObserversRpc]
+    public void RpcSpawnDeathDummy(Vector3 position)
+    {
+        GameObject go = Instantiate(deathDummy, position, Quaternion.identity);
+        UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
     }
 }

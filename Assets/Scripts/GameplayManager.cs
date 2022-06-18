@@ -189,7 +189,7 @@ namespace FirstGearGames.LobbyAndWorld.Demos.KingOfTheHill
         /// </summary>
         /// <param name="player"></param>
         [ObserversRpc]
-        private void RpcSpawnDeathDummy(Vector3 position)
+        public void RpcSpawnDeathDummy(Vector3 position)
         {
             GameObject go = Instantiate(_deathDummy, position, Quaternion.identity);
             UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
