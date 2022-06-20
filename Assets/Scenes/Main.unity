@@ -50960,7 +50960,6 @@ MonoBehaviour:
   _scenePathHash: 394288251
   _sceneId: 1693455147481305784
   _sceneNetworkObjects:
-  - {fileID: 0}
   - {fileID: 1332096412}
   - {fileID: 1990719402}
 --- !u!1001 &84321474
@@ -65161,7 +65160,6 @@ MonoBehaviour:
   _scenePathHash: 394288251
   _sceneId: 1693455144290483095
   _sceneNetworkObjects:
-  - {fileID: 0}
   - {fileID: 1332096412}
   - {fileID: 1990719402}
 --- !u!114 &1332096413
@@ -70915,7 +70913,6 @@ MonoBehaviour:
   _scenePathHash: 394288251
   _sceneId: 1693455145672883466
   _sceneNetworkObjects:
-  - {fileID: 0}
   - {fileID: 1332096412}
   - {fileID: 1990719402}
 --- !u!1001 &1996121530

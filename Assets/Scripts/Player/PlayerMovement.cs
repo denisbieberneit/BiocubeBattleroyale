@@ -5,6 +5,8 @@ using FishNet.Object;
 using FishNet;
 using FishNet.Connection;
 using FishNet.Object.Prediction;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
+
 
 
 public class PlayerMovement : NetworkBehaviour
@@ -50,18 +52,24 @@ public class PlayerMovement : NetworkBehaviour
 
     private bool holdingJump;
 
+    private bool hit;
+
+    private GameplayManager gameplayManager;//used for spawning
+
 
     #region Types.
     public struct MoveData
     {
         public bool Jump;
         public bool CanJump;
+        public bool Hit;
         public float Horizontal;
         public float Vertical;
-        public MoveData(bool jump,bool canJump, float horizontal, float vertical)
+        public MoveData(bool jump,bool canJump, bool hit, float horizontal, float vertical)
         {
             Jump = jump;
             CanJump = canJump;
+            Hit = hit;
             Horizontal = horizontal;
             Vertical = vertical;
         }
@@ -85,27 +93,27 @@ public class PlayerMovement : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
-        controller.enabled = (base.IsServer || base.IsOwner);
         rb.isKinematic = (!base.IsOwner || base.IsServerOnly);
+        
+        if (!IsOwner)
+        {
+            return;
+        }
+        inventory = GetComponent<InventorySystem>();
+        slopeCheck = GetComponent<SlopeCheck>();
+        controller = GetComponent<CharacterController2D>();
+
+        rb = GetComponent<Rigidbody2D>();
+        ac = GetComponentInChildren<AnimationController>();
+        controller.enabled = (base.IsServer || base.IsOwner);
+        gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
 
     }
 
     private void Awake()
     {
-        controller = GetComponent<CharacterController2D>();
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
         InstanceFinder.TimeManager.OnPostTick += TimeManager_OnPostTick;
-
-    }
-
-    private void Start()
-    {
-
-        inventory = GetComponent<InventorySystem>();
-        slopeCheck = GetComponent<SlopeCheck>();
-
-        rb = GetComponent<Rigidbody2D>();
-        ac = GetComponentInChildren<AnimationController>();
     }
 
 
@@ -113,7 +121,10 @@ public class PlayerMovement : NetworkBehaviour
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
         //synch hit
-
+        if (md.Hit)
+        {
+            //rb.AddForce(new Vector2(600f * md.Horizontal, 600f));
+        }
         // synch move
         controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
 
@@ -200,7 +211,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            //attackController.OnEndHit();
+            attackController.OnEndHit();
         }
     }
 
@@ -211,13 +222,16 @@ public class PlayerMovement : NetworkBehaviour
             ac.SetIsAttacking(true);
             //inventory attack,
             Vector3 v = new Vector3(transform.position.x + (.6f * lastMovement), transform.position.y, transform.position.z);
-            GameObject ability = inventory.inventory.referenceItem.prefab;
-            GameObject obj = Instantiate(ability, v, Quaternion.identity);
-            InstanceFinder.ServerManager.Spawn(obj, base.Owner);
-            Debug.Log("Instantiated by owner:" + base.OwnerId);
-
+            //GameObject obj = Instantiate(inventory.inventory.referenceItem.prefab, v, Quaternion.identity);
+            SpawnItemAttack(inventory.inventory.referenceItem.prefab, base.Owner, v);
             inventory.Remove();
         }
+    }
+
+    [ServerRpc]
+    private void SpawnItemAttack(GameObject _item, NetworkConnection owner, Vector3 v)
+    {
+        GameplayManager.instance.SpawnAbility(owner, _item, v);
     }
 
 
@@ -249,8 +263,9 @@ public class PlayerMovement : NetworkBehaviour
     [ObserversRpc]
     private void ObserversHitback(GameObject target, float direction)
     {
-        target.GetComponent<Rigidbody2D>().AddForce(new Vector2(600f * direction, 600f));
-        target.GetComponent<Player>().TakeDamage(3f);
+
+        //target.GetComponent<PlayerMovement>().hit = true;
+        target.GetComponent<Player>().TakeDamage(30);
     }
 
     [Reconcile]
@@ -293,8 +308,9 @@ public class PlayerMovement : NetworkBehaviour
         if (horizontal == 0f && vertical == 0f && !_jump)
             return;
 
-        md = new MoveData(_jump, canJump, horizontal, vertical);
+        md = new MoveData(_jump, canJump, hit, horizontal, vertical);
         _jump = false;
+        hit = false;
 
     }
     private void Update()

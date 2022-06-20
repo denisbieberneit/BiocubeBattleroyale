@@ -1,17 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CodeMonkey.HealthSystemCM;
 using CodeMonkey.Utils;
 using FishNet.Object;
 using FishNet.Connection;
+using FishNet;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
-public class Player : NetworkBehaviour, IGetHealthSystem
+public class Player : NetworkBehaviour
 {
-
-    private HealthSystem healthSystem;
-
     private PlayerMovement pm;
 
     [SerializeField]
@@ -20,8 +17,21 @@ public class Player : NetworkBehaviour, IGetHealthSystem
     [SerializeField]
     private GameObject deathDummy;
 
-    private void Start()
+    [SerializeField]
+    private int maxHealth;
+
+    public int currentHealth;
+
+    [SerializeField]
+    private HealthBar healthBar;
+
+    public override void OnStartClient()
     {
+        base.OnStartClient();
+        
+        healthBar.SetMaxHealth(maxHealth);
+
+
         FunctionPeriodic.Create(() =>
         {
             /*if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
@@ -32,39 +42,18 @@ public class Player : NetworkBehaviour, IGetHealthSystem
             {
                 GainHealth(1f);
             }*/
-        },2f);
-    }
-    private void Update()
-    {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        Debug.Log("HP OF OWNER: " + base.OwnerId + ", "+ healthSystem.GetHealth());
-        if (healthSystem.GetHealth() == 0)
-        {
-            OnDeath();
-        }
-    }
-    public override void OnStartClient()
-    {
-        base.OnStartClient();
-        healthSystem = new HealthSystem(baseHealth);
+        }, 2f);
 
     }
 
-    public void GainHealth(float health)
+    public void GainHealth(int health)
     {
-        if (!base.IsOwner)
+        currentHealth += health;
+        if (currentHealth > maxHealth)
         {
-            return;
+            currentHealth = maxHealth;
         }
-        if (healthSystem == null)
-        {
-            healthSystem = new HealthSystem(baseHealth);
-            healthSystem.OnDead += HealthSystem_OnDead;
-        }
-        healthSystem.Heal(health);
+        healthBar.SetHealth(currentHealth);
     }
 
 
@@ -91,43 +80,20 @@ public class Player : NetworkBehaviour, IGetHealthSystem
     }
 
 
-    public void TakeDamage(float takeDamage)
+    public void TakeDamage(int takeDamage)
     {
-        if (!base.IsOwner)
+        currentHealth -= takeDamage;
+        healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
         {
-            Debug.Log("Not owner");
-            return;
+            OnDeath();
         }
-        if (healthSystem == null)
-        {
-            healthSystem = new HealthSystem(baseHealth);
-            healthSystem.OnDead += HealthSystem_OnDead;
-        }
-        healthSystem.Damage(takeDamage);
-        Debug.Log("Remaining after hit HP:" + healthSystem.GetHealth());
-    }
-
-    private void HealthSystem_OnDead(object sender, System.EventArgs e)
-    {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        Destroy(gameObject);
-    }
-
-    public HealthSystem GetHealthSystem()
-    {
-       
-        return healthSystem;
     }
 
 
     private void OnDeath()
     {
-        if (!base.IsServer)
-            return;
-
+    
         //If there is an owning client then destroy the object and respawn.
         __DelayRespawn(GetComponent<NetworkObject>());
     }
@@ -138,10 +104,9 @@ public class Player : NetworkBehaviour, IGetHealthSystem
         RpcSpawnDeathDummy(netIdent.transform.position);
     }
 
-    [ObserversRpc]
     public void RpcSpawnDeathDummy(Vector3 position)
     {
         GameObject go = Instantiate(deathDummy, position, Quaternion.identity);
-        UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
+        base.Spawn(go, base.Owner);
     }
 }

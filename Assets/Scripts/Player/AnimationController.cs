@@ -15,6 +15,10 @@ public class AnimationController : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
+        if (!IsOwner)
+        {
+            return;
+        }
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim.SetBool("isHuntress", true);

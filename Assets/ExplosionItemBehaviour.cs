@@ -4,7 +4,7 @@ using UnityEngine;
 using FishNet.Object;
 
 
-public class ExplosionItemBehaviour : MonoBehaviour
+public class ExplosionItemBehaviour : NetworkBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
@@ -12,6 +12,7 @@ public class ExplosionItemBehaviour : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Spawned");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
@@ -37,7 +38,7 @@ public class ExplosionItemBehaviour : MonoBehaviour
                 return;
             }
             Explode();
-            collision.gameObject.GetComponent<Player>().TakeDamage(3f);
+            collision.gameObject.GetComponent<Player>().TakeDamage(30);
         }
     }
 

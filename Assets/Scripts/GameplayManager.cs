@@ -12,12 +12,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
-namespace FirstGearGames.LobbyAndWorld.Demos.KingOfTheHill
-{
-
-
     public class GameplayManager : NetworkBehaviour
     {
+
+
+    public static GameplayManager instance;
 
         [SerializeField]
         private List<GameObject> spawns = new List<GameObject>();
@@ -134,6 +133,7 @@ namespace FirstGearGames.LobbyAndWorld.Demos.KingOfTheHill
              * before spaning then check if roomDetails.StartedMembers.Count
              * is the same as roomDetails.MemberIds.Count. A member is considered
              * started AFTER they have loaded all of the scenes. */
+
             SpawnPlayer(client.Owner);
         }
         #endregion
@@ -315,7 +315,21 @@ namespace FirstGearGames.LobbyAndWorld.Demos.KingOfTheHill
             return spawns[Random.Range(0, spawns.Count)].gameObject.transform.position;
         }
         #endregion
+
+
+        public void Death(NetworkObject netIdent)
+        {
+            RpcSpawnDeathDummy(netIdent.transform.position);
+        }
+
+    [Server]
+    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v)
+    {
+        GameObject obj = Instantiate(item, v, Quaternion.identity);
+        ServerManager.Spawn(obj, playerConnection);
     }
-
-
+    private void Awake()
+    {
+        instance = this;
+    }
 }

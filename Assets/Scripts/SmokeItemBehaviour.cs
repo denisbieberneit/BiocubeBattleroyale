@@ -11,6 +11,7 @@ public class SmokeItemBehaviour : NetworkBehaviour
 
     private void Start()
     {
+        Debug.Log("Spawned");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
@@ -31,7 +32,6 @@ public class SmokeItemBehaviour : NetworkBehaviour
             if (ownerId == objectId)
             {
                 Debug.Log("Selfhit");
-                //selfhit
                 return;
             }
             Debug.Log("Collided with " + collision.gameObject.tag);
