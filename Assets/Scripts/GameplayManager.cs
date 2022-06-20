@@ -162,7 +162,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// </summary>
         /// <param name="netIdent"></param>
         /// <returns></returns>
-        private IEnumerator __DelayRespawn(NetworkObject netIdent)
+        public IEnumerator __DelayRespawn(NetworkObject netIdent)
         {
             //Send Rpc to spawn death dummy then destroy original.
             RpcSpawnDeathDummy(netIdent.transform.position);
@@ -327,6 +327,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
         ServerManager.Spawn(obj, playerConnection);
+        UnitySceneManager.MoveGameObjectToScene(obj, obj.GetScene(out _));
+
     }
     private void Awake()
     {

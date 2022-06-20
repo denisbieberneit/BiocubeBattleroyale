@@ -25,12 +25,19 @@ public class Player : NetworkBehaviour
     [SerializeField]
     private HealthBar healthBar;
 
+    private GameplayManager gameplayManager;
+
     public override void OnStartClient()
     {
         base.OnStartClient();
         
         healthBar.SetMaxHealth(maxHealth);
 
+        if (!IsOwner)
+        {
+            return;
+        }
+        gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
 
         FunctionPeriodic.Create(() =>
         {
@@ -101,12 +108,14 @@ public class Player : NetworkBehaviour
     private void __DelayRespawn(NetworkObject netIdent)
     {
         //Send Rpc to spawn death dummy then destroy original.
-        RpcSpawnDeathDummy(netIdent.transform.position);
+        RpcSpawnDeathDummy(netIdent.transform.position,netIdent);
     }
 
-    public void RpcSpawnDeathDummy(Vector3 position)
+    public void RpcSpawnDeathDummy(Vector3 position, NetworkObject netIdent)
     {
         GameObject go = Instantiate(deathDummy, position, Quaternion.identity);
         base.Spawn(go, base.Owner);
+        StartCoroutine(GameplayManager.instance.__DelayRespawn(netIdent));
+
     }
 }

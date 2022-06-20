@@ -93,6 +93,7 @@ public class PlayerMovement : NetworkBehaviour
     public override void OnStartClient()
     {
         base.OnStartClient();
+        rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = (!base.IsOwner || base.IsServerOnly);
         
         if (!IsOwner)
@@ -103,7 +104,6 @@ public class PlayerMovement : NetworkBehaviour
         slopeCheck = GetComponent<SlopeCheck>();
         controller = GetComponent<CharacterController2D>();
 
-        rb = GetComponent<Rigidbody2D>();
         ac = GetComponentInChildren<AnimationController>();
         controller.enabled = (base.IsServer || base.IsOwner);
         gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
