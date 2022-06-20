@@ -380,6 +380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 892817958195713579}
     - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: SceneTransformProperties.Rotation.w
       value: 1
       objectReference: {fileID: 0}
