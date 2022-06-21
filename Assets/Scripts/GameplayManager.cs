@@ -323,13 +323,13 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         }
 
     [Server]
-    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v)
+    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v, UnityEngine.SceneManagement.Scene scene)
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
         ServerManager.Spawn(obj, playerConnection);
-        UnitySceneManager.MoveGameObjectToScene(obj, obj.GetScene(out _));
-
+        UnitySceneManager.MoveGameObjectToScene(obj, scene);
     }
+
     private void Awake()
     {
         instance = this;

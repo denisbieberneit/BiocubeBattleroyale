@@ -231,7 +231,7 @@ public class PlayerMovement : NetworkBehaviour
     [ServerRpc]
     private void SpawnItemAttack(GameObject _item, NetworkConnection owner, Vector3 v)
     {
-        GameplayManager.instance.SpawnAbility(owner, _item, v);
+        GameplayManager.instance.SpawnAbility(owner, _item, v, gameObject.scene);
     }
 
 
@@ -264,7 +264,7 @@ public class PlayerMovement : NetworkBehaviour
     private void ObserversHitback(GameObject target, float direction)
     {
 
-        //target.GetComponent<PlayerMovement>().hit = true;
+        target.GetComponent<PlayerMovement>().hit = true;
         target.GetComponent<Player>().TakeDamage(30);
     }
 
