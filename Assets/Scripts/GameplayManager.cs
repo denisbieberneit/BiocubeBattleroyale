@@ -127,15 +127,16 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
             if (client == null || client.Owner == null)
                 return;
 
-            /* POSSIBLY USEFUL INFORMATION!!!!!
-             * POSSIBLY USEFUL INFORMATION!!!!!
-             * If you want to wait until all players are in the scene
-             * before spaning then check if roomDetails.StartedMembers.Count
-             * is the same as roomDetails.MemberIds.Count. A member is considered
-             * started AFTER they have loaded all of the scenes. */
+        /* POSSIBLY USEFUL INFORMATION!!!!!
+         * POSSIBLY USEFUL INFORMATION!!!!!
+         * If you want to wait until all players are in the scene
+         * before spaning then check if roomDetails.StartedMembers.Count
+         * is the same as roomDetails.MemberIds.Count. A member is considered
+         * started AFTER they have loaded all of the scenes. */
 
-            SpawnPlayer(client.Owner);
+        SpawnPlayer(client.Owner);
         }
+
         #endregion
 
         #region Death.

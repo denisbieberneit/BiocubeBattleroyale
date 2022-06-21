@@ -102,7 +102,7 @@ public class Player : NetworkBehaviour
     {
     
         //If there is an owning client then destroy the object and respawn.
-        __DelayRespawn(GetComponent<NetworkObject>());
+        __DelayRespawn(this.gameObject);
     }
 
     private void __DelayRespawn(NetworkObject netIdent)
