@@ -201,7 +201,6 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         {
             GameObject go = Instantiate(_deathDummy, position, Quaternion.identity);
             UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
-            Destroy(go, 1f);
         }
         #endregion
 
@@ -339,25 +338,16 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         //Send Rpc to spawn death dummy then destroy original.
         RpcSpawnDeathDummy(netIdent.transform.position);
         NetworkConnection deathConn = netIdent.Owner;
-        Camera playerCam = FindCameraFromPlayer(netIdent);
-
-        playerCam.gameObject.transform.parent = killer.gameObject.transform;
-
         InstanceFinder.ServerManager.Despawn(netIdent.gameObject);
-       // NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), killer.gameObject.transform.position, Quaternion.identity);
-       // SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
-        // UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
-    }
+        NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1), Quaternion.identity);
+        SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
+        UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
+        base.Spawn(netDeathCam.gameObject, deathConn);
 
-    private Camera FindCameraFromPlayer(NetworkObject netIdent)
-    {
-       Camera cam =  netIdent.gameObject.GetComponentInChildren<Camera>();
-        if (cam == null)
-        {
-            //2nd layer bs needs to be replaced later
-            cam = netIdent.GetComponentInChildren<PlayerMovement>().GetComponentInChildren<Camera>();
-        }
-        return cam;
+        //NetworkObject netIdent = conn.identity;            
+        netDeathCam.transform.position = new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1);
+        netDeathCam.transform.parent = killer.gameObject.transform;
+        RpcTeleport(netDeathCam, new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1));
     }
 
     private void Awake()

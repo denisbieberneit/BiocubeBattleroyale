@@ -10,13 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 5065438470165125623}
   - component: {fileID: 2556433474244670889}
-  m_Layer: 0
+  - component: {fileID: 5783645667917074741}
+  - component: {fileID: 6673667099798858048}
+  m_Layer: 6
   m_Name: deathCam
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5065438470165125623
 Transform:
   m_ObjectHideFlags: 0
@@ -28,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4700140107364609207}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _networkBehaviours: []
+  _networkBehaviours:
+  - {fileID: 6673667099798858048}
   SceneTransformProperties:
     Position: {x: 0, y: 0, z: 0}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -57,46 +59,13 @@ MonoBehaviour:
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
---- !u!1 &2012789869712764567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4700140107364609207}
-  - component: {fileID: 2010501900827440750}
-  - component: {fileID: 3511801630504915790}
-  m_Layer: 6
-  m_Name: PlayerCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4700140107364609207
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012789869712764567}
-  m_LocalRotation: {x: 0.00042128036, y: 0.00015573195, z: -0.00019149859, w: 0.9999999}
-  m_LocalPosition: {x: -0.13000011, y: 0.74000025, z: -19.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5065438470165125623}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0.048, y: 0.018, z: -0.022}
---- !u!20 &2010501900827440750
+--- !u!20 &5783645667917074741
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012789869712764567}
+  m_GameObject: {fileID: 382650543704887643}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
@@ -133,11 +102,18 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3511801630504915790
-AudioListener:
+--- !u!114 &6673667099798858048
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012789869712764567}
+  m_GameObject: {fileID: 382650543704887643}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a02b629b5a7d94497dbeda383baa9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 0
+  _addedNetworkObject: {fileID: 2556433474244670889}
+  _networkObjectCache: {fileID: 2556433474244670889}
