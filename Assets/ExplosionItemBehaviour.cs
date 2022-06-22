@@ -38,7 +38,7 @@ public class ExplosionItemBehaviour : NetworkBehaviour
                 return;
             }
             Explode();
-            collision.gameObject.GetComponent<Player>().TakeDamage(30);
+            collision.gameObject.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
         }
     }
 

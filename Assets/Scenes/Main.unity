@@ -65187,6 +65187,7 @@ MonoBehaviour:
   _spawnRegion: {x: 1, y: 1, z: 1}
   _playerPrefab: {fileID: 2410751104200399866, guid: 74099974485b6db4bb15917799da9902, type: 3}
   _deathDummy: {fileID: 1101612211655084, guid: 087f6530e132e6f46b06fa466d87b3a0, type: 3}
+  deathCam: {fileID: 382650543704887643, guid: 7ff10488e23fd164c9591d89ca24d5ee, type: 3}
 --- !u!4 &1332096414
 Transform:
   m_ObjectHideFlags: 0

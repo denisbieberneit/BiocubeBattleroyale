@@ -15,17 +15,12 @@ public class Player : NetworkBehaviour
     private float baseHealth;
 
     [SerializeField]
-    private GameObject deathDummy;
-
-    [SerializeField]
     private int maxHealth;
 
     public int currentHealth;
 
     [SerializeField]
     private HealthBar healthBar;
-
-    private GameplayManager gameplayManager;
 
     public override void OnStartClient()
     {
@@ -37,8 +32,6 @@ public class Player : NetworkBehaviour
         {
             return;
         }
-        gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
-
         FunctionPeriodic.Create(() =>
         {
             /*if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
@@ -87,35 +80,28 @@ public class Player : NetworkBehaviour
     }
 
 
-    public void TakeDamage(int takeDamage)
+    public void TakeDamage(int takeDamage, NetworkObject attacker)
     {
         currentHealth -= takeDamage;
         healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            OnDeath();
+            OnDeath(attacker);
         }
     }
 
 
-    private void OnDeath()
+    private void OnDeath(NetworkObject killer)
     {
     
         //If there is an owning client then destroy the object and respawn.
-        __DelayRespawn(this.gameObject);
+        HandleDeath(GetComponent<NetworkObject>(), gameObject.scene, killer);
     }
 
-    private void __DelayRespawn(NetworkObject netIdent)
-    {
-        //Send Rpc to spawn death dummy then destroy original.
-        RpcSpawnDeathDummy(netIdent.transform.position,netIdent);
-    }
 
-    public void RpcSpawnDeathDummy(Vector3 position, NetworkObject netIdent)
+    [ServerRpc]
+    private void HandleDeath(NetworkObject owner, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
     {
-        GameObject go = Instantiate(deathDummy, position, Quaternion.identity);
-        base.Spawn(go, base.Owner);
-        StartCoroutine(GameplayManager.instance.__DelayRespawn(netIdent));
-
+        GameplayManager.instance.HandleDeath(owner, scene, killer);
     }
 }

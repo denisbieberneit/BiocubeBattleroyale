@@ -232,7 +232,6 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 2410751104200399866}
   _networkObjectCache: {fileID: 2410751104200399866}
   baseHealth: 10
-  deathDummy: {fileID: 1101612211655084, guid: 087f6530e132e6f46b06fa466d87b3a0, type: 3}
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 598883085365518871}

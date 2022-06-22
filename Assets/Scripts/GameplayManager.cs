@@ -41,12 +41,19 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         [Tooltip("DeathDummy to spawn.")]
         [SerializeField]
         private GameObject _deathDummy = null;
-        #endregion
 
-        /// <summary>
-        /// RoomDetails for this game. Only available on the server.
-        /// </summary>
-        private RoomDetails _roomDetails = null;
+    /// <summary>
+    /// DeathDummy to spawn.
+    /// </summary>
+    [Tooltip("DeathCam to spawn.")]
+    [SerializeField]
+    private GameObject deathCam = null;
+    #endregion
+
+    /// <summary>
+    /// RoomDetails for this game. Only available on the server.
+    /// </summary>
+    private RoomDetails _roomDetails = null;
         /// <summary>
         /// LobbyNetwork.
         /// </summary>
@@ -318,17 +325,39 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         #endregion
 
 
-        public void Death(NetworkObject netIdent)
-        {
-            RpcSpawnDeathDummy(netIdent.transform.position);
-        }
-
     [Server]
     public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v, UnityEngine.SceneManagement.Scene scene)
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
         ServerManager.Spawn(obj, playerConnection);
         UnitySceneManager.MoveGameObjectToScene(obj, scene);
+    }
+
+    [Server]
+    public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
+    {
+        //Send Rpc to spawn death dummy then destroy original.
+        RpcSpawnDeathDummy(netIdent.transform.position);
+        NetworkConnection deathConn = netIdent.Owner;
+        Camera playerCam = FindCameraFromPlayer(netIdent);
+
+        playerCam.gameObject.transform.parent = killer.gameObject.transform;
+
+        InstanceFinder.ServerManager.Despawn(netIdent.gameObject);
+       // NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), killer.gameObject.transform.position, Quaternion.identity);
+       // SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
+        // UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
+    }
+
+    private Camera FindCameraFromPlayer(NetworkObject netIdent)
+    {
+       Camera cam =  netIdent.gameObject.GetComponentInChildren<Camera>();
+        if (cam == null)
+        {
+            //2nd layer bs needs to be replaced later
+            cam = netIdent.GetComponentInChildren<PlayerMovement>().GetComponentInChildren<Camera>();
+        }
+        return cam;
     }
 
     private void Awake()

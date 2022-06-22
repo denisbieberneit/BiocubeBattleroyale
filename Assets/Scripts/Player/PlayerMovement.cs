@@ -265,7 +265,7 @@ public class PlayerMovement : NetworkBehaviour
     {
 
         target.GetComponent<PlayerMovement>().hit = true;
-        target.GetComponent<Player>().TakeDamage(30);
+        target.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
     }
 
     [Reconcile]
