@@ -23,6 +23,7 @@ public class CameraFollow : NetworkBehaviour
     }
 
 
+
     private void Update()
     {
         if (!base.IsOwner)

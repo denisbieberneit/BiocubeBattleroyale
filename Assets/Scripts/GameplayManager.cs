@@ -346,7 +346,9 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
         //NetworkObject netIdent = conn.identity;            
         netDeathCam.transform.position = new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1);
-        netDeathCam.transform.parent = killer.gameObject.transform;
+        //netDeathCam.transform.parent = killer.gameObject.transform;
+        netDeathCam.GetComponent<CameraFollow>().target = killer.gameObject;
+        killer.gameObject.SetActive(true);
         RpcTeleport(netDeathCam, new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1));
     }
 
