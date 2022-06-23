@@ -22,6 +22,9 @@ public class Player : NetworkBehaviour
     [SerializeField]
     private HealthBar healthBar;
 
+
+    public bool dead = false;
+
     public override void OnStartClient()
     {
         base.OnStartClient();
@@ -93,7 +96,7 @@ public class Player : NetworkBehaviour
 
     private void OnDeath(NetworkObject killer)
     {
-    
+        dead = true;
         //If there is an owning client then destroy the object and respawn.
         HandleDeath(GetComponent<NetworkObject>(), gameObject.scene, killer);
     }

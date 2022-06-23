@@ -42,6 +42,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         [SerializeField]
         private GameObject _deathDummy = null;
 
+    private bool gameOver = false;
+
     /// <summary>
     /// DeathDummy to spawn.
     /// </summary>
@@ -77,11 +79,18 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
             }
         }
 
-        /// <summary>
-        /// Initializes this script for use.
-        /// </summary>
-        /// <param name="roomDetails"></param>
-        public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbynetwork)
+    private void Awake()
+    {
+        instance = this;
+        InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
+    }
+
+
+    /// <summary>
+    /// Initializes this script for use.
+    /// </summary>
+    /// <param name="roomDetails"></param>
+    public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbynetwork)
         {
             _roomDetails = roomDetails;
             _lobbyNetwork = lobbynetwork;
@@ -205,40 +214,45 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         #endregion
 
         #region Winning.
-        /// <summary>
-        /// Called when a player wins.
-        /// </summary>
-        private void KingTimer_OnTimerComplete(NetworkObject winner)
-        {
-            //Already a winner. Could happen if both clients somehow managed to win at the exact same frame.
-            if (_winner)
-                return;
-            _winner = true;
 
-            StartCoroutine(__PlayerWon(winner));
-        }
-
-        /// <summary>
-        /// Ends the game announcing winner and sending clients back to lobby.
-        /// </summary>
-        /// <returns></returns>
-        private IEnumerator __PlayerWon(NetworkObject winner)
+    private void TimeManager_OnTick()
+    {
+        if (!gameOver)
         {
-            //Find all players in room and destroy their objects. Don't destroy client instance!
-            foreach (NetworkObject item in _roomDetails.StartedMembers)
+            int aliveCount = 0;
+            NetworkObject winner = null;
+            if (_roomDetails != null)
             {
-                //If not winner.
-                if (item.Owner != winner.Owner)
+                foreach (NetworkObject item in _roomDetails.StartedMembers)
                 {
-                    foreach (NetworkObject ni in item.Owner.Objects)
+                    if (item.GetComponent<Player>() != null)
                     {
-                        //Try to get king timer, if object with timer then stop timer.
-                        if (ni.TryGetComponent<KingTimer>(out KingTimer kt))
-                            kt.StopTimer();
+                        Debug.Log("Player fou8nd");
+                        if (item.GetComponent<Player>().dead)
+                        {
+                            aliveCount = aliveCount + 1;
+                        }
+                        else
+                        {
+                            winner = item;
+                        }
                     }
                 }
             }
-
+           
+            if (aliveCount > 1 && aliveCount != 0)
+            {
+                __PlayerWon(winner);
+                gameOver = true;
+            }
+        }
+    }
+    /// <summary>
+    /// Ends the game announcing winner and sending clients back to lobby.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator __PlayerWon(NetworkObject winner)
+        {
             //Send out winner text.
             ClientInstance ci = ClientInstance.ReturnClientInstance(winner.Owner);
             string playerName = ci.PlayerSettings.GetUsername();
@@ -346,14 +360,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
         //NetworkObject netIdent = conn.identity;            
         netDeathCam.transform.position = new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1);
-        //netDeathCam.transform.parent = killer.gameObject.transform;
-        netDeathCam.GetComponent<CameraFollow>().target = killer.gameObject;
-        killer.gameObject.SetActive(true);
+        netDeathCam.transform.parent = killer.gameObject.transform;
         RpcTeleport(netDeathCam, new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1));
     }
 
-    private void Awake()
-    {
-        instance = this;
-    }
 }

@@ -235,6 +235,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 100
   healthBar: {fileID: 598883085365518871}
+  dead: 1
 --- !u!70 &632242140255804501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
