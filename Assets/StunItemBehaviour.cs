@@ -35,13 +35,12 @@ public class StunItemBehaviour : NetworkBehaviour
             int objectId = collision.gameObject.GetComponent<NetworkObject>().OwnerId;
             if (ownerId == objectId)
             {
-                //siehst du was ich schreibe?
                 Debug.Log("Selfhit");
                 //selfhit
                 return;
             }
             Explode();
-            collision.gameObject.GetComponent<Player>().StunPlayer();
+            collision.gameObject.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
         }
     }
 

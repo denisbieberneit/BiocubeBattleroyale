@@ -232,6 +232,7 @@ MonoBehaviour:
   _componentIndexCache: 3
   _addedNetworkObject: {fileID: 2410751104200399866}
   _networkObjectCache: {fileID: 2410751104200399866}
+  pm: {fileID: 6849756407532612895}
   baseHealth: 10
   maxHealth: 100
   currentHealth: 100
@@ -278,7 +279,7 @@ MonoBehaviour:
   _enableTeleport: 1
   _teleportThreshold: 1
   _clientAuthoritative: 0
-  _sendToOwner: 1
+  _sendToOwner: 0
   _interval: 1
   _synchronizePosition: 1
   _positionSnapping:

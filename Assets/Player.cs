@@ -9,6 +9,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class Player : NetworkBehaviour
 {
+    [SerializeField]
     private PlayerMovement pm;
 
     [SerializeField]
@@ -62,25 +63,9 @@ public class Player : NetworkBehaviour
 
     public void StunPlayer()
     {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        if (pm == null)
-        {
-            GetPlayerMovement();
-        }
         pm.SetStun();
     }
 
-    private void GetPlayerMovement()
-    {
-        if (!base.IsOwner)
-        {
-            return;
-        }
-        pm = GetComponent<PlayerMovement>();
-    }
 
 
     public void TakeDamage(int takeDamage, NetworkObject attacker)

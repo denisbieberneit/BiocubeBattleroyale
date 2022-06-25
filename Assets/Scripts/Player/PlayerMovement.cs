@@ -53,6 +53,7 @@ public class PlayerMovement : NetworkBehaviour
     private bool holdingJump;
 
     private bool hit;
+    private float hitDirection = 0f;
 
 
 
@@ -62,13 +63,17 @@ public class PlayerMovement : NetworkBehaviour
         public bool Jump;
         public bool CanJump;
         public bool Hit;
+        public float HitDirection;
+        public bool Stunned;
         public float Horizontal;
         public float Vertical;
-        public MoveData(bool jump,bool canJump, bool hit, float horizontal, float vertical)
+        public MoveData(bool jump,bool canJump, bool hit, float hitDirection, bool stunned, float horizontal, float vertical)
         {
             Jump = jump;
             CanJump = canJump;
             Hit = hit;
+            HitDirection = hitDirection;
+            Stunned = stunned;
             Horizontal = horizontal;
             Vertical = vertical;
         }
@@ -122,18 +127,14 @@ public class PlayerMovement : NetworkBehaviour
         //synch hit
         if (md.Hit)
         {
-            //rb.AddForce(new Vector2(600f * md.Horizontal, 600f));
+            rb.AddForce(new Vector2(500f * md.HitDirection, 400f));
         }
-        // synch move
-        controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta);
-
-        // synch jump
+        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);  
         if (md.Jump && md.CanJump)
         {
             rb.velocity = new Vector2(0f, 0f);
             rb.AddForce(new Vector2(0f, jumpForce));
         }
-
     }
 
 
@@ -242,15 +243,16 @@ public class PlayerMovement : NetworkBehaviour
     public void SetStun()
     {
         //mach stun
-        SetFriction();
-        Invoke("RemoveStun", .2f);
+        isStunned = true;
+        Invoke("RemoveStun", 2f);
 
     }
 
-    public void RemoveStun()
+    private void RemoveStun()
     {
-        rb.sharedMaterial = noFriction;
+        isStunned = false;
     }
+
 
 
     [ServerRpc]
@@ -264,8 +266,10 @@ public class PlayerMovement : NetworkBehaviour
     {
 
         target.GetComponent<PlayerMovement>().hit = true;
+        target.GetComponent<PlayerMovement>().hitDirection = lastMovement;
         target.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
     }
+
 
     [Reconcile]
     private void Reconciliation(ReconcileData rd, bool asServer)
@@ -303,14 +307,16 @@ public class PlayerMovement : NetworkBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         horizontalMove = horizontal;
-        if (horizontal == 0f && vertical == 0f && !_jump)
-            return;
-
-        md = new MoveData(_jump, canJump, hit, horizontal, vertical);
         if (horizontal != 0)
         {
             lastMovement = horizontal;
         }
+
+        if ((horizontal == 0f && vertical == 0f && !_jump) || isStunned)
+            return;
+
+        md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, horizontal, vertical);
+        
 
         _jump = false;
         hit = false;
@@ -322,13 +328,15 @@ public class PlayerMovement : NetworkBehaviour
         {
             return;
         }
-        HandleJump();
-        HandleSlope();
-        HandleMove();
-        HandleFalling();
-        HandleAttack();
-        checkHit();
-        Debug.Log("Gravity" + rb.gravityScale);
+        if (!isStunned)
+        {
+            HandleJump();
+            HandleSlope();
+            HandleMove();
+            HandleFalling();
+            HandleAttack();
+            checkHit();
+        }
     }
 
 
