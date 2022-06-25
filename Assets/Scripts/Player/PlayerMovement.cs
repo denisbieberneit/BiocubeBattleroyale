@@ -54,7 +54,6 @@ public class PlayerMovement : NetworkBehaviour
 
     private bool hit;
 
-    private GameplayManager gameplayManager;//used for spawning
 
 
     #region Types.
@@ -90,12 +89,13 @@ public class PlayerMovement : NetworkBehaviour
     }
     #endregion
 
+    
+  
     public override void OnStartClient()
     {
         base.OnStartClient();
-        rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = (!base.IsOwner || base.IsServerOnly);
-        
+
         if (!IsOwner)
         {
             return;
@@ -105,13 +105,12 @@ public class PlayerMovement : NetworkBehaviour
         controller = GetComponent<CharacterController2D>();
 
         ac = GetComponentInChildren<AnimationController>();
-        controller.enabled = (base.IsServer || base.IsOwner);
-        gameplayManager = GameObject.Find("GameplayManager").GetComponent<GameplayManager>();
-
     }
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
+
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
         InstanceFinder.TimeManager.OnPostTick += TimeManager_OnPostTick;
     }
@@ -303,12 +302,16 @@ public class PlayerMovement : NetworkBehaviour
         md = default;
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        lastMovement = horizontal;
         horizontalMove = horizontal;
         if (horizontal == 0f && vertical == 0f && !_jump)
             return;
 
         md = new MoveData(_jump, canJump, hit, horizontal, vertical);
+        if (horizontal != 0)
+        {
+            lastMovement = horizontal;
+        }
+
         _jump = false;
         hit = false;
 
@@ -325,6 +328,7 @@ public class PlayerMovement : NetworkBehaviour
         HandleFalling();
         HandleAttack();
         checkHit();
+        Debug.Log("Gravity" + rb.gravityScale);
     }
 
 

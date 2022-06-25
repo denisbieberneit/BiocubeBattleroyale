@@ -16,14 +16,14 @@ namespace FishNet.Transporting.Yak.Server
         /// Gets the current ConnectionState of a remote client on the server.
         /// </summary>
         /// <param name="connectionId">ConnectionId to get ConnectionState for.</param>
-        internal RemoteConnectionStates GetConnectionState(int connectionId)
+        internal RemoteConnectionState GetConnectionState(int connectionId)
         {
             if (connectionId != Yak.CLIENT_HOST_ID)
-                return RemoteConnectionStates.Stopped;
+                return RemoteConnectionState.Stopped;
 
-            LocalConnectionStates state = _client.GetLocalConnectionState();
-            return (state == LocalConnectionStates.Started) ? RemoteConnectionStates.Started :
-                RemoteConnectionStates.Stopped;
+            LocalConnectionState state = _client.GetLocalConnectionState();
+            return (state == LocalConnectionState.Started) ? RemoteConnectionState.Started :
+                RemoteConnectionState.Stopped;
         }
         #endregion
 
@@ -52,8 +52,8 @@ namespace FishNet.Transporting.Yak.Server
         /// </summary>
         internal bool StartConnection()
         {
-            SetLocalConnectionState(LocalConnectionStates.Starting, true);
-            SetLocalConnectionState(LocalConnectionStates.Started, true);
+            SetLocalConnectionState(LocalConnectionState.Starting, true);
+            SetLocalConnectionState(LocalConnectionState.Started, true);
             return true;
         }
 
@@ -61,7 +61,7 @@ namespace FishNet.Transporting.Yak.Server
         /// <summary>
         /// Sets a new connection state.
         /// </summary>
-        protected override void SetLocalConnectionState(LocalConnectionStates connectionState, bool server)
+        protected override void SetLocalConnectionState(LocalConnectionState connectionState, bool server)
         {
             base.SetLocalConnectionState(connectionState, server);
             _client.OnLocalServerConnectionState(connectionState);
@@ -72,12 +72,12 @@ namespace FishNet.Transporting.Yak.Server
         /// </summary>
         internal bool StopConnection()
         {
-            if (base.GetLocalConnectionState() == LocalConnectionStates.Stopped)
+            if (base.GetLocalConnectionState() == LocalConnectionState.Stopped)
                 return false;
 
             base.ClearQueue(ref _incoming);
-            SetLocalConnectionState(LocalConnectionStates.Stopping, true);
-            SetLocalConnectionState(LocalConnectionStates.Stopped, true);
+            SetLocalConnectionState(LocalConnectionState.Stopping, true);
+            SetLocalConnectionState(LocalConnectionState.Stopped, true);
 
             return true;
         }
@@ -101,7 +101,7 @@ namespace FishNet.Transporting.Yak.Server
         /// <param name="transport"></param>
         internal void IterateIncoming()
         {
-            if (base.GetLocalConnectionState() != LocalConnectionStates.Started)
+            if (base.GetLocalConnectionState() != LocalConnectionState.Started)
                 return;
 
             //Iterate local client packets first.
@@ -122,7 +122,7 @@ namespace FishNet.Transporting.Yak.Server
         /// <param name="connectionId"></param>
         internal void SendToClient(byte channelId, ArraySegment<byte> segment, int connectionId)
         {
-            if (base.GetLocalConnectionState() != LocalConnectionStates.Started)
+            if (base.GetLocalConnectionState() != LocalConnectionState.Started)
                 return;
             if (connectionId != Yak.CLIENT_HOST_ID)
                 return;
@@ -135,19 +135,19 @@ namespace FishNet.Transporting.Yak.Server
         /// <summary>
         /// Called when the local client starts or stops.
         /// </summary>
-        internal void OnLocalClientConnectionState(LocalConnectionStates state)
+        internal void OnLocalClientConnectionState(LocalConnectionState state)
         {
             //If not started flush incoming from local client.
-            if (state != LocalConnectionStates.Started)
+            if (state != LocalConnectionState.Started)
             {
                 base.ClearQueue(ref _incoming);
                 //If stopped then send stopped event as well.
-                if (state == LocalConnectionStates.Stopped)
-                    base.Transport.HandleRemoteConnectionState(new RemoteConnectionStateArgs(RemoteConnectionStates.Stopped, Yak.CLIENT_HOST_ID, base.Transport.Index));
+                if (state == LocalConnectionState.Stopped)
+                    base.Transport.HandleRemoteConnectionState(new RemoteConnectionStateArgs(RemoteConnectionState.Stopped, Yak.CLIENT_HOST_ID, base.Transport.Index));
             }
             else
             {
-                base.Transport.HandleRemoteConnectionState(new RemoteConnectionStateArgs(RemoteConnectionStates.Started, Yak.CLIENT_HOST_ID, base.Transport.Index));
+                base.Transport.HandleRemoteConnectionState(new RemoteConnectionStateArgs(RemoteConnectionState.Started, Yak.CLIENT_HOST_ID, base.Transport.Index));
             }
         }
 
@@ -156,7 +156,7 @@ namespace FishNet.Transporting.Yak.Server
         /// </summary>
         internal void ReceivedFromLocalClient(LocalPacket packet)
         {
-            if (_client.GetLocalConnectionState() != LocalConnectionStates.Started)
+            if (_client.GetLocalConnectionState() != LocalConnectionState.Started)
                 return;
 
             _incoming.Enqueue(packet);

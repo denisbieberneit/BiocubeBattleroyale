@@ -8,18 +8,23 @@ public class StunItemBehaviour : NetworkBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private float lastMovement;
-
+    private SlopeCheck slopeCheck;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
+        slopeCheck = FindObjectOfType<SlopeCheck>();
     }
 
     void FixedUpdate()
     {
         anim.SetBool("CircleStun", true);
         rb.AddForce(new Vector2(7f * lastMovement, 0));
+        if (slopeCheck.atWall)
+        {
+            Explode();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

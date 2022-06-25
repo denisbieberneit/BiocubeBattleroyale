@@ -69,7 +69,7 @@ namespace FishNet.Transporting.Yak
         /// Gets the current local ConnectionState.
         /// </summary>
         /// <param name="server">True if getting ConnectionState for the server.</param>
-        public override LocalConnectionStates GetConnectionState(bool server)
+        public override LocalConnectionState GetConnectionState(bool server)
         {
             if (server)
                 return _server.GetLocalConnectionState();
@@ -80,7 +80,7 @@ namespace FishNet.Transporting.Yak
         /// Gets the current ConnectionState of a remote client on the server.
         /// </summary>
         /// <param name="connectionId">ConnectionId to get ConnectionState for.</param>
-        public override RemoteConnectionStates GetConnectionState(int connectionId)
+        public override RemoteConnectionState GetConnectionState(int connectionId)
         {
             return _server.GetConnectionState(connectionId);
         }
@@ -267,7 +267,7 @@ namespace FishNet.Transporting.Yak
         /// <returns>True if there were no blocks. A true response does not promise a socket will or has connected.</returns>
         private bool StartServer()
         {
-            if (_server.GetLocalConnectionState() != LocalConnectionStates.Stopped)
+            if (_server.GetLocalConnectionState() != LocalConnectionState.Stopped)
             {
                 if (NetworkManager.CanLog(LoggingType.Error))
                     Debug.LogError("Server is already running.");
@@ -297,7 +297,7 @@ namespace FishNet.Transporting.Yak
         /// <returns>True if there were no blocks. A true response does not promise a socket will or has connected.</returns>
         private bool StartClient()
         {
-            if (_client.GetLocalConnectionState() != LocalConnectionStates.Stopped)
+            if (_client.GetLocalConnectionState() != LocalConnectionState.Stopped)
             {
                 if (NetworkManager.CanLog(LoggingType.Error))
                     Debug.LogError("Client is already running.");

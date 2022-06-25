@@ -81,7 +81,7 @@ namespace FishNet.Component.Transforming
             Z4 = 32,
             Nested = 64
         }
-        private class GoalData
+        public class GoalData
         {
             public uint ReceivedTick;
             public RateData Rates = new RateData();
@@ -95,14 +95,37 @@ namespace FishNet.Component.Transforming
                 Rates.Reset();
             }
         }
-        private class RateData
+        public class RateData
         {
+            /// <summary>
+            /// Rate for position after smart calculations.
+            /// </summary>
             public float Position;
+            /// <summary>
+            /// Rate for rotation after smart calculations.
+            /// </summary>
             public float Rotation;
+            /// <summary>
+            /// Rate for scale after smart calculations.
+            /// </summary>
             public float Scale;
+            /// <summary>
+            /// Unaltered rate for position calculated through position change and tickspan.
+            /// </summary>
             public float LastUnalteredPositionRate;
-            public bool AbnormalRateDetected;
-            public float TimeRemaining;
+            /// <summary>
+            /// Number of ticks the rates are calculated for.
+            /// If TickSpan is 2 then the rates are calculated under the assumption the transform changed over 2 ticks.
+            /// </summary>
+            public uint TickSpan;
+            /// <summary>
+            /// True if the rate is believed to be fluctuating unusually.
+            /// </summary>
+            internal bool AbnormalRateDetected;
+            /// <summary>
+            /// Time remaining until transform is expected to reach it's goal.
+            /// </summary>
+            internal float TimeRemaining;
 
             public RateData() { }
 
@@ -112,24 +135,27 @@ namespace FishNet.Component.Transforming
                 Rotation = 0f;
                 Scale = 0f;
                 LastUnalteredPositionRate = 0f;
+                TickSpan = 0;
                 AbnormalRateDetected = false;
                 TimeRemaining = 0f;
             }
 
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
             public void Update(RateData rd)
             {
-                Update(rd.Position, rd.Rotation, rd.Scale, rd.LastUnalteredPositionRate, rd.AbnormalRateDetected, rd.TimeRemaining);
+                Update(rd.Position, rd.Rotation, rd.Scale, rd.LastUnalteredPositionRate, rd.TickSpan, rd.AbnormalRateDetected, rd.TimeRemaining);
             }
 
             /// <summary>
             /// Updates rates.
             /// </summary>
-            public void Update(float position, float rotation, float scale, float unalteredPositionRate, bool abnormalRateDetected, float timeRemaining)
+            public void Update(float position, float rotation, float scale, float unalteredPositionRate, uint tickSpan, bool abnormalRateDetected, float timeRemaining)
             {
                 Position = position;
                 Rotation = rotation;
                 Scale = scale;
                 LastUnalteredPositionRate = unalteredPositionRate;
+                TickSpan = tickSpan;
                 AbnormalRateDetected = abnormalRateDetected;
                 TimeRemaining = timeRemaining;
             }
@@ -194,6 +220,14 @@ namespace FishNet.Component.Transforming
         /// This feature is experimental.
         /// </summary>
         public event DataReceivedChanged OnDataReceived;
+        /// <summary>
+        /// Called when GoalData is updated.
+        /// </summary>
+        public event Action<GoalData> OnNextGoal;
+        /// <summary>
+        /// Called when the transform has reached it's goal.
+        /// </summary>
+        public event Action OnInterpolationComplete;
         #endregion
         #region Serialized.
         /// <summary>
@@ -944,7 +978,7 @@ namespace FishNet.Component.Transforming
             /* Set ratedata to immediate so there's no blending between transform values when
              * getting on or off platforms. */
             if (rd != null)
-                rd.Update(-1f, -1f, -1f, rd.LastUnalteredPositionRate, rd.AbnormalRateDetected, rd.TimeRemaining);
+                rd.Update(-1f, -1f, -1f, rd.LastUnalteredPositionRate, rd.TickSpan, rd.AbnormalRateDetected, rd.TimeRemaining);
         }
         //PROEND
 
@@ -1042,7 +1076,7 @@ namespace FishNet.Component.Transforming
                 {
                     _currentGoalData.Reset();
                     _goalDataCache.Push(_currentGoalData);
-                    _currentGoalData = _goalDataQueue.Dequeue();
+                    SetCurrentGoalData(_goalDataQueue.Dequeue());
                     if (leftOver > 0f)
                         MoveToTarget(leftOver);
                 }
@@ -1078,6 +1112,7 @@ namespace FishNet.Component.Transforming
                         if (!HasChanged(td))
                             _queueReady = false;
                         //PROSTART
+                        OnInterpolationComplete?.Invoke();
                     }
                     //PROEND
                 }
@@ -1345,7 +1380,7 @@ namespace FishNet.Component.Transforming
         /// </summary>
         private void SetInstantRates(RateData rd)
         {
-            rd.Update(-1f, -1f, -1f, -1f, false, -1f);
+            rd.Update(-1f, -1f, -1f, -1f, 1, false, -1f);
         }
 
         /// <summary>
@@ -1373,7 +1408,7 @@ namespace FishNet.Component.Transforming
                 lastTick = (nextGd.Transforms.Tick - _interval);
 
             uint tickDifference = (td.Tick - lastTick);
-            float timePassed = base.NetworkManager.TimeManager.TicksToTime(tickDifference);
+            float timePassed = (float)base.NetworkManager.TimeManager.TicksToTime(tickDifference);
 
             //Distance between properties.
             float distance;
@@ -1474,7 +1509,7 @@ namespace FishNet.Component.Transforming
             if (scaleRate == 0f)
                 scaleRate = prevRd.Scale;
 
-            rd.Update(positionRate, rotationRate, scaleRate, unalteredPositionRate, abnormalRateDetected, timePassed);
+            rd.Update(positionRate, rotationRate, scaleRate, unalteredPositionRate, tickDifference, abnormalRateDetected, timePassed);
 
             //Returns if whole contains part.
             bool ChangedFullContains(ChangedFull whole, ChangedFull part)
@@ -1611,7 +1646,7 @@ namespace FishNet.Component.Transforming
             if (_currentGoalData.Transforms.ExtrapolationState == TransformData.ExtrapolateState.Active)
             {
                 _queueReady = true;
-                _currentGoalData = nextGd;
+                SetCurrentGoalData(nextGd);
             }
             /* If queue isn't started and its buffered enough
              * to satisfy interpolation then set ready
@@ -1624,7 +1659,7 @@ namespace FishNet.Component.Transforming
                 _queueReady = true;
                 if (_goalDataQueue.Count > 0)
                 {
-                    _currentGoalData = _goalDataQueue.Dequeue();
+                    SetCurrentGoalData(_goalDataQueue.Dequeue());
                     /* If is reliable and has changed then also
                     * enqueue latest. */
                     if (hasChanged)
@@ -1632,7 +1667,9 @@ namespace FishNet.Component.Transforming
 
                 }
                 else
-                    _currentGoalData = nextGd;
+                {
+                    SetCurrentGoalData(nextGd);
+                }
             }
             /* If here then there's not enough in buffer to begin
              * so add onto the buffer. */
@@ -1640,6 +1677,16 @@ namespace FishNet.Component.Transforming
             {
                 _goalDataQueue.Enqueue(nextGd);
             }
+        }
+
+        /// <summary>
+        /// Sets CurrentGoalData value.
+        /// </summary>
+        /// <param name="data"></param>
+        private void SetCurrentGoalData(GoalData data)
+        {
+            _currentGoalData = data;
+            OnNextGoal?.Invoke(data);
         }
 
         /// <summary>

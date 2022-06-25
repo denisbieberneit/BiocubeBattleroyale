@@ -41,9 +41,10 @@ namespace FishNet.CodeGenerating.Helping
         private MethodReference Debug_LogError_MethodRef;
         internal MethodReference Comparers_EqualityCompare_MethodRef;
         internal MethodReference Comparers_IsDefault_MethodRef;
-        internal MethodReference IsServer_MethodRef = null;
-        internal MethodReference IsClient_MethodRef = null;
-        internal MethodReference NetworkObject_Deinitializing_MethodRef = null;
+        internal MethodReference IsServer_MethodRef;
+        internal MethodReference IsClient_MethodRef;
+        internal MethodReference NetworkObject_Deinitializing_MethodRef;
+        internal MethodReference Application_IsPlaying_MethodRef;
         private Dictionary<Type, TypeReference> _importedTypeReferences = new Dictionary<Type, TypeReference>();
         private Dictionary<FieldDefinition, FieldReference> _importedFieldReferences = new Dictionary<FieldDefinition, FieldReference>();
         private Dictionary<MethodReference, MethodDefinition> _methodReferenceResolves = new Dictionary<MethodReference, MethodDefinition>();
@@ -53,10 +54,15 @@ namespace FishNet.CodeGenerating.Helping
         private string Single_FullName;
         #endregion
 
+        #region Const.
+        public const string UNITYENGINE_ASSEMBLY_PREFIX = "UnityEngine.";
+        #endregion
+
         internal bool ImportReferences()
         {
             Type tmpType;
             SR.MethodInfo tmpMi;
+            SR.PropertyInfo tmpPi;
 
             NonSerialized_Attribute_FullName = typeof(NonSerializedAttribute).FullName;
             Single_FullName = typeof(float).FullName;
@@ -86,6 +92,12 @@ namespace FishNet.CodeGenerating.Helping
                 else if (mi.Name == nameof(Comparers.IsDefault))
                     Comparers_IsDefault_MethodRef = CodegenSession.ImportReference(mi);
             }
+
+            //Misc.
+            tmpType = typeof(UnityEngine.Application);
+            tmpPi = tmpType.GetProperty(nameof(UnityEngine.Application.isPlaying));
+            if (tmpPi != null)
+                Application_IsPlaying_MethodRef = CodegenSession.ImportReference(tmpPi.GetMethod);
 
             //Networkbehaviour.
             Type networkBehaviourType = typeof(NetworkBehaviour);
@@ -287,11 +299,9 @@ namespace FishNet.CodeGenerating.Helping
         }
 
         /// <summary>
-        /// Returns if methodInfo should be ignored.
+        /// Returns if type uses CodegenExcludeAttribute.
         /// </summary>
-        /// <param name="methodInfo"></param>
-        /// <returns></returns>
-        internal bool IgnoreMethod(SR.MethodInfo methodInfo)
+        internal bool CodegenExclude(SR.MethodInfo methodInfo)
         {
             foreach (SR.CustomAttributeData item in methodInfo.CustomAttributes)
             {
@@ -303,11 +313,9 @@ namespace FishNet.CodeGenerating.Helping
         }
 
         /// <summary>
-        /// Returns if methodInfo should be ignored.
+        /// Returns if type uses CodegenExcludeAttribute.
         /// </summary>
-        /// <param name="methodInfo"></param>
-        /// <returns></returns>
-        internal bool IgnoreMethod(MethodDefinition methodDef)
+        internal bool CodegenExclude(MethodDefinition methodDef)
         {
             foreach (CustomAttribute item in methodDef.CustomAttributes)
             {
@@ -318,6 +326,94 @@ namespace FishNet.CodeGenerating.Helping
             return false;
         }
 
+        /// <summary>
+        /// Returns if type uses CodegenExcludeAttribute.
+        /// </summary>
+        internal bool CodegenExclude(FieldDefinition fieldDef)
+        {
+            foreach (CustomAttribute item in fieldDef.CustomAttributes)
+            {
+                if (item.AttributeType.FullName == CodegenExcludeAttribute_FullName)
+                    return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Returns if type uses CodegenExcludeAttribute.
+        /// </summary>
+        internal bool CodegenExclude(PropertyDefinition propDef)
+        {
+            foreach (CustomAttribute item in propDef.CustomAttributes)
+            {
+                if (item.AttributeType.FullName == CodegenExcludeAttribute_FullName)
+                    return true;
+            }
+
+            return false;
+        }
+
+
+
+
+        /// <summary>
+        /// Calls copiedMd with the assumption md shares the same parameters.
+        /// </summary>
+        internal void CallCopiedMethod(MethodDefinition md, MethodDefinition copiedMd)
+        {
+            ILProcessor processor = md.Body.GetILProcessor();
+            processor.Emit(OpCodes.Ldarg_0);
+            foreach (var item in copiedMd.Parameters)
+                processor.Emit(OpCodes.Ldarg, item);
+            processor.Emit(OpCodes.Call, copiedMd);
+
+        }
+
+        /// <summary>
+        /// Copies one method to another while transferring diagnostic paths.
+        /// </summary>
+        internal MethodDefinition CopyMethod(MethodDefinition originalMd, string toName, out bool alreadyCreated)
+        {
+            TypeDefinition typeDef = originalMd.DeclaringType;
+
+            MethodDefinition copyMd = typeDef.GetMethod(toName);
+            //Already made.
+            if (copyMd != null)
+            {
+                alreadyCreated = true;
+                return copyMd;
+            }
+            else
+            {
+                alreadyCreated = false;
+            }
+
+            //Create the method body.
+            copyMd = new MethodDefinition(
+                toName, originalMd.Attributes, originalMd.ReturnType);
+            typeDef.Methods.Add(copyMd);
+            copyMd.Body.InitLocals = true;
+
+            //Copy parameter expecations into new method.
+            foreach (ParameterDefinition pd in originalMd.Parameters)
+                copyMd.Parameters.Add(pd);
+
+            //Swap bodies.
+            (copyMd.Body, originalMd.Body) = (originalMd.Body, copyMd.Body);
+            //Move over all the debugging information
+            foreach (SequencePoint sequencePoint in originalMd.DebugInformation.SequencePoints)
+                copyMd.DebugInformation.SequencePoints.Add(sequencePoint);
+            originalMd.DebugInformation.SequencePoints.Clear();
+
+            foreach (CustomDebugInformation customInfo in originalMd.CustomDebugInformations)
+                copyMd.CustomDebugInformations.Add(customInfo);
+            originalMd.CustomDebugInformations.Clear();
+            //Swap debuginformation scope.
+            (originalMd.DebugInformation.Scope, copyMd.DebugInformation.Scope) = (copyMd.DebugInformation.Scope, originalMd.DebugInformation.Scope);
+
+            return copyMd;
+        }
 
         /// <summary>
         /// Creates the RuntimeInitializeOnLoadMethod attribute for a method.

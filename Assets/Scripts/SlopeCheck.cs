@@ -14,8 +14,6 @@ public class SlopeCheck : MonoBehaviour
     [HideInInspector]
     public Transform rayCastOrigin;
     
-    [SerializeField]
-    private CharacterController2D characterController;
     
     public bool onSlope = false;
     public bool atWall = false;

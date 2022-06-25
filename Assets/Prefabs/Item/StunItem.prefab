@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1387123686462247249}
   - component: {fileID: -162443125589339060}
   - component: {fileID: 1136957180225920540}
+  - component: {fileID: -5172850817934649972}
   m_Layer: 6
   m_Name: StunItem
   m_TagString: Ability
@@ -163,6 +164,7 @@ MonoBehaviour:
   _networkBehaviours:
   - {fileID: 1387123686462247249}
   - {fileID: -162443125589339060}
+  - {fileID: 1136957180225920540}
   SceneTransformProperties:
     Position: {x: 21.976885, y: -2.1481397, z: -0.055296946}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -170,7 +172,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 10
+  _prefabId: 16
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
@@ -222,9 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 5330375076387988261}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 5330375076387988261}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -252,3 +254,25 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &-5172850817934649972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249047828962651358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc752806252ccab41928ec95b6cdd471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  slopeLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  rayCastOrigin: {fileID: 0}
+  onSlope: 0
+  atWall: 0
+  onGround: 0

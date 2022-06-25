@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: -5619124536314918133}
   - component: {fileID: 4469972187463437601}
   - component: {fileID: 6788768176670356733}
-  - component: {fileID: 5330375076387988261}
   - component: {fileID: 3733816999680891581}
   - component: {fileID: 5225388169784910074}
   - component: {fileID: 4511049481447974191}
+  - component: {fileID: -3814982822573440363}
+  - component: {fileID: 7951659259833978663}
   m_Layer: 6
   m_Name: ExplosionItem
   m_TagString: Ability
@@ -148,32 +149,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.057504356}
   serializedVersion: 2
   m_Radius: 0.3624316
---- !u!114 &5330375076387988261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249047828962651358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 3733816999680891581}
-  - {fileID: 5225388169784910074}
-  SceneTransformProperties:
-    Position: {x: 21.976885, y: -2.1481397, z: -0.055296946}
-    Rotation: {x: 0, y: 0, z: 0, w: 1}
-    LocalScale: {x: 1, y: 1, z: 1}
-  _isNetworked: 1
-  _hasParentNetworkObjectAtEdit: 0
-  NetworkObserver: {fileID: 0}
-  _prefabId: 9
-  _scenePathHash: 0
-  _sceneId: 0
-  _sceneNetworkObjects: []
 --- !u!114 &3733816999680891581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,8 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 5330375076387988261}
-  _networkObjectCache: {fileID: 5330375076387988261}
+  _addedNetworkObject: {fileID: -3814982822573440363}
+  _networkObjectCache: {fileID: -3814982822573440363}
 --- !u!114 &5225388169784910074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 1
-  _addedNetworkObject: {fileID: 5330375076387988261}
-  _networkObjectCache: {fileID: 5330375076387988261}
+  _addedNetworkObject: {fileID: -3814982822573440363}
+  _networkObjectCache: {fileID: -3814982822573440363}
   IgnoredParameters: []
   _animator: {fileID: 249047828962651357}
   _smoothFloats: 1
@@ -222,9 +197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
-  _addedNetworkObject: {fileID: 5330375076387988261}
-  _networkObjectCache: {fileID: 0}
+  _componentIndexCache: 2
+  _addedNetworkObject: {fileID: -3814982822573440363}
+  _networkObjectCache: {fileID: -3814982822573440363}
   _synchronizeParent: 0
   _packing:
     Position: 1
@@ -252,3 +227,52 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &-3814982822573440363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249047828962651358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 3733816999680891581}
+  - {fileID: 5225388169784910074}
+  - {fileID: 4511049481447974191}
+  SceneTransformProperties:
+    Position: {x: 21.976885, y: -2.1481397, z: -0.055296946}
+    Rotation: {x: 0, y: 0, z: 0, w: 1}
+    LocalScale: {x: 1, y: 1, z: 1}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: 4
+  _scenePathHash: 0
+  _sceneId: 0
+  _sceneNetworkObjects: []
+--- !u!114 &7951659259833978663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249047828962651358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc752806252ccab41928ec95b6cdd471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  slopeLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  rayCastOrigin: {fileID: 0}
+  onSlope: 0
+  atWall: 0
+  onGround: 0

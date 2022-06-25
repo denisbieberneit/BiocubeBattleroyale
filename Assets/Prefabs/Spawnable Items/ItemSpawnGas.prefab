@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3472682039192280951}
   - component: {fileID: 3472682039192280948}
-  - component: {fileID: 3472682039192280949}
   - component: {fileID: 3472682039192280938}
   - component: {fileID: 3472682039192280939}
   - component: {fileID: 3472682039192280936}
@@ -50,47 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 3472682039192280949}
-  _networkObjectCache: {fileID: 3472682039192280949}
+  _addedNetworkObject: {fileID: 0}
+  _networkObjectCache: {fileID: 0}
   item: {fileID: 4007534014146569608, guid: 45b65c3651431004ca2f21ae7478edce, type: 3}
   animName: CircleGas
---- !u!114 &3472682039192280949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472682039192280942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 3472682039192280948}
-  - {fileID: 3472682039192280937}
-  SceneTransformProperties:
-    Position: {x: 39.72, y: 2.44481, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 1}
-    LocalScale: {x: 1, y: 1, z: 1}
-  _isNetworked: 1
-  _hasParentNetworkObjectAtEdit: 0
-  NetworkObserver: {fileID: 0}
-  _prefabId: 17
-  _scenePathHash: 0
-  _sceneId: 0
-  _sceneNetworkObjects:
-  - {fileID: 3472682039192280949}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!95 &3472682039192280938
 Animator:
   serializedVersion: 4
@@ -192,8 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentIndexCache: 1
-  _addedNetworkObject: {fileID: 3472682039192280949}
-  _networkObjectCache: {fileID: 3472682039192280949}
+  _addedNetworkObject: {fileID: 0}
+  _networkObjectCache: {fileID: 0}
   IgnoredParameters: []
   _animator: {fileID: 3472682039192280938}
   _smoothFloats: 1

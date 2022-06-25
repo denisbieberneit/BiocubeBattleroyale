@@ -54,7 +54,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
         /// <summary>
         /// Rigidbody on this object.
         /// </summary>
-        private Rigidbody2D _rigidbody;
+        private Rigidbody _rigidbody;
         /// <summary>
         /// Next time a jump is allowed.
         /// </summary>
@@ -63,8 +63,6 @@ namespace FishNet.Example.Prediction.Rigidbodies
         /// True to jump next frame.
         /// </summary>
         private bool _jump;
-
-        private bool m_FacingRight = true;
         #endregion
 
 
@@ -72,7 +70,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
         private void Awake()
         {
 
-            _rigidbody = GetComponent<Rigidbody2D>();
+            _rigidbody = GetComponent<Rigidbody>();
             InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
             InstanceFinder.TimeManager.OnPostTick += TimeManager_OnPostTick;
         }
@@ -96,7 +94,6 @@ namespace FishNet.Example.Prediction.Rigidbodies
                     _jump = true;
                 }
             }
-           
         }
 
         private void TimeManager_OnTick()
@@ -118,7 +115,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
         {
             if (base.IsServer)
             {
-                ReconcileData rd = new ReconcileData(transform.position, transform.rotation, _rigidbody.velocity, Vector3.one);
+                ReconcileData rd = new ReconcileData(transform.position, transform.rotation, _rigidbody.velocity, _rigidbody.angularVelocity);
                 Reconciliation(rd, true);
             }
         }
@@ -144,22 +141,8 @@ namespace FishNet.Example.Prediction.Rigidbodies
             Vector3 forces = new Vector3(md.Horizontal, Physics.gravity.y, md.Vertical) * _moveRate;
             _rigidbody.AddForce(forces);
 
-
-            // Multiply the player's x local scale by -1.
-            if (md.Horizontal > 0 && !m_FacingRight)
-            {
-                m_FacingRight = !m_FacingRight;
-
-                if (md.Horizontal >= 1)
-                {
-                    Vector3 theScale = transform.localScale;
-                    theScale.x *= -1;
-                    transform.localScale = theScale;
-
-                }
-            }
             if (md.Jump)
-                _rigidbody.AddForce(new Vector3(0f, _jumpForce, 0f));
+                _rigidbody.AddForce(new Vector3(0f, _jumpForce, 0f), ForceMode.Impulse);
         }
 
         [Reconcile]
@@ -168,7 +151,7 @@ namespace FishNet.Example.Prediction.Rigidbodies
             transform.position = rd.Position;
             transform.rotation = rd.Rotation;
             _rigidbody.velocity = rd.Velocity;
-            _rigidbody.angularVelocity = 1f;
+            _rigidbody.angularVelocity = rd.AngularVelocity;
         }
 
 

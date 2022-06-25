@@ -9,12 +9,14 @@ public class ExplosionItemBehaviour : NetworkBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private float lastMovement;
+    private SlopeCheck slopeCheck;
 
     private void Start()
     {
         Debug.Log("Spawned");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        slopeCheck = GetComponent<SlopeCheck>();
         lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
     }
 
@@ -22,6 +24,10 @@ public class ExplosionItemBehaviour : NetworkBehaviour
     {
         anim.SetBool("CircleExplosion", true);
         rb.AddForce(new Vector2(7f * lastMovement, 0));
+        if (slopeCheck.atWall)
+        {
+            Explode();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

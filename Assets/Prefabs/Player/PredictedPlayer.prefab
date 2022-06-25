@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4034622244466700057}
   - component: {fileID: 8867479507771499381}
   - component: {fileID: 632242140255804501}
-  - component: {fileID: 4367048098271410454}
+  - component: {fileID: 5638003557659535576}
   m_Layer: 6
   m_Name: PredictedPlayer
   m_TagString: Player
@@ -60,7 +60,7 @@ MonoBehaviour:
   - {fileID: 6726746365241379945}
   - {fileID: 6849756407532612895}
   - {fileID: 8867479507771499381}
-  - {fileID: 4367048098271410454}
+  - {fileID: 5638003557659535576}
   - {fileID: 3584995312177527306}
   - {fileID: 4948327828110776197}
   - {fileID: 2584600193130345604}
@@ -74,7 +74,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 17
+  _prefabId: 8
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
@@ -96,10 +96,12 @@ MonoBehaviour:
   _graphicalObject: {fileID: 3584995312177527538}
   _smoothTicks: 1
   _smoothingDuration: 0.125
+  _enableTeleport: 1
+  _teleportThreshold: 1
   _predictionType: 0
   _rigidbody: {fileID: 0}
   _rigidbody2d: {fileID: 7931516846868324376}
-  _networkTransform: {fileID: 4367048098271410454}
+  _networkTransform: {fileID: 0}
   _predictionRatio: 0
 --- !u!50 &7931516846868324376
 Rigidbody2D:
@@ -212,7 +214,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   rayCastOrigin: {fileID: 0}
-  characterController: {fileID: 6726746365241379945}
   onSlope: 0
   atWall: 0
   onGround: 1
@@ -252,7 +253,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.03807354}
   m_Size: {x: 0.45508766, y: 0.80351067}
   m_Direction: 0
---- !u!114 &4367048098271410454
+--- !u!114 &5638003557659535576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,19 +273,19 @@ MonoBehaviour:
     Position: 1
     Rotation: 1
     Scale: 0
-  _interpolation: 1
-  _extrapolation: 255
+  _interpolation: 2
+  _extrapolation: 256
   _enableTeleport: 1
   _teleportThreshold: 1
   _clientAuthoritative: 0
-  _sendToOwner: 0
+  _sendToOwner: 1
   _interval: 1
   _synchronizePosition: 1
   _positionSnapping:
     X: 0
     Y: 0
     Z: 0
-  _synchronizeRotation: 0
+  _synchronizeRotation: 1
   _rotationSnapping:
     X: 0
     Y: 0
@@ -430,6 +431,42 @@ PrefabInstance:
       propertyPath: _hasParentNetworkObjectAtEdit
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Position.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Position.y
+      value: 0.463
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
@@ -457,6 +494,70 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 4717895597456125541}
     m_Modifications:
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _prefabId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _hasParentNetworkObjectAtEdit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[0]
+      value: 
+      objectReference: {fileID: 3584995312177527306}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[1]
+      value: 
+      objectReference: {fileID: 4948327828110776197}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[2]
+      value: 
+      objectReference: {fileID: 2584600193130345604}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[3]
+      value: 
+      objectReference: {fileID: 333158575921589742}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[4]
+      value: 
+      objectReference: {fileID: 892817958195713579}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[5]
+      value: 
+      objectReference: {fileID: 1142304872344136245}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.Rotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: SceneTransformProperties.LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 651871748125383595, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -505,70 +606,6 @@ PrefabInstance:
       propertyPath: _synchronizeInterval
       value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _prefabId
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _hasParentNetworkObjectAtEdit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[0]
-      value: 
-      objectReference: {fileID: 3584995312177527306}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[1]
-      value: 
-      objectReference: {fileID: 4948327828110776197}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[2]
-      value: 
-      objectReference: {fileID: 2584600193130345604}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[3]
-      value: 
-      objectReference: {fileID: 333158575921589742}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[4]
-      value: 
-      objectReference: {fileID: 892817958195713579}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: _networkBehaviours.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.Rotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.Rotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.Rotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.Rotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295196389165029171, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: SceneTransformProperties.LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -581,22 +618,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+    - target: {fileID: 4820428619373347915, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4820428619373347916, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_Name
       value: PlayerView
       objectReference: {fileID: 0}
+    - target: {fileID: 4820428619373348018, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _addedNetworkObject
+      value: 
+      objectReference: {fileID: 2410751104200399866}
     - target: {fileID: 4820428619373348018, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _networkObjectCache
       value: 
@@ -661,10 +694,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 8615452675218292443, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8627332837437494102, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _addedNetworkObject
       value: 
@@ -714,9 +743,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _sceneNetworkObjects.Array.size
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[0]
+      value: 
+      objectReference: {fileID: 333158575921589742}
+    - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: _networkBehaviours.Array.data[1]
+      value: 
+      objectReference: {fileID: 892817958195713579}
     - target: {fileID: 9010208978141533523, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _sceneNetworkObjects.Array.data[0]
       value: 
