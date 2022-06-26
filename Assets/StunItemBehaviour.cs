@@ -13,8 +13,15 @@ public class StunItemBehaviour : NetworkBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
         slopeCheck = FindObjectOfType<SlopeCheck>();
+        if (rb.velocity.x <= 0)
+        {
+            lastMovement = -1;
+        }
+        else
+        {
+            lastMovement = 1;
+        }
     }
 
     void FixedUpdate()
@@ -40,7 +47,7 @@ public class StunItemBehaviour : NetworkBehaviour
                 return;
             }
             Explode();
-            collision.gameObject.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
+            collision.gameObject.GetComponent<Player>().StunPlayer();
         }
     }
 

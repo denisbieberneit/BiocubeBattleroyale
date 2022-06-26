@@ -12,11 +12,17 @@ public class SmokeItemBehaviour : NetworkBehaviour
 
     private void Start()
     {
-        Debug.Log("Spawned");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
-        slopeCheck = FindObjectOfType<SlopeCheck>();    
+        slopeCheck = FindObjectOfType<SlopeCheck>();
+        if (rb.velocity.x <= 0)
+        {
+            lastMovement = -1;
+        }
+        else
+        {
+            lastMovement = 1;
+        }
     }
 
     void FixedUpdate()

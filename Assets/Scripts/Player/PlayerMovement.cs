@@ -231,7 +231,7 @@ public class PlayerMovement : NetworkBehaviour
     [ServerRpc]
     private void SpawnItemAttack(GameObject _item, NetworkConnection owner, Vector3 v)
     {
-        GameplayManager.instance.SpawnAbility(owner, _item, v, gameObject.scene);
+        GameplayManager.instance.SpawnAbility(owner, _item, v, gameObject.scene, lastMovement);
     }
 
 
@@ -389,6 +389,10 @@ public class PlayerMovement : NetworkBehaviour
                 rb.sharedMaterial = noFriction;
             }
 
+        }
+        if (slopeCheck.atWall)
+        {
+            rb.sharedMaterial = noFriction;
         }
     }
 }

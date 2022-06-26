@@ -291,9 +291,10 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     }
 
     [Server]
-    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v, UnityEngine.SceneManagement.Scene scene)
+    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v, UnityEngine.SceneManagement.Scene scene, float lastMovement)
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
+        obj.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f*lastMovement, 0), ForceMode2D.Force);
         ServerManager.Spawn(obj, playerConnection);
         UnitySceneManager.MoveGameObjectToScene(obj, scene);
     }

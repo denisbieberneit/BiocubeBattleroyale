@@ -13,11 +13,17 @@ public class ExplosionItemBehaviour : NetworkBehaviour
 
     private void Start()
     {
-        Debug.Log("Spawned");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         slopeCheck = GetComponent<SlopeCheck>();
-        lastMovement = FindObjectOfType<PlayerMovement>().lastMovement;
+        if (rb.velocity.x < 0)
+        {
+            lastMovement = -1;
+        }
+        else
+        {
+            lastMovement = 1;
+        }
     }
 
     void FixedUpdate()
