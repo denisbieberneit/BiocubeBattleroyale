@@ -43,9 +43,6 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     [SerializeField]
     private List<GameObject> spawns = new List<GameObject>();
     private bool gameOver = false;
-    [SerializeField]
-    private GameObject zonePref;
-    private GameObject currentZone;
 
     /// <summary>
     /// DeathDummy to spawn.
@@ -101,17 +98,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
         _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
         playersAliveList = new List<GameObject>();
-        StartZone();
     }
 
-
-    void StartZone()
-    {
-        currentZone = Instantiate(zonePref);
-        ServerManager.Spawn(currentZone, null);
-        UnitySceneManager.MoveGameObjectToScene(currentZone, gameObject.scene);
-
-    }
 
     /// <summary>
     /// Called when a client leaves the room.

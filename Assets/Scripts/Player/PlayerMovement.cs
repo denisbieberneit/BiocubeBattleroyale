@@ -338,9 +338,8 @@ public class PlayerMovement : NetworkBehaviour
     private void Update()
     {
         if (!base.IsOwner)
-        {
             return;
-        }
+
         if (!isStunned)
         {
             HandleJump();

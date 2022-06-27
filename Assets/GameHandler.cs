@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FishNet.Object;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
+
 
 public class GameHandler : NetworkBehaviour
 {
@@ -10,23 +12,21 @@ public class GameHandler : NetworkBehaviour
 
     private GameObject currentZone;
 
-    public override void OnStartServer()
+    private void Start()
     {
-        base.OnStartServer();
+        if (!base.IsServer)
+        {
+            return;
+        }
         startMatch();
     }
-
-    public override void OnStopServer()
-    {
-        base.OnStopServer();
-        stopMatch();
-    }
-
 
     void startMatch()
     {
         currentZone = Instantiate(zonePref);
         ServerManager.Spawn(currentZone, null);
+        UnitySceneManager.MoveGameObjectToScene(currentZone, gameObject.scene);
+
     }
 
     void stopMatch()

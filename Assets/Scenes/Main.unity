@@ -55817,6 +55817,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4897912073399594, guid: 8f92b9d89a0861644bcc71a5186c8750, type: 3}
   m_PrefabInstance: {fileID: 654353859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &656943706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656943709}
+  - component: {fileID: 656943708}
+  - component: {fileID: 656943707}
+  m_Layer: 0
+  m_Name: GameHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &656943707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656943706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkBehaviours:
+  - {fileID: 656943708}
+  SceneTransformProperties:
+    Position: {x: 12.989222, y: -0.6366624, z: -13.038124}
+    Rotation: {x: 0, y: 0, z: 0, w: 1}
+    LocalScale: {x: 1, y: 1, z: 1}
+  _isNetworked: 1
+  _hasParentNetworkObjectAtEdit: 0
+  NetworkObserver: {fileID: 0}
+  _prefabId: -1
+  _scenePathHash: 394288251
+  _sceneId: 1693455144690313791
+  _sceneNetworkObjects:
+  - {fileID: 656943707}
+  - {fileID: 1332096412}
+  - {fileID: 1990719402}
+--- !u!114 &656943708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656943706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4907d1c7aec2af44968ac4db6932595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 0
+  _addedNetworkObject: {fileID: 656943707}
+  _networkObjectCache: {fileID: 656943707}
+  zonePref: {fileID: 1928362500203174396, guid: 9c713b563d081584c92301b160290b07, type: 3}
+--- !u!4 &656943709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656943706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.989222, y: -0.6366624, z: -13.038124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &666172174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65112,7 +65189,6 @@ MonoBehaviour:
   - {fileID: 1951051752}
   - {fileID: 393653301}
   - {fileID: 1021443612}
-  zonePref: {fileID: 1928362500203174396, guid: 9c713b563d081584c92301b160290b07, type: 3}
   deathCam: {fileID: 382650543704887643, guid: 7ff10488e23fd164c9591d89ca24d5ee, type: 3}
 --- !u!4 &1332096414
 Transform:
