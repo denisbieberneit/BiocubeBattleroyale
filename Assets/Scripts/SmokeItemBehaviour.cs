@@ -46,8 +46,8 @@ public class SmokeItemBehaviour : NetworkBehaviour
                 Debug.Log("Selfhit");
                 return;
             }
-            Debug.Log("Collided with " + collision.gameObject.tag);
             Explode();
+            collision.gameObject.GetComponent<Player>().SmokePlayer();
         }
     }
 

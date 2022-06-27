@@ -74,7 +74,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 8
+  _prefabId: 9
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
@@ -177,7 +177,7 @@ MonoBehaviour:
   ac: {fileID: 3584995312177527306}
   fullGround: 0
   isStunned: 0
-  isGased: 0
+  isSmoked: 0
   jumpForce: 400
   attackController: {fileID: 2584600193130345604}
   maxJumps: 3
@@ -304,6 +304,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 3584995312177527538}
     m_Modifications:
+    - target: {fileID: 3208635723151398974, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208635723808811613, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3208635724102464484, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_RenderMode
       value: 2
@@ -319,6 +327,10 @@ PrefabInstance:
     - target: {fileID: 3208635724102464487, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_Name
       value: HealthSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208635724102464487, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3208635724102464491, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_Pivot.x
@@ -423,6 +435,10 @@ PrefabInstance:
     - target: {fileID: 3208635724418071512, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208635724418071513, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003691703320343777, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: _prefabId
@@ -579,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3210010822983724616, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3884100090418709481, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -627,6 +647,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerView
       objectReference: {fileID: 0}
+    - target: {fileID: 4820428619373347916, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820428619373347916, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4820428619373348018, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _addedNetworkObject
       value: 
@@ -643,7 +671,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4820428619544634687, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4820428619667716608, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820428620061792699, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}

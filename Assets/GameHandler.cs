@@ -26,6 +26,7 @@ public class GameHandler : NetworkBehaviour
     void startMatch()
     {
         currentZone = Instantiate(zonePref);
+        ServerManager.Spawn(currentZone, null);
     }
 
     void stopMatch()

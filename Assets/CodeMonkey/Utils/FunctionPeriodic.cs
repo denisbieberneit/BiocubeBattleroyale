@@ -87,6 +87,7 @@ namespace CodeMonkey.Utils {
 
             if (triggerImmediately) action();
 
+
             return functionPeriodic;
         }
 

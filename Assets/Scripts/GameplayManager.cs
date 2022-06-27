@@ -43,12 +43,18 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     [SerializeField]
     private List<GameObject> spawns = new List<GameObject>();
     private bool gameOver = false;
+    [SerializeField]
+    private GameObject zonePref;
+    private GameObject currentZone;
+
     /// <summary>
     /// DeathDummy to spawn.
     /// </summary>
     [Tooltip("DeathCam to spawn.")]
     [SerializeField]
     private GameObject deathCam = null;
+
+    private List<GameObject> playersAliveList;
 
 
     private void Awake()
@@ -80,6 +86,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
             {
                 _lobbyNetwork.OnClientJoinedRoom -= LobbyNetwork_OnClientStarted;
                 _lobbyNetwork.OnClientLeftRoom -= LobbyNetwork_OnClientLeftRoom;
+            playersAliveList = null;
             }
         }
 
@@ -87,20 +94,32 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// Initializes this script for use.
         /// </summary>
         /// <param name="roomDetails"></param>
-        public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbynetwork)
-        {
-            _roomDetails = roomDetails;
-            _lobbyNetwork = lobbynetwork;
-            _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
-            _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
-        }
+       
+    public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbynetwork)
+    {
+        _roomDetails = roomDetails;
+        _lobbyNetwork = lobbynetwork;
+        _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
+        _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
+        playersAliveList = new List<GameObject>();
+        StartZone();
+    }
 
-        /// <summary>
-        /// Called when a client leaves the room.
-        /// </summary>
-        /// <param name="arg1"></param>
-        /// <param name="arg2"></param>
-        private void LobbyNetwork_OnClientLeftRoom(RoomDetails arg1, NetworkObject arg2)
+
+    void StartZone()
+    {
+        currentZone = Instantiate(zonePref);
+        ServerManager.Spawn(currentZone, null);
+        UnitySceneManager.MoveGameObjectToScene(currentZone, gameObject.scene);
+
+    }
+
+    /// <summary>
+    /// Called when a client leaves the room.
+    /// </summary>
+    /// <param name="arg1"></param>
+    /// <param name="arg2"></param>
+    private void LobbyNetwork_OnClientLeftRoom(RoomDetails arg1, NetworkObject arg2)
         {
             //Destroy all of clients objects, except their client instance.
             for (int i = 0; i < _spawnedPlayerObjects.Count; i++)
@@ -219,12 +238,33 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// <returns></returns>
     private void __PlayerWon()
     {
+        if (playersAliveList == null)
+        {
+            return;
+        }
+        if (playersAliveList.Count == 1)
+        {
+            gameOver = true;
+        }
+        if (gameOver)
+            StartCoroutine(_DelayWin());
        
     }
+    private IEnumerator _DelayWin()
+    {
+        //Send Rpc to spawn death dummy then destroy original.
+        foreach (GameObject player in playersAliveList)
+        {
+            TargetShowWinner(player.GetComponent<NetworkObject>().Owner, "You", player.GetComponent<Player>().dead);
+        }
+        //Wait a little to respawn player.
+        yield return new WaitForSeconds(2f);
+    }
+
+      
     private void TimeManager_OnTick()
     {
-        if (!gameOver)
-            __PlayerWon();
+        __PlayerWon();
     }
     /// <summary>
     /// Displayers who won.
@@ -247,12 +287,9 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// <param name="conn"></param>
        
     private void SpawnPlayer(NetworkConnection conn)
-    
     {
     
         Vector3 next = GetSpawn();
-
-
         //Make object and move it to proper scene.
         NetworkObject netIdent = Instantiate<NetworkObject>(_playerPrefab, next, Quaternion.identity);
         SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
@@ -263,7 +300,15 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         //NetworkObject netIdent = conn.identity
         netIdent.transform.position = next;    
         RpcTeleport(netIdent, next);
+        UpdatePlayersAliveList();
         
+    }
+
+    private void UpdatePlayersAliveList()
+    {
+        int size = GameObject.FindGameObjectsWithTag("Player").Length;
+        Debug.Log("Found: " + size + " players");
+        playersAliveList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
     }
         /// <summary>
         /// teleports a NetworkObject to a position.
@@ -302,18 +347,27 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     [Server]
     public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
     {
+        Transform killerTransform;
+        if (killer != null)
+        {
+            killerTransform = killer.gameObject.transform;
+        }
+        else
+        {
+            killerTransform = netIdent.gameObject.transform;
+        }
         //Send Rpc to spawn death dummy then destroy original.
         RpcSpawnDeathDummy(netIdent.transform.position);
         NetworkConnection deathConn = netIdent.Owner;
         InstanceFinder.ServerManager.Despawn(netIdent.gameObject);
-        NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1), Quaternion.identity);
+        NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), new Vector3(killerTransform.position.x, killerTransform.position.y, -1), Quaternion.identity);
         SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
         UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
         base.Spawn(netDeathCam.gameObject, deathConn);
 
         //NetworkObject netIdent = conn.identity;            
-        netDeathCam.transform.position = new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1);
-        netDeathCam.transform.parent = killer.gameObject.transform;
-        RpcTeleport(netDeathCam, new Vector3(killer.gameObject.transform.position.x, killer.gameObject.transform.position.y, -1));
+        netDeathCam.transform.position = new Vector3(killerTransform.position.x, killerTransform.position.y, -1);
+        RpcTeleport(netDeathCam, new Vector3(killerTransform.position.x, killerTransform.position.y, -1));
+        UpdatePlayersAliveList();
     }
 }

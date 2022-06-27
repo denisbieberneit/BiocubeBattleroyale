@@ -26,26 +26,21 @@ public class Player : NetworkBehaviour
 
     public bool dead = false;
 
-    public override void OnStartClient()
-    {
-        base.OnStartClient();
-        
-        healthBar.SetMaxHealth(maxHealth);
+    public FunctionPeriodic p; 
 
-        if (!IsOwner)
+    private void Start()
+    {        
+        healthBar.SetMaxHealth(maxHealth);
+        p = FunctionPeriodic.Create(() =>
         {
-            return;
-        }
-        FunctionPeriodic.Create(() =>
-        {
-            /*if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
+            if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
             {
-                TakeDamage(1f);
+                TakeDamage(10, null);
             }
             else
             {
-                GainHealth(1f);
-            }*/
+                GainHealth(1);
+            }
         }, 2f);
 
     }
@@ -66,7 +61,10 @@ public class Player : NetworkBehaviour
         pm.SetStun();
     }
 
-
+    public void SmokePlayer()
+    {
+        pm.SetSmoke();
+    }
 
     public void TakeDamage(int takeDamage, NetworkObject attacker)
     {

@@ -22,7 +22,7 @@ public class HitController : MonoBehaviour
         {
             timeBetweenGasCount = timeBetweenGasCount - 1f;
 
-            playerMovement.isGased = true;
+            playerMovement.isSmoked = true;
         }
         if (timeBetweenGasCount < 0f && spawnGas)
         {
@@ -36,7 +36,7 @@ public class HitController : MonoBehaviour
             gasLenghtCount = 5f;
             playerMovement.runSpeed = 20f;
             spawnGas = false;
-            playerMovement.isGased = false;
+            playerMovement.isSmoked = false;
         }
 
         if (playerStunned)

@@ -11,18 +11,20 @@
  */
 
 using UnityEngine;
+using FishNet.Object;
+using FishNet;
 
-public class DamageCircle : MonoBehaviour {
+public class DamageCircle : NetworkBehaviour {
 
     private static DamageCircle instance;
 
     [SerializeField] private Transform targetCircleTransform;
 
-    private Transform circleTransform;
-    private Transform topTransform;
-    private Transform bottomTransform;
-    private Transform leftTransform;
-    private Transform rightTransform;
+    [SerializeField] private Transform circleTransform;
+    [SerializeField] private Transform topTransform;
+    [SerializeField] private Transform bottomTransform;
+    [SerializeField] private Transform leftTransform;
+    [SerializeField] private Transform rightTransform;
 
     public float circleShrinkSpeed;
     public float waitTime;
@@ -36,29 +38,23 @@ public class DamageCircle : MonoBehaviour {
     private Vector3 targetCircleSize;
     private Vector3 targetCirclePosition;
 
-    private void Awake() {
+
+    private void Start() {
         instance = this;
-
-        circleTransform = transform.Find("circle");
-        topTransform = transform.Find("top");
-        bottomTransform = transform.Find("bottom");
-        leftTransform = transform.Find("left");
-        rightTransform = transform.Find("right");
-
+        InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
         SetCircleSize(new Vector3(18.5f, 15f), new Vector3(100, 100));
-
         SetTargetCircle(new Vector3(18.5f, 15f), new Vector3(100,100), waitTime);
     }
 
-    private void Update() {
-        shrinkTimer -= Time.deltaTime;
+    private void TimeManager_OnTick() {
+        shrinkTimer -= ((float)(base.TimeManager.TickDelta));
 
         if (shrinkTimer < 0) {
             Vector3 sizeChangeVector = (targetCircleSize - circleSize).normalized;
-            Vector3 newCircleSize = circleSize + sizeChangeVector * Time.deltaTime * circleShrinkSpeed;
+            Vector3 newCircleSize = circleSize + sizeChangeVector * ((float)(base.TimeManager.TickDelta)) * circleShrinkSpeed;
 
             Vector3 circleMoveDir = (targetCirclePosition - circlePosition).normalized;
-            Vector3 newCirclePosition = circlePosition + circleMoveDir * Time.deltaTime * circleShrinkSpeed;
+            Vector3 newCirclePosition = circlePosition + circleMoveDir * ((float)(base.TimeManager.TickDelta)) * circleShrinkSpeed;
 
             SetCircleSize(newCirclePosition, newCircleSize);
 
@@ -121,5 +117,13 @@ public class DamageCircle : MonoBehaviour {
 
     public static bool IsOutsideCircle_Static(Vector3 position) {
         return instance.IsOutsideCircle(position);
+    }
+
+    private void OnDestroy()
+    {
+        if (InstanceFinder.TimeManager != null)
+        {
+            InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
+        }
     }
 }

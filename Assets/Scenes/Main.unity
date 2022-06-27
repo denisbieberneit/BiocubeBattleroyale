@@ -500,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d331f979d46e8e4a9fc90070c596d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _setHostVisibility: 1
   _defaultConditions:
   - {fileID: 11400000, guid: 2033f54fd2794464bae08fa5a55c8996, type: 2}
 --- !u!1001 &29376737
@@ -50886,82 +50887,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &80451291
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 80451293}
-  - component: {fileID: 80451292}
-  - component: {fileID: 80451294}
-  m_Layer: 0
-  m_Name: GameHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &80451292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80451291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4907d1c7aec2af44968ac4db6932595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 80451294}
-  _networkObjectCache: {fileID: 80451294}
-  zonePref: {fileID: 1928362500203174396, guid: 9c713b563d081584c92301b160290b07, type: 3}
---- !u!4 &80451293
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80451291}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.797417, y: 19.146133, z: -0.13848302}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &80451294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80451291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 80451292}
-  SceneTransformProperties:
-    Position: {x: 16.797417, y: 19.146133, z: -0.13848302}
-    Rotation: {x: 0, y: 0, z: 0, w: 1}
-    LocalScale: {x: 1, y: 1, z: 1}
-  _isNetworked: 1
-  _hasParentNetworkObjectAtEdit: 0
-  NetworkObserver: {fileID: 0}
-  _prefabId: -1
-  _scenePathHash: 394288251
-  _sceneId: 1693455147481305784
-  _sceneNetworkObjects:
-  - {fileID: 1332096412}
-  - {fileID: 1990719402}
 --- !u!1001 &84321474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60447,7 +60372,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1060765068
 PrefabInstance:
@@ -65177,6 +65102,9 @@ MonoBehaviour:
   _componentIndexCache: 0
   _addedNetworkObject: {fileID: 1332096412}
   _networkObjectCache: {fileID: 1332096412}
+  _spawnRegion: {x: 1, y: 1, z: 1}
+  _playerPrefab: {fileID: 2410751104200399866, guid: 74099974485b6db4bb15917799da9902, type: 3}
+  _deathDummy: {fileID: 1101612211655084, guid: 087f6530e132e6f46b06fa466d87b3a0, type: 3}
   spawns:
   - {fileID: 951037318}
   - {fileID: 908397907}
@@ -65184,9 +65112,7 @@ MonoBehaviour:
   - {fileID: 1951051752}
   - {fileID: 393653301}
   - {fileID: 1021443612}
-  _spawnRegion: {x: 1, y: 1, z: 1}
-  _playerPrefab: {fileID: 2410751104200399866, guid: 74099974485b6db4bb15917799da9902, type: 3}
-  _deathDummy: {fileID: 1101612211655084, guid: 087f6530e132e6f46b06fa466d87b3a0, type: 3}
+  zonePref: {fileID: 1928362500203174396, guid: 9c713b563d081584c92301b160290b07, type: 3}
   deathCam: {fileID: 382650543704887643, guid: 7ff10488e23fd164c9591d89ca24d5ee, type: 3}
 --- !u!4 &1332096414
 Transform:
@@ -65201,7 +65127,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1342952056
 PrefabInstance:
@@ -66687,7 +66613,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1551818522
 PrefabInstance:
@@ -72600,6 +72526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c95dfde7d73b54dbbdc23155d35d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _refreshDefaultPrefabs: 0
   _runInBackground: 1
   _dontDestroyOnLoad: 1
   _persistence: 0

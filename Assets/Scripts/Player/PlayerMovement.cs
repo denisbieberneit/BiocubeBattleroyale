@@ -29,7 +29,7 @@ public class PlayerMovement : NetworkBehaviour
 
     public bool isStunned = false;
 
-    public bool isGased = false;
+    public bool isSmoked = false;
 
     private bool leftGround = false;
 
@@ -253,7 +253,20 @@ public class PlayerMovement : NetworkBehaviour
         isStunned = false;
     }
 
+    public void SetSmoke()
+    {
+        //mach stun
+        isSmoked = true;
+        runSpeed = runSpeed / 2;
+        Invoke("RemoveSmoke", 4f);
 
+    }
+
+    private void RemoveSmoke()
+    {
+        isSmoked = false;
+        runSpeed = runSpeed * 2;
+    }
 
     [ServerRpc]
     public void ServerHitback(GameObject target, float direction)
@@ -347,6 +360,7 @@ public class PlayerMovement : NetworkBehaviour
             InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
             InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
         }
+        GetComponent<Player>().p.DestroySelf();
     }
 
     private void HandleMove()
@@ -389,6 +403,10 @@ public class PlayerMovement : NetworkBehaviour
                 rb.sharedMaterial = noFriction;
             }
 
+        }
+        if (slopeCheck.atWall)
+        {
+            rb.sharedMaterial = noFriction;
         }
         if (slopeCheck.atWall)
         {
