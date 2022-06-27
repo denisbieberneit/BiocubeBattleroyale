@@ -42,7 +42,7 @@ public class Player : NetworkBehaviour
                 GainHealth(1);
             }
         }, 2f);
-
+       
     }
 
     public void GainHealth(int health)

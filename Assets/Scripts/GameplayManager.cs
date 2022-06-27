@@ -51,7 +51,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     [SerializeField]
     private GameObject deathCam = null;
 
-    private List<GameObject> playersAliveList;
+    private List<GameObject> playerList;
+    private int playersAlive = 0;
 
 
     private void Awake()
@@ -82,7 +83,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
             {
                 _lobbyNetwork.OnClientJoinedRoom -= LobbyNetwork_OnClientStarted;
                 _lobbyNetwork.OnClientLeftRoom -= LobbyNetwork_OnClientLeftRoom;
-            playersAliveList = null;
+                playerList = null;
             }
         }
 
@@ -97,7 +98,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         _lobbyNetwork = lobbynetwork;
         _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
         _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
-        playersAliveList = new List<GameObject>();
+        playerList = new List<GameObject>();
     }
 
 
@@ -226,18 +227,14 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// <returns></returns>
     private void __PlayerWon()
     {
-        if (playersAliveList == null)
-        {
-            return;
-        }
-        if (playersAliveList.Count == 1)
+        if (playersAlive == 1)
         {
             gameOver = true;
         }
         if (gameOver)
-            foreach(GameObject player in playersAliveList)
+            foreach(GameObject player in playerList)
             {
-                TargetShowWinner(player.GetComponent<NetworkObject>().Owner, "You", !player.GetComponent<Player>().dead);
+                TargetShowWinner(player.GetComponent<NetworkObject>().Owner, player.GetComponent<NetworkObject>().name, !player.GetComponent<Player>().dead);
             }
     }
 
@@ -276,6 +273,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         //NetworkObject netIdent = conn.identity
         netIdent.transform.position = next;    
         RpcTeleport(netIdent, next);
+        playersAlive = playersAlive + 1;
         UpdatePlayersAliveList();
         
     }
@@ -284,10 +282,10 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
     {
         int size = GameObject.FindGameObjectsWithTag("Player").Length;
         Debug.Log("Found: " + size + " players");
-        playersAliveList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
-        foreach (GameObject o in playersAliveList)
+        playerList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
+        foreach (GameObject o in playerList)
         {
-            Debug.Log("Name: "+ o.GetComponent<Player>().dead);
+            Debug.Log("Name: " + o.GetComponent<Player>().dead);
         }
     }
         /// <summary>
@@ -349,6 +347,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         netDeathCam.transform.position = new Vector3(killerTransform.position.x, killerTransform.position.y, -1);
         RpcTeleport(netDeathCam, new Vector3(killerTransform.position.x, killerTransform.position.y, -1));
         UpdatePlayersAliveList();
+        playersAlive = playersAlive - 1;
         __PlayerWon();
     }
 }

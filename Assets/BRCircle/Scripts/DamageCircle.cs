@@ -13,6 +13,7 @@
 using UnityEngine;
 using FishNet.Object;
 using FishNet;
+using FishNet.Object.Synchronizing;
 
 public class DamageCircle : NetworkBehaviour {
 
@@ -26,27 +27,32 @@ public class DamageCircle : NetworkBehaviour {
     [SerializeField] private Transform leftTransform;
     [SerializeField] private Transform rightTransform;
 
-    public float circleShrinkSpeed;
-    public float waitTime;
-    public float shrinkAmount;
+    [SyncVar] public float circleShrinkSpeed;
+    [SyncVar] public float waitTime;
+    [SyncVar] public float shrinkAmount;
 
-    private float shrinkTimer;
+    [SyncVar] private float shrinkTimer;
 
-    private Vector3 circleSize;
-    private Vector3 circlePosition;
+    [SyncVar] private Vector3 circleSize;
+    [SyncVar] private Vector3 circlePosition;
 
-    private Vector3 targetCircleSize;
-    private Vector3 targetCirclePosition;
+    [SyncVar] private Vector3 targetCircleSize;
+    [SyncVar] private Vector3 targetCirclePosition;
 
 
     private void Start() {
         instance = this;
         InstanceFinder.TimeManager.OnTick += TimeManager_OnTick;
         SetCircleSize(new Vector3(18.5f, 15f), new Vector3(100, 100));
-        SetTargetCircle(new Vector3(18.5f, 15f), new Vector3(100,100), waitTime);
+        SetTargetCircle(new Vector3(18.5f, 15f), new Vector3(100, 100), waitTime);
+
     }
 
     private void TimeManager_OnTick() {
+        if (!base.IsServer)
+        {
+            return;
+        }
         shrinkTimer -= ((float)(base.TimeManager.TickDelta));
 
         if (shrinkTimer < 0) {
@@ -66,6 +72,10 @@ public class DamageCircle : NetworkBehaviour {
     }
 
     private void GenerateTargetCircle() {
+        if (!base.IsServer)
+        {
+            return;
+        }
         float shrinkSizeAmount = shrinkAmount;
         Vector3 generatedTargetCircleSize = circleSize - new Vector3(shrinkSizeAmount, shrinkSizeAmount) * 2f;
 
@@ -81,6 +91,10 @@ public class DamageCircle : NetworkBehaviour {
     }
 
     private void SetCircleSize(Vector3 position, Vector3 size) {
+        if (!base.IsServer)
+        {
+            return;
+        }
         circlePosition = position;
         circleSize = size;
 
@@ -102,6 +116,10 @@ public class DamageCircle : NetworkBehaviour {
     }
 
     private void SetTargetCircle(Vector3 position, Vector3 size, float shrinkTimer) {
+        if (!base.IsServer)
+        {
+            return;
+        }
         this.shrinkTimer = shrinkTimer;
 
         targetCircleTransform.position = position;
@@ -111,7 +129,7 @@ public class DamageCircle : NetworkBehaviour {
         targetCircleSize = size;
     }
 
-    private bool IsOutsideCircle(Vector3 position) {
+    private bool IsOutsideCircle(Vector3 position) { 
         return Vector3.Distance(position, circlePosition) > circleSize.x * .5f;
     }
 
