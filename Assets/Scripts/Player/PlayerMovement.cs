@@ -53,7 +53,7 @@ public class PlayerMovement : NetworkBehaviour
     private bool holdingJump;
 
     private bool hit;
-    private float hitDirection = 0f;
+    private float hitDirection;
 
 
 
@@ -124,16 +124,17 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        //synch hit
-        if (md.Hit)
-        {
-            rb.AddForce(new Vector2(500f * md.HitDirection, 400f));
-        }
         controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);  
         if (md.Jump && md.CanJump)
         {
             rb.velocity = new Vector2(0f, 0f);
             rb.AddForce(new Vector2(0f, jumpForce));
+        }
+        //synch hit
+        if (md.Hit)
+        {
+            rb.AddForce(new Vector2(0f, 300f));
+            rb.velocity = new Vector2(500f * md.HitDirection * (float)base.TimeManager.TickDelta, 0f);
         }
     }
 
@@ -277,9 +278,8 @@ public class PlayerMovement : NetworkBehaviour
     [ObserversRpc]
     private void ObserversHitback(GameObject target, float direction)
     {
-
+        target.GetComponent<PlayerMovement>().hitDirection = direction;
         target.GetComponent<PlayerMovement>().hit = true;
-        target.GetComponent<PlayerMovement>().hitDirection = lastMovement;
         target.GetComponent<Player>().TakeDamage(30, gameObject.GetComponent<NetworkObject>());
     }
 
@@ -325,7 +325,7 @@ public class PlayerMovement : NetworkBehaviour
             lastMovement = horizontal;
         }
 
-        if ((horizontal == 0f && vertical == 0f && !_jump) || isStunned)
+        if ((horizontal == 0f && vertical == 0f && !_jump && !hit) || isStunned)
             return;
 
         md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, horizontal, vertical);
@@ -402,10 +402,6 @@ public class PlayerMovement : NetworkBehaviour
                 rb.sharedMaterial = noFriction;
             }
 
-        }
-        if (slopeCheck.atWall)
-        {
-            rb.sharedMaterial = noFriction;
         }
         if (slopeCheck.atWall)
         {

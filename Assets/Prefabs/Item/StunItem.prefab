@@ -172,7 +172,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 16
+  _prefabId: 17
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects: []
@@ -233,7 +233,7 @@ MonoBehaviour:
     Rotation: 1
     Scale: 0
   _interpolation: 2
-  _extrapolation: 2
+  _extrapolation: 256
   _enableTeleport: 0
   _teleportThreshold: 1
   _clientAuthoritative: 1

@@ -131,7 +131,8 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
                 }
 
             }
-        __PlayerWon();
+           
+            __PlayerWon();
     }
 
     /// <summary>
@@ -213,7 +214,6 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         {
             GameObject go = Instantiate(_deathDummy, position, Quaternion.identity);
             UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
-            Destroy(go, 1f);
         }
         #endregion
 
@@ -227,15 +227,17 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
         /// <returns></returns>
     private void __PlayerWon()
     {
-        if (playersAlive == 1)
+        if (!gameOver)
         {
-            gameOver = true;
-        }
-        if (gameOver)
-            foreach(GameObject player in playerList)
+            if (playersAlive == 1)
+            {
+                gameOver = true;
+            }
+            foreach (GameObject player in playerList)
             {
                 TargetShowWinner(player.GetComponent<NetworkObject>().Owner, player.GetComponent<NetworkObject>().name, !player.GetComponent<Player>().dead);
             }
+        }
     }
 
      
