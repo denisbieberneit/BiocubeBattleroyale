@@ -181,6 +181,7 @@ MonoBehaviour:
   jumpForce: 400
   attackController: {fileID: 2584600193130345604}
   maxJumps: 3
+  canAttack: 1
 --- !u!114 &2888176492688861625
 MonoBehaviour:
   m_ObjectHideFlags: 0

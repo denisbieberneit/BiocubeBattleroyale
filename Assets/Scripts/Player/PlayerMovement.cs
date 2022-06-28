@@ -54,6 +54,8 @@ public class PlayerMovement : NetworkBehaviour
 
     private bool hit;
     private float hitDirection;
+    [SerializeField]
+    private bool canAttack;
 
 
 
@@ -159,15 +161,23 @@ public class PlayerMovement : NetworkBehaviour
 
     private void HandleAttack()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (canAttack)
         {
-            ac.SetIsAttacking(true);
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                ac.SetIsAttacking(true);
+                canAttack = false;
+                Invoke("SetCanAttack", 1f);
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                OnAbility();
+                canAttack = false;
+                Invoke("SetCanAttack", 1f);
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            OnAbility();
-        }
     }
 
     private void HandleJump()
@@ -261,6 +271,11 @@ public class PlayerMovement : NetworkBehaviour
         runSpeed = runSpeed / 2;
         Invoke("RemoveSmoke", 4f);
 
+    }
+
+    private void SetCanAttack()
+    {
+        canAttack = true;
     }
 
     private void RemoveSmoke()
