@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GameSettings : MonoBehaviour
 {
+    [SerializeField]
+    private  int fps;
     // Set all game settings here such as targetFramerate
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = fps;
     }
 }

@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FishNet.Managing;
+using FishNet;
+using FishNet.Object;
 
 public class PhysicsResolver : MonoBehaviour
 {

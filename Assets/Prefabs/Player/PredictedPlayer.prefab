@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 4034622244466700057}
   - component: {fileID: 8867479507771499381}
   - component: {fileID: 632242140255804501}
-  - component: {fileID: 5638003557659535576}
   m_Layer: 6
   m_Name: PredictedPlayer
   m_TagString: Player
@@ -60,7 +59,7 @@ MonoBehaviour:
   - {fileID: 6726746365241379945}
   - {fileID: 6849756407532612895}
   - {fileID: 8867479507771499381}
-  - {fileID: 5638003557659535576}
+  - {fileID: 0}
   - {fileID: 3584995312177527306}
   - {fileID: 4948327828110776197}
   - {fileID: 2584600193130345604}
@@ -98,7 +97,7 @@ MonoBehaviour:
   _smoothingDuration: 0.125
   _enableTeleport: 1
   _teleportThreshold: 1
-  _predictionType: 0
+  _predictionType: 2
   _rigidbody: {fileID: 0}
   _rigidbody2d: {fileID: 7931516846868324376}
   _networkTransform: {fileID: 0}
@@ -255,48 +254,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.03807354}
   m_Size: {x: 0.45508766, y: 0.80351067}
   m_Direction: 0
---- !u!114 &5638003557659535576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8465374379778460824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 4
-  _addedNetworkObject: {fileID: 2410751104200399866}
-  _networkObjectCache: {fileID: 2410751104200399866}
-  _synchronizeParent: 0
-  _packing:
-    Position: 1
-    Rotation: 1
-    Scale: 0
-  _interpolation: 2
-  _extrapolation: 256
-  _enableTeleport: 1
-  _teleportThreshold: 1
-  _clientAuthoritative: 0
-  _sendToOwner: 0
-  _interval: 1
-  _synchronizePosition: 1
-  _positionSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeRotation: 1
-  _rotationSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeScale: 1
-  _scaleSnapping:
-    X: 0
-    Y: 0
-    Z: 0
 --- !u!1001 &2650638648254593588
 PrefabInstance:
   m_ObjectHideFlags: 0

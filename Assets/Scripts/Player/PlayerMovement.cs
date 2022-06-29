@@ -136,7 +136,7 @@ public class PlayerMovement : NetworkBehaviour
         if (md.Hit)
         {
             rb.AddForce(new Vector2(0f, 300f));
-            rb.velocity = new Vector2(500f * md.HitDirection * Time.deltaTime, 0f);
+            rb.velocity = new Vector2(500f * md.HitDirection * (float) base.TimeManager.TickDelta, 0f);
         }
     }
 
@@ -374,7 +374,6 @@ public class PlayerMovement : NetworkBehaviour
             InstanceFinder.TimeManager.OnTick -= TimeManager_OnTick;
             InstanceFinder.TimeManager.OnPostTick -= TimeManager_OnPostTick;
         }
-        GetComponent<Player>().p.DestroySelf();
     }
 
     private void HandleMove()
