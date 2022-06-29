@@ -31,8 +31,7 @@ public class SlopeCheck : MonoBehaviour
     }
 
     private void CheckSlope(){
-
-        if (Physics2D.Raycast(rayCastOrigin.position, Vector2.down, .8f, slopeLayerMask))
+        if (gameObject.scene.GetPhysicsScene2D().Raycast(rayCastOrigin.position, Vector2.down, .8f, slopeLayerMask))
             {
             //playerBody2D.gravityScale = 4f;
                 //characterController.m_MovementSmoothing = .15f;
@@ -47,7 +46,7 @@ public class SlopeCheck : MonoBehaviour
 
     private void CheckWall()
     {
-        if (Physics2D.Raycast(rayCastOrigin.position, Vector2.down, .5f, groundLayerMask))
+        if (gameObject.scene.GetPhysicsScene2D().Raycast(rayCastOrigin.position, Vector2.down, .5f, groundLayerMask))
         {
             onGround = true;
         }
@@ -56,7 +55,7 @@ public class SlopeCheck : MonoBehaviour
             onGround = false;
         }
 
-        if (Physics2D.Raycast(rayCastOrigin.position, Vector2.left, .5f, groundLayerMask) || Physics2D.Raycast(rayCastOrigin.position, Vector2.right, .5f, groundLayerMask))
+        if (gameObject.scene.GetPhysicsScene2D().Raycast(rayCastOrigin.position, Vector2.left, .5f, groundLayerMask) || Physics2D.Raycast(rayCastOrigin.position, Vector2.right, .5f, groundLayerMask))
         {
             atWall = true;
             

@@ -126,7 +126,7 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);  
+        controller.Move(md.Horizontal);  
         if (md.Jump && md.CanJump)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -136,7 +136,7 @@ public class PlayerMovement : NetworkBehaviour
         if (md.Hit)
         {
             rb.AddForce(new Vector2(0f, 300f));
-            rb.velocity = new Vector2(500f * md.HitDirection * (float)base.TimeManager.TickDelta, 0f);
+            rb.velocity = new Vector2(500f * md.HitDirection * Time.deltaTime, 0f);
         }
     }
 
@@ -343,7 +343,7 @@ public class PlayerMovement : NetworkBehaviour
         if ((horizontal == 0f && vertical == 0f && !_jump && !hit) || isStunned)
             return;
 
-        md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, horizontal, vertical);
+        md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, (horizontal * runSpeed * (float)base.TimeManager.TickDelta), vertical);
         
 
         _jump = false;
