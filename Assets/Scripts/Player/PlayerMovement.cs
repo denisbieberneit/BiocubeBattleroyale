@@ -85,13 +85,21 @@ public class PlayerMovement : NetworkBehaviour
         public Vector3 Position;
         public Quaternion Rotation;
         public Vector3 Velocity;
-        public Vector3 AngularVelocity;
-        public ReconcileData(Vector3 position, Quaternion rotation, Vector3 velocity, Vector3 angularVelocity)
+        public bool Jump;
+        public bool CanJump;
+        public bool Hit;
+        public float HitDirection;
+        public bool Stunned;
+        public ReconcileData(Vector3 position, Quaternion rotation, Vector3 velocity,bool jump, bool canJump, bool hit, float hitDirection, bool stunned)
         {
             Position = position;
             Rotation = rotation;
             Velocity = velocity;
-            AngularVelocity = angularVelocity;
+            Jump = jump;
+            CanJump = canJump;
+            Hit = hit;
+            HitDirection = hitDirection;
+            Stunned = stunned;
         }
     }
     #endregion
@@ -305,7 +313,11 @@ public class PlayerMovement : NetworkBehaviour
         transform.position = rd.Position;
         transform.rotation = rd.Rotation;
         rb.velocity = rd.Velocity;
-        rb.angularVelocity = 1f;
+        _jump = rd.Jump;
+        canJump = rd.CanJump;
+        hit = rd.Hit;
+        hitDirection = rd.HitDirection;
+
     }
 
     private void TimeManager_OnTick()
@@ -325,7 +337,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (base.IsServer)
         {
-            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, Vector3.one);
+            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, _jump, canJump, hit, hitDirection, isStunned);
             Reconciliation(rd, true);
         }
     }
