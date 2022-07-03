@@ -93,6 +93,7 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 2410751104200399866}
   _graphicalObject: {fileID: 3584995312177527538}
   _smoothTicks: 1
+  _durationType: 0
   _smoothingDuration: 0.125
   _enableTeleport: 1
   _teleportThreshold: 1
@@ -258,7 +259,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 3584995312177527538}
     m_Modifications:
     - target: {fileID: 3208635723151398974, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3208635724102464491, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3208635724102464491, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
       propertyPath: m_AnchorMax.x
@@ -442,7 +442,6 @@ PrefabInstance:
       value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
 --- !u!114 &598883085365518871 stripped
 MonoBehaviour:
@@ -455,17 +454,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1cbe76874ec6243bc691554ee7ede8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &598883086316571103 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3208635724102464491, guid: 77f99e72832a28c46b908f7f015c6515, type: 3}
-  m_PrefabInstance: {fileID: 2650638648254593588}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8297297872083762872
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 4717895597456125541}
     m_Modifications:
     - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
@@ -586,7 +579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: m_LocalPosition.x
@@ -688,6 +681,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8615452675218292443, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8627332837437494102, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _addedNetworkObject
       value: 
@@ -777,10 +774,6 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4820428619373347914, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 598883086316571103}
   m_SourcePrefab: {fileID: 100100000, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
 --- !u!114 &333158575921589742 stripped
 MonoBehaviour:
