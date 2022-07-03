@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833391a8accf3c04f91a5b4f80ce4216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 0
+  _componentIndexCache: 255
   _addedNetworkObject: {fileID: 6443780140225780309}
-  _networkObjectCache: {fileID: 6443780140225780309}
+  _networkObjectCache: {fileID: 0}
   _gameSceneConfigurations: {fileID: 6443780140225780310}
 --- !u!114 &6443780140225780310
 MonoBehaviour:
@@ -80,9 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _networkBehaviours:
-  - {fileID: 6443780140225780308}
-  - {fileID: 6443780140225780299}
+  _networkBehaviours: []
   SceneTransformProperties:
     Position: {x: -9999, y: -9999, z: -9999}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -90,7 +88,7 @@ MonoBehaviour:
   _isNetworked: 1
   _hasParentNetworkObjectAtEdit: 0
   NetworkObserver: {fileID: 0}
-  _prefabId: 4
+  _prefabId: -1
   _scenePathHash: 0
   _sceneId: 0
   _sceneNetworkObjects:
@@ -107,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71fd7f855ec523429999fc4e14a1928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 255
   _addedNetworkObject: {fileID: 6443780140225780309}
-  _networkObjectCache: {fileID: 6443780140225780309}
+  _networkObjectCache: {fileID: 0}
   _overrideType: 3
   _setHostVisibility: 1
   _observerConditions: []

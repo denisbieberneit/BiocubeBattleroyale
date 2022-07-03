@@ -1,9 +1,6 @@
 ﻿using FirstGearGames.LobbyAndWorld.Clients;
-using FirstGearGames.Mirrors;
 using FishNet.Object;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 namespace FirstGearGames.LobbyAndWorld.Global.Canvases

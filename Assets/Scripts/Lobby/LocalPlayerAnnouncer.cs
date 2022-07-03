@@ -4,7 +4,7 @@ using FishNet.Object;
 using System;
 
 
-namespace FirstGearGames.Mirrors
+namespace FirstGearGames.LobbyAndWorld
 {
 
     /// <summary>
@@ -20,7 +20,6 @@ namespace FirstGearGames.Mirrors
         public static event Action<NetworkObject> OnLocalPlayerUpdated;
         #endregion
 
-        #region Start/Destroy
         public override void OnOwnershipClient(NetworkConnection prevOwner)
         {
             base.OnOwnershipClient(prevOwner);
@@ -28,14 +27,6 @@ namespace FirstGearGames.Mirrors
                 OnLocalPlayerUpdated?.Invoke(base.NetworkObject);
         }
 
-        //private void OnDestroy()
-        //{
-        //    if (base.IsOwner)
-        //        OnLocalPlayerUpdated?.Invoke(null);
-        //}
-        #endregion
-
-        #region OnEnable/Disable.
         private void OnEnable()
         {
             if (base.IsOwner)
@@ -46,8 +37,6 @@ namespace FirstGearGames.Mirrors
             if (base.IsOwner)
                 OnLocalPlayerUpdated?.Invoke(null);
         }
-        #endregion
-
     }
 
 

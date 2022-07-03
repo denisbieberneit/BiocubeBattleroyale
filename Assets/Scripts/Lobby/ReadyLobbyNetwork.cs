@@ -43,7 +43,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
             _instance = this;
             base.OnClientLeftRoom += MyLobbyNetwork_OnClientLeftRoom;
             base.OnClientJoinedRoom += ReadyLobbyNetwork_OnClientJoinedRoom;
-            InstanceFinder.SceneManager.OnLoadEnd += FlexSceneManager_OnLoadSceneEnd;
+            InstanceFinder.SceneManager.OnLoadEnd += SceneManager_OnLoadEnd;
 
             LobbyNetwork.OnMemberLeft += LobbyNetwork_OnMemberLeft;
             InstanceFinder.ClientManager.OnClientConnectionState += ClientManager_OnClientConnectionState;
@@ -84,12 +84,12 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
             base.LobbyCanvases.SetLobbyCameraActive(true);
         }
 
-        #region FlexSceneManager callbacks.
+        #region SceneManager callbacks.
         /// <summary>
-        /// Called after FlexSceneManager has loaded a scene.
+        /// Called after SceneManager has loaded a scene.
         /// </summary>
         /// <param name="obj"></param>
-        private void FlexSceneManager_OnLoadSceneEnd(SceneLoadEndEventArgs obj)
+        private void SceneManager_OnLoadEnd(SceneLoadEndEventArgs obj)
         {
             if (!obj.QueueData.AsServer)
                 return;

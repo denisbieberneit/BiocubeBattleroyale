@@ -1140,7 +1140,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
                     SceneLoadData sld = new SceneLoadData(_gameSceneConfigurations.GetGameScenes());
                     LoadOptions loadOptions = new LoadOptions
                     {
-                        LocalPhysics = LocalPhysicsMode.Physics2D,
+                        LocalPhysics = _gameSceneConfigurations.PhysicsMode,
                         AllowStacking = true,
                     };
                     LoadParams loadParams = new LoadParams
