@@ -38,27 +38,6 @@ public class GameplayManager : NetworkBehaviour
     private GameObject _deathDummy = null;
     #endregion
 
-    public static GameplayManager instance;
-
-    [SerializeField]
-    private List<GameObject> spawns = new List<GameObject>();
-    private bool gameOver = false;
-
-    /// <summary>
-    /// DeathDummy to spawn.
-    /// </summary>
-    [Tooltip("DeathCam to spawn.")]
-    [SerializeField]
-    private GameObject deathCam = null;
-
-    private List<GameObject> playerList;
-    private int playersAlive = 0;
-
-
-    private void Awake()
-    {
-        instance = this;
-    }
     /// <summary>
     /// RoomDetails for this game. Only available on the server.
     /// </summary>
@@ -76,31 +55,46 @@ public class GameplayManager : NetworkBehaviour
     /// </summary>
     private List<NetworkObject> _spawnedPlayerObjects = new List<NetworkObject>();
 
+    public static GameplayManager instance;
+
+
+    [SerializeField]
+    private List<GameObject> spawns = new List<GameObject>();
+    private bool gameOver = false;
+
+    /// <summary>
+    /// DeathDummy to spawn.
+    /// </summary>
+    [Tooltip("DeathCam to spawn.")]
+    [SerializeField]
+    private GameObject deathCam = null;
+
     #region Initialization and Deinitialization.
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void OnDestroy()
     {
         if (_lobbyNetwork != null)
         {
             _lobbyNetwork.OnClientJoinedRoom -= LobbyNetwork_OnClientStarted;
             _lobbyNetwork.OnClientLeftRoom -= LobbyNetwork_OnClientLeftRoom;
-            playerList = null;
         }
     }
 
     /// <summary>
     /// Initializes this script for use.
     /// </summary>
-    /// <param name="roomDetails"></param>
-
-    public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbynetwork)
+    public void FirstInitialize(RoomDetails roomDetails, LobbyNetwork lobbyNetwork)
     {
         _roomDetails = roomDetails;
-        _lobbyNetwork = lobbynetwork;
+        _lobbyNetwork = lobbyNetwork;
         _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
         _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
-        playerList = new List<GameObject>();
     }
-
 
     /// <summary>
     /// Called when a client leaves the room.
@@ -131,8 +125,6 @@ public class GameplayManager : NetworkBehaviour
             }
 
         }
-
-        __PlayerWon();
     }
 
     /// <summary>
@@ -213,33 +205,80 @@ public class GameplayManager : NetworkBehaviour
     private void RpcSpawnDeathDummy(Vector3 position)
     {
         GameObject go = Instantiate(_deathDummy, position, Quaternion.identity);
+        ServerManager.Spawn(go, null);
+
         UnitySceneManager.MoveGameObjectToScene(go, gameObject.scene);
     }
     #endregion
 
     #region Winning.
 
+    private bool CheckGameEnd()
+    {
+        int alivePlayer = 0;
+        foreach (NetworkObject item in _roomDetails.StartedMembers)
+        {
+            bool isDead = item.gameObject.GetComponent<Player>().dead;
 
+            //If not winner.
+            if (!isDead)
+            {
+                alivePlayer = alivePlayer + 1;
+            }
+        }
+        if (alivePlayer == 1)
+        {
+            return true;
+        }
+        return false;
+    }
 
     /// <summary>
     /// Ends the game announcing winner and sending clients back to lobby.
     /// </summary>
     /// <returns></returns>
-    private void __PlayerWon()
+    private IEnumerator __PlayerWon()
     {
-        if (!gameOver)
+        List<NetworkObject> deadPlayers = new List<NetworkObject>();
+        NetworkObject winnerObject = null;
+
+        //Find all players in room and destroy their objects. Don't destroy client instance!
+        foreach (NetworkObject item in _roomDetails.StartedMembers)
         {
-            if (playersAlive == 1)
+            bool isDead = item.gameObject.GetComponent<Player>().dead;
+
+            //If not winner.
+            if (isDead)
             {
-                gameOver = true;
+                deadPlayers.Add(item);
             }
-            foreach (GameObject player in playerList)
+            else
             {
-                TargetShowWinner(player.GetComponent<NetworkObject>().Owner, player.GetComponent<NetworkObject>().name, !player.GetComponent<Player>().dead);
+                winnerObject = item;
             }
         }
-    }
 
+        //Send out winner text.
+        ClientInstance ci = ClientInstance.ReturnClientInstance(winnerObject.Owner);
+        string playerName = ci.PlayerSettings.GetUsername();
+        foreach (NetworkObject item in _roomDetails.StartedMembers)
+        {
+            if (item != null && item.Owner != null)
+                TargetShowWinner(item.Owner, playerName, (item.Owner == winnerObject.Owner));
+        }
+
+        //Wait a moment then kick the players out. Not required.
+        yield return new WaitForSeconds(4f);
+        List<NetworkObject> collectedIdents = new List<NetworkObject>();
+        foreach (NetworkObject item in _roomDetails.StartedMembers)
+        {
+            ClientInstance cli = ClientInstance.ReturnClientInstance(item.Owner);
+            if (ci != null)
+                collectedIdents.Add(cli.NetworkObject);
+        }
+        foreach (NetworkObject item in collectedIdents)
+            _lobbyNetwork.TryLeaveRoom(item);
+    }
 
     /// <summary>
     /// Displayers who won.
@@ -260,35 +299,20 @@ public class GameplayManager : NetworkBehaviour
     /// Spawns a player at a random position for a connection.
     /// </summary>
     /// <param name="conn"></param>
-
     private void SpawnPlayer(NetworkConnection conn)
     {
-
         Vector3 next = GetSpawn();
+
         //Make object and move it to proper scene.
         NetworkObject netIdent = Instantiate<NetworkObject>(_playerPrefab, next, Quaternion.identity);
-        SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
-        UnitySceneManager.MoveGameObjectToScene(netIdent.gameObject, sld.GetScene(out _));
+        UnitySceneManager.MoveGameObjectToScene(netIdent.gameObject, gameObject.scene);
+
         _spawnedPlayerObjects.Add(netIdent);
-        //Subscriber to kingtimer so we know when a player reaches 0.
         base.Spawn(netIdent.gameObject, conn);
-        //NetworkObject netIdent = conn.identity
+
+        //NetworkObject netIdent = conn.identity;            
         netIdent.transform.position = next;
         RpcTeleport(netIdent, next);
-        playersAlive = playersAlive + 1;
-        UpdatePlayersAliveList();
-
-    }
-
-    private void UpdatePlayersAliveList()
-    {
-        int size = GameObject.FindGameObjectsWithTag("Player").Length;
-        Debug.Log("Found: " + size + " players");
-        playerList = new List<GameObject>(GameObject.FindGameObjectsWithTag("Player"));
-        foreach (GameObject o in playerList)
-        {
-            Debug.Log("Name: " + o.GetComponent<Player>().dead);
-        }
     }
     /// <summary>
     /// teleports a NetworkObject to a position.
@@ -310,6 +334,42 @@ public class GameplayManager : NetworkBehaviour
     }
     #endregion
 
+    [Server]
+    public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
+    {
+        Transform killerTransform;
+         if (killer != null)
+         {
+             killerTransform = killer.gameObject.transform;
+         }
+         else
+         {
+             killerTransform = netIdent.gameObject.transform;
+         }
+        Vector3 next = killerTransform.position;
+
+         //Make object and move it to proper scene.
+        NetworkObject netIdentNew = Instantiate<NetworkObject>(_deathDummy.GetComponent<NetworkObject>(), next, Quaternion.identity);
+        UnitySceneManager.MoveGameObjectToScene(netIdentNew.gameObject, gameObject.scene);
+
+        _spawnedPlayerObjects.Add(netIdentNew);// not
+        base.Spawn(netIdentNew.gameObject, netIdent.Owner);
+
+        //NetworkObject netIdent = conn.identity;            
+        netIdentNew.transform.position = next;
+        RpcTeleport(netIdentNew, next);
+        //Send Rpc to spawn death dummy then destroy original.
+         NetworkConnection deathConn = netIdentNew.Owner;
+         NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), new Vector3(killerTransform.position.x, killerTransform.position.y, -1), Quaternion.identity);
+         SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
+         UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
+         base.Spawn(netDeathCam.gameObject, deathConn);
+
+         //NetworkObject netIdent = conn.identity;            
+         netDeathCam.transform.position = new Vector3(killerTransform.position.x, killerTransform.position.y, -1);
+         RpcTeleport(netDeathCam, new Vector3(killerTransform.position.x, killerTransform.position.y, -1));
+    }
+
     private Vector3 GetSpawn()
     {
         return spawns[Random.Range(0, spawns.Count)].gameObject.transform.position;
@@ -322,34 +382,5 @@ public class GameplayManager : NetworkBehaviour
         obj.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f * lastMovement, 0), ForceMode2D.Force);
         ServerManager.Spawn(obj, playerConnection);
         UnitySceneManager.MoveGameObjectToScene(obj, scene);
-    }
-
-    [Server]
-    public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
-    {
-        Transform killerTransform;
-        if (killer != null)
-        {
-            killerTransform = killer.gameObject.transform;
-        }
-        else
-        {
-            killerTransform = netIdent.gameObject.transform;
-        }
-        //Send Rpc to spawn death dummy then destroy original.
-        RpcSpawnDeathDummy(netIdent.transform.position);
-        NetworkConnection deathConn = netIdent.Owner;
-        InstanceFinder.ServerManager.Despawn(netIdent.gameObject);
-        NetworkObject netDeathCam = Instantiate<NetworkObject>(deathCam.GetComponent<NetworkObject>(), new Vector3(killerTransform.position.x, killerTransform.position.y, -1), Quaternion.identity);
-        SceneLookupData sld = SceneLookupData.CreateData(gameObject.scene.handle);
-        UnitySceneManager.MoveGameObjectToScene(netDeathCam.gameObject, sld.GetScene(out _));
-        base.Spawn(netDeathCam.gameObject, deathConn);
-
-        //NetworkObject netIdent = conn.identity;            
-        netDeathCam.transform.position = new Vector3(killerTransform.position.x, killerTransform.position.y, -1);
-        RpcTeleport(netDeathCam, new Vector3(killerTransform.position.x, killerTransform.position.y, -1));
-        UpdatePlayersAliveList();
-        playersAlive = playersAlive - 1;
-        __PlayerWon();
     }
 }

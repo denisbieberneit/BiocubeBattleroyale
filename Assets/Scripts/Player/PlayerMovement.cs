@@ -85,21 +85,13 @@ public class PlayerMovement : NetworkBehaviour
         public Vector3 Position;
         public Quaternion Rotation;
         public Vector3 Velocity;
-        public bool Jump;
-        public bool CanJump;
-        public bool Hit;
-        public float HitDirection;
-        public bool Stunned;
-        public ReconcileData(Vector3 position, Quaternion rotation, Vector3 velocity,bool jump, bool canJump, bool hit, float hitDirection, bool stunned)
+        public float AngularVelocity;
+        public ReconcileData(Vector3 position, Quaternion rotation, Vector3 velocity, float angularVelocity)
         {
             Position = position;
             Rotation = rotation;
             Velocity = velocity;
-            Jump = jump;
-            CanJump = canJump;
-            Hit = hit;
-            HitDirection = hitDirection;
-            Stunned = stunned;
+            AngularVelocity = angularVelocity;
         }
     }
     #endregion
@@ -134,7 +126,7 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        controller.Move(md.Horizontal);  
+        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);  
         if (md.Jump && md.CanJump)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -199,7 +191,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             canJump = true;
         }
-        if (Input.GetKeyDown(KeyCode.Space) & canJump)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             _jump = true;
             leftGround = true;
@@ -240,8 +232,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             ac.SetIsAttacking(true);
             //inventory attack,
-            Vector3 v = new Vector3(transform.position.x + (.6f * lastMovement), transform.position.y, transform.position.z);
-            //GameObject obj = Instantiate(inventory.inventory.referenceItem.prefab, v, Quaternion.identity);
+            Vector3 v = new Vector3(transform.position.x * (.6f * lastMovement), transform.position.y, transform.position.z);
             SpawnItemAttack(inventory.inventory.referenceItem.prefab, base.Owner, v);
             inventory.Remove();
         }
@@ -313,11 +304,7 @@ public class PlayerMovement : NetworkBehaviour
         transform.position = rd.Position;
         transform.rotation = rd.Rotation;
         rb.velocity = rd.Velocity;
-        _jump = rd.Jump;
-        canJump = rd.CanJump;
-        hit = rd.Hit;
-        hitDirection = rd.HitDirection;
-
+        rb.angularVelocity = rd.AngularVelocity;
     }
 
     private void TimeManager_OnTick()
@@ -337,7 +324,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (base.IsServer)
         {
-            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, _jump, canJump, hit, hitDirection, isStunned);
+            ReconcileData rd = new ReconcileData(transform.position, transform.rotation, rb.velocity, rb.angularVelocity);
             Reconciliation(rd, true);
         }
     }
@@ -352,10 +339,10 @@ public class PlayerMovement : NetworkBehaviour
             lastMovement = horizontal;
         }
 
-        if ((horizontal == 0f && vertical == 0f && !_jump && !hit) || isStunned)
+        if (horizontal == 0f && vertical == 0f && !_jump && !hit)
             return;
 
-        md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, (horizontal * runSpeed * (float)base.TimeManager.TickDelta), vertical);
+        md = new MoveData(_jump, canJump, hit, hitDirection, isStunned, horizontal, vertical);
         
 
         _jump = false;

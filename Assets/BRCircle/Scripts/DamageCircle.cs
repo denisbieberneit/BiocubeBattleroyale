@@ -17,7 +17,7 @@ using FishNet.Object.Synchronizing;
 
 public class DamageCircle : NetworkBehaviour {
 
-    private static DamageCircle instance;
+    public static DamageCircle instance;
 
     [SerializeField] private Transform targetCircleTransform;
 

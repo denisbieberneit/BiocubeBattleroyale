@@ -106,14 +106,17 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
                 foreach (Scene s in obj.LoadedScenes)
                 {
                     GameObject[] gos = s.GetRootGameObjects();
+                    Debug.Log("Loading scene "+ s.name + " is loaded" + s.isLoaded + " checking " + gos.Length);
                     for (int i = 0; i < gos.Length; i++)
                     {
                         //If found.
                         if (gos[i].TryGetComponent<GameplayManager>(out GameplayManager gpm))
                         {
                             gpm.FirstInitialize(rd, this);
+                            Debug.Log("Init scene");
                             break;
                         }
+                        Debug.Log(gos[i].name + " Not gpm");
 
                     }
                 }

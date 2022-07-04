@@ -31,9 +31,9 @@ public class Player : NetworkBehaviour
     private void Start()
     {        
         healthBar.SetMaxHealth(maxHealth);
-        p = FunctionPeriodic.Create(() =>
+       /* p = FunctionPeriodic.Create(() =>
         {
-            if (DamageCircle.IsOutsideCircle_Static(transform.position)) //TODO: add back
+            if (DamageCircle.IsOutsideCircle_Static(transform.position))
             {
                 TakeDamage(10, null);
             }
@@ -41,7 +41,7 @@ public class Player : NetworkBehaviour
             {
                 GainHealth(1);
             }
-        }, 2f);
+        }, 2f);*/
        
     }
 
