@@ -232,16 +232,17 @@ public class PlayerMovement : NetworkBehaviour
         {
             ac.SetIsAttacking(true);
             //inventory attack,
-            Vector3 v = new Vector3(transform.position.x * (.6f * lastMovement), transform.position.y, transform.position.z);
-            SpawnItemAttack(inventory.inventory.referenceItem.prefab, base.Owner, v);
+            Vector3 v = new Vector3(transform.position.x +( 0.6f * lastMovement), transform.position.y, transform.position.z);
+            float move = lastMovement;
+            SpawnItemAttack(inventory.inventory.referenceItem.prefab, base.Owner, v, move);
             inventory.Remove();
         }
     }
 
     [ServerRpc]
-    private void SpawnItemAttack(GameObject _item, NetworkConnection owner, Vector3 v)
+    private void SpawnItemAttack(GameObject _item, NetworkConnection owner, Vector3 v, float move)
     {
-        GameplayManager.instance.SpawnAbility(owner, _item, v, gameObject.scene, lastMovement);
+        GameplayManager.instance.SpawnAbility(owner, _item, move, gameObject.scene, v);
     }
 
 

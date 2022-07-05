@@ -376,10 +376,10 @@ public class GameplayManager : NetworkBehaviour
     }
 
     [Server]
-    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, Vector3 v, UnityEngine.SceneManagement.Scene scene, float lastMovement)
+    public void SpawnAbility(NetworkConnection playerConnection, GameObject item, float move , UnityEngine.SceneManagement.Scene scene, Vector3 v)
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
-        obj.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f * lastMovement, 0), ForceMode2D.Force);
+        obj.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f * move, 0), ForceMode2D.Force);
         ServerManager.Spawn(obj, playerConnection);
         UnitySceneManager.MoveGameObjectToScene(obj, scene);
     }
