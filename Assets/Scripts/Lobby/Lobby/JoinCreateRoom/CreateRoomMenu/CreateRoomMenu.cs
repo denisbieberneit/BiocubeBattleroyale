@@ -111,6 +111,33 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
             }
         }
 
+        public void OnClick_PlayCreateRoom()
+        {
+            if (_awaitingCreateResponse)
+                return;
+
+            string roomName = "Room" + GetRandomRoomNumber();
+            string password = "";
+            int playerCount = LobbyNetwork.ReturnMaximumPlayers();
+
+            string failedReason = string.Empty;
+            //If cannot create,
+            if (!LobbyNetwork.SanitizeRoomName(ref roomName, ref failedReason) || !LobbyNetwork.SanitizePlayerCount(playerCount, ref failedReason))
+            {
+                GlobalManager.CanvasesManager.MessagesCanvas.InfoMessages.ShowTimedMessage(failedReason, MessagesCanvas.BRIGHT_ORANGE);
+            }
+            //Can try to create.
+            else
+            {
+                _awaitingCreateResponse = true;
+                LobbyNetwork.SanitizeTextMeshProString(ref password);
+                LobbyNetwork.CreateRoom(roomName, password, true, playerCount);
+            }
+        }
+        private int GetRandomRoomNumber()
+        {
+            return UnityEngine.Random.Range(0, int.MaxValue);
+        }
         /// <summary>
         /// Sanitizes player count string.
         /// </summary>

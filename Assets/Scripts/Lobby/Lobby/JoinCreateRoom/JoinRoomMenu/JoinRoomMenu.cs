@@ -35,6 +35,12 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         [Tooltip("Text holding the entered room password.")]
         [SerializeField]
         private TMP_InputField _passwordText;
+        /// <summary>
+        /// Text holding the entered room password.
+        /// </summary>
+        [Tooltip("CreateRoomMenue.")]
+        [SerializeField]
+        private CreateRoomMenu createRoomMenu;
         #endregion
 
         #region Private.
@@ -211,6 +217,28 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
             else
             { 
                 LobbyNetwork.JoinRoom(_cachedRoomName, string.Empty);
+            }
+        }
+
+        /// <summary>
+        /// Tries to join a room.
+        /// </summary>
+        /// <param name="roomName"></param>
+        public void JoinCreateRoomRandom()
+        {
+            bool joinedRoom = false;
+            foreach (RoomEntry roomEntry in _roomEntries)
+            {
+                _cachedRoomName = roomEntry.RoomDetails.Name;
+                if (roomEntry.RoomDetails.MaxPlayers < roomEntry.RoomDetails.MemberIds.Count)
+                {
+                    LobbyNetwork.JoinRoom(_cachedRoomName, string.Empty);
+                    joinedRoom = true;
+                }
+            }
+            if (!joinedRoom)
+            {
+                createRoomMenu.OnClick_PlayCreateRoom();
             }
         }
 
