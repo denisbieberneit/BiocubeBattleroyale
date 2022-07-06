@@ -41,6 +41,10 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// CurrentRoomMenu reference.
         /// </summary>
         public CurrentRoomMenu CurrentRoomMenu { get { return _currentRoomMenu; } }
+
+        [Tooltip("MainMenue.")]
+        [SerializeField]
+        private GameObject _mainMenu;
         #endregion
 
         #region Private.
@@ -106,6 +110,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// <param name="show"></param>
         public void ShowRoomCreatedFailed(string failedReason)
         {
+            _mainMenu.SetActive(true);
             _createRoomMenu.ShowRoomCreatedFailed();
             CurrentRoomMenu.ShowRoomCreatedFailed(failedReason);
         }
@@ -117,6 +122,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// <param name="show"></param>
         public void ShowRoomJoinedSuccess(RoomDetails roomDetails)
         {
+            _mainMenu.SetActive(false);
             JoinRoomMenu.ShowRoomJoinedSuccess();
             _createRoomMenu.ShowRoomJoinedSuccess();
             CurrentRoomMenu.ShowRoomJoinedSuccess(roomDetails);
@@ -127,6 +133,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// <param name="show"></param>
         public void ShowRoomJoinedFailed(string failedReason)
         {
+            _mainMenu.SetActive(true);
             JoinRoomMenu.ShowRoomJoinedFailed();
             _createRoomMenu.ShowRoomJoinedFailed();
             CurrentRoomMenu.ShowRoomJoinedFailed(failedReason);
@@ -137,6 +144,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// </summary>
         public void ShowRoomLeftSuccess()
         {
+            _mainMenu.SetActive(true);
             JoinRoomMenu.ShowRoomLeftSuccess();
             _createRoomMenu.ShowRoomLeftSuccess();
             CurrentRoomMenu.ShowRoomLeftSuccess();
@@ -146,6 +154,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// </summary>
         public void ShowRoomLeftFailed()
         {
+            _mainMenu.SetActive(false);
             JoinRoomMenu.ShowRoomLeftFailed();
             _createRoomMenu.ShowRoomLeftFailed();
             CurrentRoomMenu.ShowRoomLeftFailed();
@@ -160,6 +169,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
              * JoinRoonMenu or CreateRoomMenu as they
              * both are already hidden because of being 
              * in a CurrentRoom. Only current room must update. */
+            _mainMenu.SetActive(false);
             CurrentRoomMenu.ShowStartGame(success, roomDetails, failedReason);
         }
 

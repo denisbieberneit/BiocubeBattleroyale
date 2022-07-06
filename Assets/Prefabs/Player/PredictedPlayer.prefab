@@ -511,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _hasParentNetworkObjectAtEdit
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8007132572801485375, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: _networkBehaviours.Array.size
@@ -751,6 +751,10 @@ PrefabInstance:
       objectReference: {fileID: 8465374379778460824}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
       propertyPath: offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}
+      propertyPath: offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9007098436967535757, guid: 0b86bba94fa6eea41ad37b3c862e1771, type: 3}

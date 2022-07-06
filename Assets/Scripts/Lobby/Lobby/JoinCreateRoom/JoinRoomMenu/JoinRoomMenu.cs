@@ -230,7 +230,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
             foreach (RoomEntry roomEntry in _roomEntries)
             {
                 _cachedRoomName = roomEntry.RoomDetails.Name;
-                if (roomEntry.RoomDetails.MaxPlayers < roomEntry.RoomDetails.MemberIds.Count)
+                if (roomEntry.RoomDetails.MaxPlayers > roomEntry.RoomDetails.MemberIds.Count)
                 {
                     LobbyNetwork.JoinRoom(_cachedRoomName, string.Empty);
                     joinedRoom = true;
