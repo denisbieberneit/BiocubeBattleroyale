@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ability
   - DarkZone
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - DeadzoneCollider2
   - EnvironmentFront
   - EnvironmentBack
-  - 
+  - EnvironmentMiddle
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: EnvironmentBack
     uniqueID: 1729350057
+    locked: 0
+  - name: EnvironmentMiddle
+    uniqueID: 1563288643
     locked: 0
   - name: EnvironmentFront
     uniqueID: 1103726563

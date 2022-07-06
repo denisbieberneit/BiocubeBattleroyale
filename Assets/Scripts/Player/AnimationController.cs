@@ -21,8 +21,6 @@ public class AnimationController : NetworkBehaviour
         }
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        anim.SetBool("isHuntress", true);
-
     }
 
     private void Update()

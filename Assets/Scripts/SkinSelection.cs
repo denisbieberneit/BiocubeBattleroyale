@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FishNet.Object;
 
-public class SkinSelection : MonoBehaviour
+public class SkinSelection : NetworkBehaviour
 {
+    [SerializeField]
     private Animator anim;
 
     // Start is called before the first frame update
-    void Start()
+    public override void OnStartClient()
     {
-        anim = GetComponent<Animator>();
-        int selectedPlayer = 0;//PlayerPrefs.GetInt("Character"); //TODO: add back again
+        base.OnStartClient();
+        if (!base.IsOwner)
+        {
+            return;
+        }
+        int selectedPlayer = PlayerPrefs.GetInt("Character", 0);
         if (selectedPlayer == 1)
         {
             anim.SetBool("isMage", true);
@@ -25,9 +31,4 @@ public class SkinSelection : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
