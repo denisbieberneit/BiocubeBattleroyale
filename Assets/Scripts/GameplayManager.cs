@@ -19,12 +19,6 @@ public class GameplayManager : NetworkBehaviour
     #region Serialized
     [Header("Spawning")]
     /// <summary>
-    /// Region players may spawn.
-    /// </summary>
-    [Tooltip("Region players may spawn.")]
-    [SerializeField]
-    private Vector3 _spawnRegion = Vector3.one;
-    /// <summary>
     /// Prefab to spawn.
     /// </summary>
     [Tooltip("Prefab to spawn.")]
@@ -94,6 +88,7 @@ public class GameplayManager : NetworkBehaviour
         _lobbyNetwork = lobbyNetwork;
         _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
         _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
+        Debug.Log("Initialized with " + roomDetails + ", " + lobbyNetwork);
     }
 
     /// <summary>
@@ -136,17 +131,23 @@ public class GameplayManager : NetworkBehaviour
     {
         //Not for this room.
         if (roomDetails != _roomDetails)
+        {
+            Debug.Log("roomDetails!=_roomDetails");
             return;
-        //NetIdent is null or not a player.
-        if (client == null || client.Owner == null)
-            return;
+        }
 
-        /* POSSIBLY USEFUL INFORMATION!!!!!
-         * POSSIBLY USEFUL INFORMATION!!!!!
-         * If you want to wait until all players are in the scene
-         * before spaning then check if roomDetails.StartedMembers.Count
-         * is the same as roomDetails.MemberIds.Count. A member is considered
-         * started AFTER they have loaded all of the scenes. */
+        //NetIdent is null or not a player.
+        if (client == null)
+        {
+            Debug.Log("client==null");
+            return;
+        }
+        if (client.Owner == null)
+        {
+            Debug.Log("client.Owner==null");
+            return;
+        }
+        Debug.Log("Now Spawning");
         SpawnPlayer(client.Owner);
     }
     #endregion
@@ -323,14 +324,6 @@ public class GameplayManager : NetworkBehaviour
     private void RpcTeleport(NetworkObject ident, Vector3 position)
     {
         ident.transform.position = position;
-    }
-
-    /// <summary>
-    /// Draw spawn region.
-    /// </summary>
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireCube(transform.position, _spawnRegion);
     }
     #endregion
 

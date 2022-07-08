@@ -15,7 +15,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.SignInCanvases
         /// </summary>
         [Tooltip("Input field to disable when trying to login.")]
         [SerializeField]
-        private TMP_InputField _usernameText;
+        private Text _usernameText;
         /// <summary>
         /// SignIn button the user interacts with.
         /// </summary>

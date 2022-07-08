@@ -56,7 +56,8 @@ public class PlayerMovement : NetworkBehaviour
     private float hitDirection;
     [SerializeField]
     private bool canAttack;
-
+    [SerializeField]
+    private int hitKnockBackStrength;
 
 
     #region Types.
@@ -126,7 +127,7 @@ public class PlayerMovement : NetworkBehaviour
     [Replicate]
     private void updateMethod(MoveData md, bool asServer, bool replaying = false)
     {
-        controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);  
+       
         if (md.Jump && md.CanJump)
         {
             rb.velocity = new Vector2(0f, 0f);
@@ -135,8 +136,11 @@ public class PlayerMovement : NetworkBehaviour
         //synch hit
         if (md.Hit)
         {
-            rb.AddForce(new Vector2(0f, 300f));
-            rb.velocity = new Vector2(500f * md.HitDirection * (float) base.TimeManager.TickDelta, 0f);
+            rb.AddForce(new Vector2(md.HitDirection * hitKnockBackStrength, 350f));
+        }
+        else
+        {
+            controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
         }
     }
 

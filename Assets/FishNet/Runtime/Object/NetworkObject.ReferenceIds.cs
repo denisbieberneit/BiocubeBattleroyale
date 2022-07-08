@@ -88,7 +88,7 @@ namespace FishNet.Object
                 return;
             if (gameObject == null)
                 return;
-
+            
             ulong startId = SceneId;
             uint startPath = _scenePathHash;
 

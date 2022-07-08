@@ -18,6 +18,10 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.SignInCanvases
         [Tooltip("SignInMenu reference.")]
         [SerializeField]
         private SignInMenu _signInMenu;
+
+
+        [SerializeField]
+        private GameObject _mainMenu;
         /// <summary>
         /// SignInMenu reference.
         /// </summary>
@@ -30,6 +34,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.SignInCanvases
         /// <param name="lobbyCanvases"></param>
         public void FirstInitialize(LobbyCanvases lobbyCanvases)
         {
+            _mainMenu.SetActive(false);
             LobbyCanvases = lobbyCanvases;
             SignInMenu.FirstInitialize(this);
             Reset();
@@ -50,6 +55,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.SignInCanvases
         /// <param name="signedIn"></param>
         public void SignInSuccess(string username)
         {
+            _mainMenu.SetActive(true);
             SignInMenu.SignInSuccess();
             GlobalManager.CanvasesManager.UserActionsCanvas.SignInSuccess(username);
         }
@@ -60,6 +66,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.SignInCanvases
         /// <param name="signedIn"></param>
         public void SignInFailed(string failedReason)
         {
+            _mainMenu.SetActive(false);
             SignInMenu.SignInFailed(failedReason);
             GlobalManager.CanvasesManager.UserActionsCanvas.SignInFailed();
         }

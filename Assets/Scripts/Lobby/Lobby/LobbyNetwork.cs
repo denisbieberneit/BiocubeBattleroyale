@@ -118,7 +118,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
         /// <summary>
         /// Maximum number of players which may be in a room.
         /// </summary>
-        private const int MAXIMUM_PLAYERS = 8;
+        private const int MAXIMUM_PLAYERS = 6;
         #endregion
 
         #region Initialization.
@@ -1187,15 +1187,22 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
              * to check if they are in a room or not. */
             if (args.Scene == gameObject.scene)
                 return;
-
+            Debug.Log("scene == gameobject.scene");
             //Find roomDetails for the scene client loaded.
             if (ConnectionRooms.TryGetValue(args.Connection, out RoomDetails roomDetails))
             {
+                Debug.Log("found");
+
                 /* Only need to initialize 'started' if not already started.
                  * This method will run even when multiple scenes are being loaded.
                  * So if two scenes were loaded for the game then this would run twice. */
                 if (!roomDetails.StartedMembers.Contains(args.Connection.FirstObject))
                 {
+                    foreach (NetworkObject o in roomDetails.MemberIds)
+                    {
+                        Debug.Log("Found " + o + ", " + o.name);
+                    }
+                    Debug.Log("Contains");
                     roomDetails.AddStartedMember(args.Connection.FirstObject);
                     OnClientStarted?.Invoke(roomDetails, args.Connection.FirstObject);
                     TargetLeaveLobby(args.Connection, roomDetails);
@@ -1213,6 +1220,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
                 TargetLeaveRoomSuccess(args.Connection);
             }
         }
+
 
         /// <summary>
         /// Called when a member has loaded the game scenes for your room.

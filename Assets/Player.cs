@@ -31,7 +31,7 @@ public class Player : NetworkBehaviour
     private void Start()
     {        
         healthBar.SetMaxHealth(maxHealth);
-       /* p = FunctionPeriodic.Create(() =>
+        p = FunctionPeriodic.Create(() =>
         {
             if (DamageCircle.IsOutsideCircle_Static(transform.position))
             {
@@ -41,7 +41,7 @@ public class Player : NetworkBehaviour
             {
                 GainHealth(1);
             }
-        }, 2f);*/
+        }, 2f);
        
     }
 
@@ -76,7 +76,10 @@ public class Player : NetworkBehaviour
         }
     }
 
-
+    private void OnDestroy()
+    {
+        p.DestroySelf();
+    }
     private void OnDeath(NetworkObject killer)
     {
         dead = true;

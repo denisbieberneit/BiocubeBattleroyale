@@ -22,10 +22,6 @@ public class DamageCircle : NetworkBehaviour {
     [SerializeField] private Transform targetCircleTransform;
 
     [SerializeField] private Transform circleTransform;
-    [SerializeField] private Transform topTransform;
-    [SerializeField] private Transform bottomTransform;
-    [SerializeField] private Transform leftTransform;
-    [SerializeField] private Transform rightTransform;
 
     [SyncVar] public float circleShrinkSpeed;
     [SyncVar] public float waitTime;
@@ -101,18 +97,6 @@ public class DamageCircle : NetworkBehaviour {
         transform.position = position;
 
         circleTransform.localScale = size;
-
-        topTransform.localScale = new Vector3(1000, 1000);
-        topTransform.localPosition = new Vector3(0, topTransform.localScale.y * .5f + size.y * .5f);
-        
-        bottomTransform.localScale = new Vector3(1000, 1000);
-        bottomTransform.localPosition = new Vector3(0, -topTransform.localScale.y * .5f - size.y * .5f);
-
-        leftTransform.localScale = new Vector3(1000, size.y);
-        leftTransform.localPosition = new Vector3(-leftTransform.localScale.x * .5f - size.x * .5f, 0f);
-
-        rightTransform.localScale = new Vector3(1000, size.y);
-        rightTransform.localPosition = new Vector3(+leftTransform.localScale.x * .5f + size.x * .5f, 0f);
     }
 
     private void SetTargetCircle(Vector3 position, Vector3 size, float shrinkTimer) {

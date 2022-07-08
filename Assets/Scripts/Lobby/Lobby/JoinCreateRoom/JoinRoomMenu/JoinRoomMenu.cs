@@ -41,6 +41,11 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         [Tooltip("CreateRoomMenue.")]
         [SerializeField]
         private CreateRoomMenu createRoomMenu;
+
+
+        [Tooltip("MainMenu.")]
+        [SerializeField]
+        private GameObject _mainMenu;
         #endregion
 
         #region Private.
@@ -226,6 +231,7 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies.JoinCreateRoomCanvases
         /// <param name="roomName"></param>
         public void JoinCreateRoomRandom()
         {
+            _mainMenu.SetActive(false);
             bool joinedRoom = false;
             foreach (RoomEntry roomEntry in _roomEntries)
             {

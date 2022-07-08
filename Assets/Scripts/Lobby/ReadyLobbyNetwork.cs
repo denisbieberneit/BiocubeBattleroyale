@@ -91,38 +91,42 @@ namespace FirstGearGames.LobbyAndWorld.Lobbies
         /// <param name="obj"></param>
         private void SceneManager_OnLoadEnd(SceneLoadEndEventArgs obj)
         {
+            Debug.Log("SceneManager_OnLoadEnd");
+
             if (!obj.QueueData.AsServer)
                 return;
-
-            /* When the server loads a scene try to find the SceneRoomDetails script in it
-             * and pass in the RoomDetails for the scene loaded. This isn't required by any
-             * means but it shows how you can have a reference to the RoomDetails which
-             * the scene is for on the server. */
             object[] p = obj.QueueData.SceneLoadData.Params.ServerParams;
             if (p != null && p.Length > 1)
             {
+                Debug.Log("p != null && p.Length > 1");
+
                 RoomDetails rd = (RoomDetails)p[1];
                 //Try to find script in scene.
+                Debug.Log("obj.LoadedScenes " + obj.LoadedScenes.Length + ", " + obj.LoadedScenes[0].name);
                 foreach (Scene s in obj.LoadedScenes)
                 {
                     GameObject[] gos = s.GetRootGameObjects();
-                    Debug.Log("Loading scene "+ s.name + " is loaded" + s.isLoaded + " checking " + gos.Length);
+                    Debug.Log("s.GetRootGameObjects()"  + s.GetRootGameObjects().Length);
+
                     for (int i = 0; i < gos.Length; i++)
                     {
                         //If found.
                         if (gos[i].TryGetComponent<GameplayManager>(out GameplayManager gpm))
                         {
+                            Debug.Log("Found GP Manager, now initializing");
                             gpm.FirstInitialize(rd, this);
-                            Debug.Log("Init scene");
                             break;
                         }
-                        Debug.Log(gos[i].name + " Not gpm");
+                        Debug.Log("Not found gp");
 
                     }
                 }
             }
         }
         #endregion
+
+
+
 
         /// <summary>
         /// Called when a client joins a room. This is called after the client has been sent a successful join response.
