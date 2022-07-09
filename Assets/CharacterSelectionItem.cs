@@ -22,13 +22,33 @@ public class CharacterSelectionItem : MonoBehaviour
     [SerializeField]
     private Image img;
 
+    private Animator animator;
+
+    [SerializeField]
+    private int scale;
+
+    [SerializeField]
+    private Text nameText;
+
+    [SerializeField]
+    private string nameString;
+
+    [SerializeField]
+    private GameObject mainMenu;
+
+    [SerializeField]
+    private GameObject characterMenu;
+
     private void Start()
     {
         isUnlocked = true;
         GameObject go = Instantiate(player, spawnLocation.position, Quaternion.identity);
         go.transform.parent = spawnLocation;
-        sr = player.GetComponent<SpriteRenderer>();
-        player.GetComponent<Animator>().SetBool(animationKey, true);
+        sr = go.GetComponent<SpriteRenderer>();
+        animator = go.GetComponent<Animator>();
+        animator.SetBool(animationKey, true);
+        img.transform.localScale = new Vector3(scale, scale, scale);
+        nameText.text = nameString;
     }
 
 
@@ -36,6 +56,10 @@ public class CharacterSelectionItem : MonoBehaviour
     {
         if(isUnlocked){
             PlayerPrefs.SetString("Character", animationKey);
+            Debug.Log("Selected character " + nameString);
+            characterMenu.SetActive(false);
+            mainMenu.SetActive(true);
+            //highlight card
         }
         else
         {

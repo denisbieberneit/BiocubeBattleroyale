@@ -10,6 +10,7 @@ using FishNet.Object;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 
@@ -51,17 +52,23 @@ public class GameplayManager : NetworkBehaviour
 
     public static GameplayManager instance;
 
-
     [SerializeField]
     private List<GameObject> spawns = new List<GameObject>();
     private bool gameOver = false;
 
     /// <summary>
-    /// DeathDummy to spawn.
+    /// DeathCam to spawn.
     /// </summary>
     [Tooltip("DeathCam to spawn.")]
     [SerializeField]
     private GameObject deathCam = null;
+
+    [SerializeField]
+    private int playersAlive;
+
+    private List<NetworkObject> playerObjects = new List<NetworkObject>();
+
+    private Hashtable top3List = new Hashtable();
 
     #region Initialization and Deinitialization.
 
@@ -88,7 +95,6 @@ public class GameplayManager : NetworkBehaviour
         _lobbyNetwork = lobbyNetwork;
         _lobbyNetwork.OnClientStarted += LobbyNetwork_OnClientStarted;
         _lobbyNetwork.OnClientLeftRoom += LobbyNetwork_OnClientLeftRoom;
-        Debug.Log("Initialized with " + roomDetails + ", " + lobbyNetwork);
     }
 
     /// <summary>
@@ -98,6 +104,7 @@ public class GameplayManager : NetworkBehaviour
     /// <param name="arg2"></param>
     private void LobbyNetwork_OnClientLeftRoom(RoomDetails arg1, NetworkObject arg2)
     {
+        playersAlive = playersAlive - 1;
         //Destroy all of clients objects, except their client instance.
         for (int i = 0; i < _spawnedPlayerObjects.Count; i++)
         {
@@ -147,7 +154,7 @@ public class GameplayManager : NetworkBehaviour
             Debug.Log("client.Owner==null");
             return;
         }
-        Debug.Log("Now Spawning");
+        playersAlive = playersAlive + 1;
         SpawnPlayer(client.Owner);
     }
     #endregion
@@ -214,24 +221,10 @@ public class GameplayManager : NetworkBehaviour
 
     #region Winning.
 
-    private bool CheckGameEnd()
-    {
-        int alivePlayer = 0;
-        foreach (NetworkObject item in _roomDetails.StartedMembers)
-        {
-            bool isDead = item.gameObject.GetComponent<Player>().dead;
 
-            //If not winner.
-            if (!isDead)
-            {
-                alivePlayer = alivePlayer + 1;
-            }
-        }
-        if (alivePlayer == 1)
-        {
-            return true;
-        }
-        return false;
+    private void AddTop3(NetworkObject obj, int spot)
+    {
+        top3List.Add(obj, spot);
     }
 
     /// <summary>
@@ -240,25 +233,27 @@ public class GameplayManager : NetworkBehaviour
     /// <returns></returns>
     private IEnumerator __PlayerWon()
     {
-        List<NetworkObject> deadPlayers = new List<NetworkObject>();
         NetworkObject winnerObject = null;
 
         //Find all players in room and destroy their objects. Don't destroy client instance!
-        foreach (NetworkObject item in _roomDetails.StartedMembers)
+        if (playersAlive <= 1)
         {
-            bool isDead = item.gameObject.GetComponent<Player>().dead;
-
-            //If not winner.
-            if (isDead)
+            foreach(NetworkObject winnersearchobj in _roomDetails.StartedMembers)
             {
-                deadPlayers.Add(item);
-            }
-            else
-            {
-                winnerObject = item;
+                if (!winnersearchobj.gameObject.GetComponentInChildren<Player>().dead)
+                {
+                    winnerObject = winnersearchobj;
+                }
             }
         }
-
+        else
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        if (winnerObject == null)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
         //Send out winner text.
         ClientInstance ci = ClientInstance.ReturnClientInstance(winnerObject.Owner);
         string playerName = ci.PlayerSettings.GetUsername();
@@ -270,6 +265,7 @@ public class GameplayManager : NetworkBehaviour
 
         //Wait a moment then kick the players out. Not required.
         yield return new WaitForSeconds(4f);
+        //show top 3
         List<NetworkObject> collectedIdents = new List<NetworkObject>();
         foreach (NetworkObject item in _roomDetails.StartedMembers)
         {
@@ -307,7 +303,7 @@ public class GameplayManager : NetworkBehaviour
         //Make object and move it to proper scene.
         NetworkObject netIdent = Instantiate<NetworkObject>(_playerPrefab, next, Quaternion.identity);
         UnitySceneManager.MoveGameObjectToScene(netIdent.gameObject, gameObject.scene);
-
+        playerObjects.Add(netIdent);
         _spawnedPlayerObjects.Add(netIdent);
         base.Spawn(netIdent.gameObject, conn);
 
@@ -330,6 +326,8 @@ public class GameplayManager : NetworkBehaviour
     [Server]
     public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
     {
+        playersAlive = playersAlive - 1;
+        ServerManager.Despawn(netIdent.gameObject);
         Transform killerTransform;
          if (killer != null)
          {
@@ -361,6 +359,7 @@ public class GameplayManager : NetworkBehaviour
          //NetworkObject netIdent = conn.identity;            
          netDeathCam.transform.position = new Vector3(killerTransform.position.x, killerTransform.position.y, -1);
          RpcTeleport(netDeathCam, new Vector3(killerTransform.position.x, killerTransform.position.y, -1));
+        StartCoroutine(__PlayerWon());
     }
 
     private Vector3 GetSpawn()

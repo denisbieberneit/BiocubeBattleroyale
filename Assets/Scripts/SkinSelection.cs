@@ -16,19 +16,7 @@ public class SkinSelection : NetworkBehaviour
         {
             return;
         }
-        int selectedPlayer = PlayerPrefs.GetInt("Character", 0);
-        if (selectedPlayer == 1)
-        {
-            anim.SetBool("isMage", true);
-        }
-        if (selectedPlayer == 2)
-        {
-            anim.SetBool("isEvilMage", true);
-        }
-        if (selectedPlayer == 3)
-        {
-            anim.SetBool("isHuntress", true);
-        }
+        anim.SetBool(PlayerPrefs.GetString("Character", "isEvilMage"), true);
     }
 
 }

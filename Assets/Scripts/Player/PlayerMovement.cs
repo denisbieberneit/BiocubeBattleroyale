@@ -130,6 +130,7 @@ public class PlayerMovement : NetworkBehaviour
        
         if (md.Jump && md.CanJump)
         {
+            Debug.Log("isJumping: " + md.CanJump);
             rb.velocity = new Vector2(0f, 0f);
             rb.AddForce(new Vector2(0f, jumpForce));
         }
@@ -211,7 +212,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             ac.SetJumping();
         }
-        if (holdingJump && !fullGround && rb.velocity.y <= 0 & canJump)
+        if (holdingJump && !fullGround && rb.velocity.y <= 0 && canJump)
         {
             _jump = true;
             jumps = jumps + 1;
