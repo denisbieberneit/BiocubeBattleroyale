@@ -121,7 +121,7 @@ public class GameplayManager : NetworkBehaviour
             if (_spawnedPlayerObjects[i].Owner == arg2.Owner)
             {
                 //Destroy entry then remove from collection.
-                //InstanceFinder.ServerManager.Despawn(entry.gameObject);
+                InstanceFinder.ServerManager.Despawn(entry.gameObject);
                 _spawnedPlayerObjects.RemoveAt(i);
                 i--;
             }
@@ -236,23 +236,25 @@ public class GameplayManager : NetworkBehaviour
         NetworkObject winnerObject = null;
 
         //Find all players in room and destroy their objects. Don't destroy client instance!
-        if (playersAlive <= 1)
-        {
-            foreach(NetworkObject winnersearchobj in _roomDetails.StartedMembers)
+        int winnerCount = 0;
+        int loserCount = 0;
+          
+        foreach(NetworkObject winnersearchobj in _roomDetails.StartedMembers)   
+        {    
+            if (winnersearchobj.gameObject.GetComponent<Player>().dead)
             {
-                if (!winnersearchobj.gameObject.GetComponentInChildren<Player>().dead)
-                {
-                    winnerObject = winnersearchobj;
-                }
+                loserCount = loserCount + 1;
+            }
+            else
+            {
+                winnerCount = winnerCount + 1;
+                winnerObject = winnersearchobj;
             }
         }
-        else
+
+        if (winnerCount > 1)
         {
-            yield return new WaitForSeconds(0.1f);
-        }
-        if (winnerObject == null)
-        {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(.1f);
         }
         //Send out winner text.
         ClientInstance ci = ClientInstance.ReturnClientInstance(winnerObject.Owner);
@@ -372,6 +374,22 @@ public class GameplayManager : NetworkBehaviour
     {
         GameObject obj = Instantiate(item, v, Quaternion.identity);
         obj.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f * move, 0), ForceMode2D.Force);
+        ServerManager.Spawn(obj, playerConnection);
+        UnitySceneManager.MoveGameObjectToScene(obj, scene);
+    }
+
+    [Server]
+    public void SpawnEmote(GameObject emote, Transform playerEmotePosition, UnityEngine.SceneManagement.Scene scene, NetworkConnection playerConnection)
+    {
+        GameObject obj = Instantiate(emote.gameObject, playerEmotePosition.position, Quaternion.identity);
+        ServerManager.Spawn(obj, playerConnection);
+        UnitySceneManager.MoveGameObjectToScene(obj, scene);
+    }
+
+    [Server]
+    public void SpawnGasPiece(GameObject gas, Transform playerTransform, UnityEngine.SceneManagement.Scene scene, NetworkConnection playerConnection)
+    {
+        GameObject obj = Instantiate(gas.gameObject, playerTransform.position, Quaternion.identity);
         ServerManager.Spawn(obj, playerConnection);
         UnitySceneManager.MoveGameObjectToScene(obj, scene);
     }

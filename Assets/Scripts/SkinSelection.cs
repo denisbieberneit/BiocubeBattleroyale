@@ -16,7 +16,7 @@ public class SkinSelection : NetworkBehaviour
         {
             return;
         }
-        anim.SetBool(PlayerPrefs.GetString("Character", "isEvilMage"), true);
+        anim.SetBool(PlayerPrefs.GetString("Character", "isEvilWarrior"), true);
     }
 
 }

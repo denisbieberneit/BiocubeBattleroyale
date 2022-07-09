@@ -60,6 +60,12 @@ public class PlayerMovement : NetworkBehaviour
     private int hitKnockBackStrength;
 
 
+    [SerializeField]
+    private GameObject gasPiece;
+    private float nextActionTime = 0.0f;
+    public float period = 0.1f;
+
+
     #region Types.
     public struct MoveData
     {
@@ -250,6 +256,19 @@ public class PlayerMovement : NetworkBehaviour
         GameplayManager.instance.SpawnAbility(owner, _item, move, gameObject.scene, v);
     }
 
+    [ServerRpc]
+    private void SpawnEmote()
+    {
+        GameplayManager.instance.SpawnEmote(GetComponent<Player>().emote, GetComponent<Player>().playerEmotePosition, gameObject.scene, base.Owner);
+    }
+
+
+    [ServerRpc]
+    private void SpawnGas()
+    {
+        GameplayManager.instance.SpawnGasPiece(gasPiece, GetComponent<Player>().playerEmotePosition, gameObject.scene, base.Owner);
+    }
+
 
     void SetFriction()
     {
@@ -368,6 +387,15 @@ public class PlayerMovement : NetworkBehaviour
             HandleFalling();
             HandleAttack();
             checkHit();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SpawnEmote();
+            }
+            if (isSmoked && (Time.time > nextActionTime))
+            {
+                nextActionTime += period;
+                SpawnGas();
+            }
         }
     }
 
@@ -386,7 +414,6 @@ public class PlayerMovement : NetworkBehaviour
         if (horizontalMove != 0f)
         {
             ac.HorizontalMovement(true);
-
         }
     }
 

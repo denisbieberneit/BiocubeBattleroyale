@@ -11,11 +11,6 @@ public class MenuController : MonoBehaviour
     [SerializeField]
     private GameObject emotes;
 
-    [SerializeField]
-    private GameObject killEmotes;
-    [SerializeField]
-    private GameObject deathEmotes;
-
 
     public void OpenCharacterSelection()
     {
@@ -50,16 +45,5 @@ public class MenuController : MonoBehaviour
         {
             menu.SetActive(true);
         }
-    }
-
-    public void ShowKillEmotes()
-    {
-        deathEmotes.SetActive(false);
-        killEmotes.SetActive(true);
-    }
-    public void ShowDeathEmotes()
-    {
-        killEmotes.SetActive(false);
-        deathEmotes.SetActive(true);
     }
 }

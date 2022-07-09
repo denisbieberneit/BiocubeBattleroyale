@@ -21,7 +21,7 @@ public class CameraTrackController : MonoBehaviour
         if (Mathf.Round(cam.transform.position.x) == Mathf.Round(targetTransform.position.x) && Mathf.Round(cam.transform.position.y) == Mathf.Round(targetTransform.position.y))
         {
             currentTarget++;
-            if (currentTarget == 39){
+            if (currentTarget == 38){
                 currentTarget = 1;
             }
             targetTransform = gameObject.transform.GetChild(currentTarget);

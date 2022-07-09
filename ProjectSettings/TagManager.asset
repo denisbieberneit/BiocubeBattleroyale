@@ -83,6 +83,9 @@ TagManager:
   - name: HUD
     uniqueID: 302880625
     locked: 0
+  - name: Emote
+    uniqueID: 441149371
+    locked: 0
   - name: HealthbarEmpty
     uniqueID: 1112522461
     locked: 0

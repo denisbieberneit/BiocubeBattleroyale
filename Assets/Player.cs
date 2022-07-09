@@ -23,10 +23,14 @@ public class Player : NetworkBehaviour
     [SerializeField]
     private HealthBar healthBar;
 
+    public GameObject emote;
 
     public bool dead = false;
 
     public FunctionPeriodic p; 
+
+    [SerializeField]
+    public Transform playerEmotePosition;
 
     private void Start()
     {        
@@ -42,7 +46,7 @@ public class Player : NetworkBehaviour
                 GainHealth(1);
             }
         }, 2f);
-       
+        emote = EmoteFactory.instance.GetEmoteById(PlayerPrefs.GetInt("emote", 0));
     }
 
     public void GainHealth(int health)
