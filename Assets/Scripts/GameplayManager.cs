@@ -42,10 +42,6 @@ public class GameplayManager : NetworkBehaviour
     /// </summary>
     private LobbyNetwork _lobbyNetwork = null;
     /// <summary>
-    /// Becomes true once someone has won.
-    /// </summary>
-    private bool _winner = false;
-    /// <summary>
     /// Currently spawned player objects. Only exist on the server.
     /// </summary>
     private List<NetworkObject> _spawnedPlayerObjects = new List<NetworkObject>();
@@ -127,6 +123,19 @@ public class GameplayManager : NetworkBehaviour
             }
 
         }
+
+        for (int i = 0; i < playerObjects.Count; i++)
+        {
+            NetworkObject entry = playerObjects[i];
+            //Entry is null. Remove and iterate next.
+            if (entry.OwnerId == arg2.OwnerId)
+            {
+                playerObjects.RemoveAt(i);
+                i--;
+                break;
+            }
+        }
+        StartCoroutine(__PlayerWon());
     }
 
     /// <summary>
@@ -192,9 +201,6 @@ public class GameplayManager : NetworkBehaviour
 
         //Wait a little to respawn player.
         yield return new WaitForSeconds(1f);
-        //Don't respawn if someone won.
-        if (_winner)
-            yield break;
         /* Check for rage quit conditions (left room). */
         if (conn == null)
             yield break;
@@ -233,28 +239,20 @@ public class GameplayManager : NetworkBehaviour
     /// <returns></returns>
     private IEnumerator __PlayerWon()
     {
+        if (gameOver)
+        {
+            yield break;
+        }
         NetworkObject winnerObject = null;
 
-        //Find all players in room and destroy their objects. Don't destroy client instance!
-        int winnerCount = 0;
-        int loserCount = 0;
-          
-        foreach(NetworkObject winnersearchobj in _roomDetails.StartedMembers)   
-        {    
-            if (winnersearchobj.gameObject.GetComponent<Player>().dead)
-            {
-                loserCount = loserCount + 1;
-            }
-            else
-            {
-                winnerCount = winnerCount + 1;
-                winnerObject = winnersearchobj;
-            }
-        }
-
-        if (winnerCount > 1)
+        if (playerObjects.Count <= 1)
         {
-            yield return new WaitForSeconds(.1f);
+            winnerObject = playerObjects[0];
+            gameOver = true;
+        }
+        else
+        {
+            yield break;
         }
         //Send out winner text.
         ClientInstance ci = ClientInstance.ReturnClientInstance(winnerObject.Owner);
@@ -329,6 +327,17 @@ public class GameplayManager : NetworkBehaviour
     public void HandleDeath(NetworkObject netIdent, UnityEngine.SceneManagement.Scene scene, NetworkObject killer)
     {
         playersAlive = playersAlive - 1;
+        for (int i = 0; i < playerObjects.Count; i++)
+        {
+            NetworkObject entry = playerObjects[i];
+            //Entry is null. Remove and iterate next.
+            if (entry.OwnerId == netIdent.OwnerId)
+            {
+                playerObjects.RemoveAt(i);
+                i--;
+                break;
+            }
+        }
         ServerManager.Despawn(netIdent.gameObject);
         Transform killerTransform;
          if (killer != null)
