@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FishNet.Object;
 using FishNet;
+using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class AbilitySpawner : NetworkBehaviour
 {
@@ -15,27 +16,15 @@ public class AbilitySpawner : NetworkBehaviour
     [SerializeField]
     private int itemSpawnSeconds;
 
-
-    int i = 0;
-
-   void FixedUpdate()
-    {
-        if (Time.time > i)
+   void Start()
+    { 
+        foreach (Transform spawn in spawnPoints)
         {
-            foreach (Transform spawn in spawnPoints)
-            {
-                if (spawn.childCount != 0)
-                {
-                    continue;
-                }
-                GameObject item = GetRandomItem();
-                GameObject instItem = Instantiate(item, new Vector3(spawn.position.x, spawn.position.y), Quaternion.identity);
-                instItem.transform.parent =spawn.transform;
-                InstanceFinder.ServerManager.Spawn(instItem, null);
-
-            }
-            i += itemSpawnSeconds;
-        }        
+            GameObject item = GetRandomItem();  
+            GameObject instItem = Instantiate(item, new Vector3(spawn.position.x, spawn.position.y), Quaternion.identity); 
+            InstanceFinder.ServerManager.Spawn(instItem, null);
+            UnitySceneManager.MoveGameObjectToScene(instItem, gameObject.scene);
+        }
     }
 
     private GameObject GetRandomItem()

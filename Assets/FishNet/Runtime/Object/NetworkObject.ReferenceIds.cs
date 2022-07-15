@@ -42,7 +42,7 @@ namespace FishNet.Object
         /// <summary>
         /// 
         /// </summary>
-        [SerializeField]//, HideInInspector]
+        [SerializeField, HideInInspector]
         private ulong _sceneId;
         /// <summary>
         /// Id for this scene object.
@@ -102,6 +102,7 @@ namespace FishNet.Object
              EditorUtility.IsPersistent(this))
             {
                 //These are all failing conditions, don't do additional checks.
+                SceneId = 0;
             }
             else
             {

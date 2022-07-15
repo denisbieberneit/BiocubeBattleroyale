@@ -136,7 +136,6 @@ public class PlayerMovement : NetworkBehaviour
        
         if (md.Jump && md.CanJump)
         {
-            Debug.Log("isJumping: " + md.CanJump);
             rb.velocity = new Vector2(0f, 0f);
             rb.AddForce(new Vector2(0f, jumpForce));
         }
@@ -147,7 +146,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            controller.Move(md.Horizontal * runSpeed * (float)base.TimeManager.TickDelta);
+            controller.Move(md.Horizontal * runSpeed * (float) base.TimeManager.TickDelta, rb.velocity.y);
         }
     }
 
@@ -193,7 +192,7 @@ public class PlayerMovement : NetworkBehaviour
 
     private void HandleJump()
     {
-        if (jumps == maxJumps)
+        if (jumps >= maxJumps)
         {
             canJump = false;
             holdingJump = false;

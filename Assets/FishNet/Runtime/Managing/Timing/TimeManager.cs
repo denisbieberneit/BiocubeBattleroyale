@@ -671,8 +671,8 @@ namespace FishNet.Managing.Timing
             FrameTicked = (_elapsedTickTime >= timePerSimulation);
 
             //Multiple ticks will occur this frame.
-            if (_elapsedTickTime > (timePerSimulation * 2d)) ;
-            _lastMultipleTicks = Time.unscaledTime;
+            if (_elapsedTickTime > (timePerSimulation * 2d))
+                _lastMultipleTicks = Time.unscaledTime;
 
             while (_elapsedTickTime >= timePerSimulation)
             {
@@ -789,7 +789,6 @@ namespace FishNet.Managing.Timing
         /// </summary>
         /// <param name="tickType">TickType to compare against.</param>
         /// <returns></returns>
-        [Obsolete("Use TicksToTime(TickType) instead.")]
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public double TicksToTime(TickType tickType = TickType.LocalTick)
         {

@@ -285,7 +285,7 @@ public class GameplayManager : NetworkBehaviour
     private void TargetShowWinner(NetworkConnection conn, string winnerName, bool won)
     {
         Color c = (won) ? MessagesCanvas.LIGHT_BLUE : Color.red;
-        string text = (won) ? "Congrats, you won!" :
+        string text = (won) ? "Winner winner Chicken dinner!" :
             $"{winnerName} has won, better luck next time!";
         GlobalManager.CanvasesManager.MessagesCanvas.InfoMessages.ShowTimedMessage(text, c, 4f);
     }

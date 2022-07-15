@@ -4,13 +4,13 @@ using UnityEngine;
 using TMPro;
 using FishNet.Managing;
 using FishNet;
+using FishNet.Object;
 
-public class FPSDisplay : MonoBehaviour
+public class FPSDisplay : NetworkBehaviour
 {
     private int avgFrameRate;
     public TMP_Text display_fps;
     public TMP_Text display_ping;
-
 
     private void Start()
     {
